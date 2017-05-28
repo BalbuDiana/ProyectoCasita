@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class DVD_video
+    class DVD_video:Electro_master
     {
-        string ubicacion;
-        public DVD_video( string ubicacion)
+        
+        public DVD_video( string id, string ubicacion)
+            :base(1220,id,ubicacion)
         {
+            this.id = id;
             this.ubicacion = ubicacion;
         }
     }

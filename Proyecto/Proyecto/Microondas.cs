@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Microondas
+    class Microondas:Electro_master
     {
-        string ubicacion;
-        public Microondas(string ubicacion)
+       
+        public Microondas(string id)
+            :base(1000,id,"Kitchen")
         {
-            this.ubicacion = ubicacion;
+            this.ubicacion = "Kitche";
+
         }
     }
 }

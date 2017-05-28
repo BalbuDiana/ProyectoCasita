@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Licuadora
+    class Licuadora:Electro_master
     {
         string ubicacion;
 
-        public Licuadora(string ubicacion)
+        public Licuadora(string id)
+            :base(450,id,"Kitchen")
         {
-            this.ubicacion = ubicacion;
+            this.ubicacion = "Kitchen";
+            this.id = id;
         }
     }
 }

@@ -47,7 +47,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clase_prueba.cs" />
+    <Compile Include="Consumo.cs" />
     <Compile Include="DVD_video.cs" />
+    <Compile Include="Electro_master.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

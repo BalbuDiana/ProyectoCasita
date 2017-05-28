@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Laptop
+    class Laptop:Electro_master
     {
-        string ubicacion;
-        int id = 0;
-        double Potencia;
-        public Laptop(double Potencia, string ubicacion)
+       
+        public Laptop(string id,string ubicacion)
+            :base(6350,id, ubicacion)
         {
-            this.Potencia = Potencia;
+            this.id = id;
             this.ubicacion = ubicacion;
-            id += 1;
+          
         }
     }
 }
