@@ -8,19 +8,18 @@ namespace Proyecto
 {
     class DVD_video:Electro_master
     {
-
-        double potencia;
-        private static double LimConsumo = 1000; //para saber cuando se apaga
-        private static double PotenciaMayor = 0; //para saber quien es el que consume mas   
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
+        double Potencia;
 
-        public DVD_video( string id, string ubicacion)
-            :base(1220,id,ubicacion)
+        public DVD_video(double Potencia, string id, string ubicacion)
+            :base(Potencia,id,ubicacion)
         {
             this.id = id;
             this.ubicacion = ubicacion;
             this.estaPrendido = false;
+            this.Potencia = Potencia;
+            this.potencia = Potencia;
         }
 
         //--------------------------------------------------------------------------------------------------------------------
@@ -34,7 +33,7 @@ namespace Proyecto
                 tiempoAux = tiempoAux + (DateTime.Now.Subtract(tiempoIni).TotalHours);
             }
 
-            return potencia * tiempoAux; //me da el consumo de Wh
+            return Potencia * tiempoAux; //me da el consumo de Wh
         }
 
 

@@ -10,9 +10,9 @@ namespace Proyecto
     {
        
         
-        double potencia;
-        private static double LimConsumo = 1000; //para saber cuando se apaga
-        private static double PotenciaMayor = 0; //para saber quien es el que consume mas   
+        protected double potencia;
+        protected static double LimConsumo = 1000; //para saber cuando se apaga
+        protected static double PotenciaMayor = 0; //para saber quien es el que consume mas   
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
 

@@ -10,19 +10,19 @@ namespace Proyecto
     class Microondas:Electro_master
     {
 
-        double potencia;
-        private static double LimConsumo = 1000; //para saber cuando se apaga
-        private static double PotenciaMayor = 0; //para saber quien es el que consume mas   
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En horas 
+        double tiempoAcc = 0.0;       // En horas 
+        double Potencia;
 
-
-        public Microondas(string id)
-            :base(1000,id,"Kitchen")
+        public Microondas(string id,double Potencia)
+            :base(Potencia,id,"Kitchen")
         {
             this.ubicacion = "Kitche";
             this.estaPrendido = false;
-
+            this.Potencia = Potencia;
+            this.potencia = Potencia;
+            
+            
         }
 
         //---------------------------------------------------------------------------------------------------------------------
@@ -35,7 +35,7 @@ namespace Proyecto
                 tiempoAux = tiempoAux + (DateTime.Now.Subtract(tiempoIni).TotalHours);
             }
 
-            return potencia * tiempoAux; //me da el consumo de Wh
+            return Potencia * tiempoAux; //me da el consumo de Wh
         }
 
 

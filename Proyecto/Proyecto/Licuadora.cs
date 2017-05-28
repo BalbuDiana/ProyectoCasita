@@ -9,24 +9,24 @@ namespace Proyecto
     class Licuadora:Electro_master
     {
 
-        double potencia;
-        private static double LimConsumo = 1000; //para saber cuando se apaga
-        private static double PotenciaMayor = 0; //para saber quien es el que consume mas   
+       
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
+        double Potencia;
 
-
-        public Licuadora(string id)
-            :base(450,id,"Kitchen")
+        public Licuadora(double Potencia,string id)
+            :base(Potencia,id,"Kitchen")
         {
             this.ubicacion = "Kitchen";
             this.id = id;
             this.estaPrendido = false;
+            this.Potencia = Potencia;
+            this.potencia = Potencia;
         }
 
         //-------------------------------------------------------------------------------------------------------
 
-        public override double Consumosuma()  //para saber el consumo de estar prendido 
+       public override double Consumosuma()  //para saber el consumo de estar prendido 
         {
             // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
             double tiempoAux = tiempoAcc;
@@ -35,7 +35,7 @@ namespace Proyecto
                 tiempoAux = tiempoAux + (DateTime.Now.Subtract(tiempoIni).TotalHours);
             }
 
-            return potencia * tiempoAux; //me da el consumo de Wh
+            return Potencia * tiempoAux; //me da el consumo de Wh
         }
 
 
