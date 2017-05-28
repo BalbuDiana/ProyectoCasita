@@ -13,6 +13,7 @@ namespace Proyecto
             :base(1000,id,"Kitchen")
         {
             this.ubicacion = "Kitche";
+            this.estaPrendido = false;
 
         }
     }

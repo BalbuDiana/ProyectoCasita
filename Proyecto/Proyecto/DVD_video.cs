@@ -14,6 +14,7 @@ namespace Proyecto
         {
             this.id = id;
             this.ubicacion = ubicacion;
+            this.estaPrendido = false;
         }
     }
 }

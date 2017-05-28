@@ -15,6 +15,7 @@ namespace Proyecto
         {
             this.ubicacion = "Kitchen";
             this.id = id;
+            this.estaPrendido = false;
         }
     }
 }
