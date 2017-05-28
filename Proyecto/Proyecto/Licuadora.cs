@@ -24,6 +24,7 @@ namespace Proyecto
             this.potencia = Potencia;
         }
 
+
         //-------------------------------------------------------------------------------------------------------
 
        public override double Consumosuma()  //para saber el consumo de estar prendido 
