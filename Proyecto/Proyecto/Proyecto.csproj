@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Clase_prueba.cs" />
     <Compile Include="Consumo.cs" />
+    <Compile Include="IDrawElectro.cs" />
     <Compile Include="DVD_video.cs" />
     <Compile Include="Electro_master.cs" />
     <Compile Include="Form1.cs">

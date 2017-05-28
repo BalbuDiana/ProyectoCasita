@@ -9,7 +9,7 @@ namespace Proyecto
     class Electro_master:Consumo
     {
        
-        protected bool estaPrendido; //para saber estado 
+        
         double potencia;
         private static double LimConsumo = 1000; //para saber cuando se apaga
         private static double PotenciaMayor = 0; //para saber quien es el que consume mas   
@@ -18,7 +18,7 @@ namespace Proyecto
 
         protected string ubicacion = ""; //es para saber la ubicacion del electrodomestico
         protected string id = " ";  //solo para saber, Para recorrer la lista
-
+        protected bool estaPrendido; //para saber estado
 
         public Electro_master(double potencia, string id, string ubicacion ) //solo creamos un foco que esta en la cocina XD
         {
@@ -33,9 +33,9 @@ namespace Proyecto
             }
         }
 
-        //para saber el consumo de estar prendido 
+       //----------------------------------------------------------------------------------------------------------------------
 
-        public override double Consumosuma()
+        public override double Consumosuma()  //para saber el consumo de estar prendido 
         {
             // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
             double tiempoAux = tiempoAcc;
@@ -48,7 +48,7 @@ namespace Proyecto
         }
 
 
-        public override void Apagar()
+        public override void Apagar() //para cambiar estado
         {
             if (estaPrendido)
             {
@@ -63,7 +63,7 @@ namespace Proyecto
         }
 
 
-        public override void Prender()
+        public override void Prender() //para cambiar el estado inicial 
         {
             if (!estaPrendido)
             {
@@ -73,7 +73,7 @@ namespace Proyecto
         }
 
 
-        public bool AltoConsumo()
+        public bool AltoConsumo() //para saber cuando es muy alto su consumo
         {
             double ConsumoActual = Consumosuma();
             //todos los aparatos tendran el mismo consumo por eso es static
@@ -84,6 +84,9 @@ namespace Proyecto
 
             return false;
         }
+
+
+        //-------------------------------------------------------------------------------------------------------------------
 
         public static void SetLimConsumo(double valor) //para cambiar //no regresa nada
         {
