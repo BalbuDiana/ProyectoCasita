@@ -9,7 +9,7 @@ namespace Proyecto
     class Plancha: Electro_master
     {
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En horas 
+        double tiempoAcc;       // En hora 
         double Potencia;
 
         public Plancha(double Potencia, string id, string ubicacion)

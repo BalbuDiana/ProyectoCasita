@@ -9,7 +9,7 @@ namespace Proyecto
     class Tostador: Electro_master
     {
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En horas 
+        double tiempoAcc;       // En hora 
         double Potencia;
 
         public Tostador(double Potencia, string id)

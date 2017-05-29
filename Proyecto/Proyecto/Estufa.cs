@@ -9,7 +9,7 @@ namespace Proyecto
     class Estufa: Electro_master
     {
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En horas 
+        double tiempoAcc;       // En hora 
         double Potencia;
 
         public Estufa(double Potencia, string id)
