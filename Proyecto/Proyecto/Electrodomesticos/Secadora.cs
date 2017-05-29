@@ -13,12 +13,11 @@ namespace Proyecto
         double Potencia = 2891;
 
         public Secadora(string id, string ubicacion)
-            :base(id, ubicacion)
+            :base(2891,id, ubicacion)
         {
             this.id = id;
             this.ubicacion = ubicacion;
             this.estaPrendido = false;
-
             this.potencia = Potencia;
             tiempoAcc = 0.0;
         }

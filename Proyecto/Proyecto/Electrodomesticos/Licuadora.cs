@@ -15,7 +15,7 @@ namespace Proyecto
         double Potencia = 250;
 
         public Licuadora(string id)
-            :base(id,"Kitchen")
+            :base(250,id,"Kitchen")
         {
             this.ubicacion = "Kitchen";
             this.id = id;
