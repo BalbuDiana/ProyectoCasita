@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Electrodomesticos\Estufa.cs" />
     <Compile Include="Electrodomesticos\Foco.cs" />
+    <Compile Include="Electrodomesticos\Lampara.cs" />
     <Compile Include="Electrodomesticos\Telefono.cs" />
     <Compile Include="IDrawElectro.cs" />
     <Compile Include="Electrodomesticos\DVD_video.cs" />
