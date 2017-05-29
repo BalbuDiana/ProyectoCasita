@@ -55,6 +55,7 @@
     <Compile Include="Electrodomesticos\Lampara.cs" />
     <Compile Include="Electrodomesticos\Lavadora.cs" />
     <Compile Include="Electrodomesticos\Refrigerador.cs" />
+    <Compile Include="Electrodomesticos\Telefono.cs" />
     <Compile Include="Electrodomesticos\Television.cs" />
     <Compile Include="IDrawElectro.cs" />
     <Compile Include="Electrodomesticos\DVD_video.cs" />
