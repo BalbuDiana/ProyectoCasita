@@ -48,9 +48,9 @@
   <ItemGroup>
     <Compile Include="Clase_prueba.cs" />
     <Compile Include="Consumo.cs" />
-    <Compile Include="Estufa.cs" />
+    <Compile Include="Electrodomesticos\Estufa.cs" />
     <Compile Include="IDrawElectro.cs" />
-    <Compile Include="DVD_video.cs" />
+    <Compile Include="Electrodomesticos\DVD_video.cs" />
     <Compile Include="Electro_master.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -58,14 +58,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="laptop.cs" />
-    <Compile Include="Licuadora.cs" />
-    <Compile Include="Microondas.cs" />
-    <Compile Include="Plancha.cs" />
+    <Compile Include="Electrodomesticos\laptop.cs" />
+    <Compile Include="Electrodomesticos\Licuadora.cs" />
+    <Compile Include="Electrodomesticos\Microondas.cs" />
+    <Compile Include="Electrodomesticos\Plancha.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Secadora.cs" />
-    <Compile Include="Tostador.cs" />
+    <Compile Include="Electrodomesticos\Secadora.cs" />
+    <Compile Include="Electrodomesticos\Tostador.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

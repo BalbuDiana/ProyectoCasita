@@ -6,23 +6,26 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Estufa: Electro_master
+    class DVD_video:Electro_master
     {
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En hora 
+        double tiempoAcc;       // En horas 
         double Potencia;
 
-        public Estufa(double Potencia, string id)
-            :base(Potencia, id, "Cocina")
+        public DVD_video(double Potencia, string id, string ubicacion)
+            :base(Potencia,id,ubicacion)
         {
-            this.ubicacion = "Cocina";
+            this.id = id;
+            this.ubicacion = ubicacion;
             this.estaPrendido = false;
             this.Potencia = Potencia;
             this.potencia = Potencia;
+            tiempoAcc = 0.0;
         }
 
-        //---------------------------------------------------------------------------------------------------------------------
-        public override double Consumosuma() //para saber el consumo de estar prendido 
+        //--------------------------------------------------------------------------------------------------------------------
+
+        public override double Consumosuma()  //para saber el consumo de estar prendido 
         {
             // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
             double tiempoAux = tiempoAcc;
@@ -33,6 +36,7 @@ namespace Proyecto
 
             return Potencia * tiempoAux; //me da el consumo de Wh
         }
+
 
         public override void Apagar() //para cambiar estado
         {
@@ -48,6 +52,7 @@ namespace Proyecto
             }
         }
 
+
         public override void Prender() //para cambiar el estado inicial 
         {
             if (!estaPrendido)
@@ -58,6 +63,5 @@ namespace Proyecto
         }
 
         //-------------------------------------------------------------------------------------------------------------------
-
     }
 }

@@ -6,21 +6,21 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Laptop:Electro_master
+    class Secadora: Electro_master
     {
-
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En horas 
+        double tiempoAcc;       // En hora 
         double Potencia;
 
-        public Laptop(double Potencia, string id,string ubicacion)
-            :base(Potencia,id, ubicacion)
+        public Secadora(double Potencia, string id, string ubicacion)
+            :base(Potencia, id, ubicacion)
         {
             this.id = id;
             this.ubicacion = ubicacion;
             this.estaPrendido = false;
             this.Potencia = Potencia;
             this.potencia = Potencia;
+            tiempoAcc = 0.0;
         }
 
         //---------------------------------------------------------------------------------------------------------------

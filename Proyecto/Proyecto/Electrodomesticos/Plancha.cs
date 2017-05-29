@@ -6,28 +6,25 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Licuadora:Electro_master
+    class Plancha: Electro_master
     {
-
-       
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En horas 
+        double tiempoAcc;       // En hora 
         double Potencia;
 
-        public Licuadora(double Potencia,string id)
-            :base(Potencia,id,"Kitchen")
+        public Plancha(double Potencia, string id, string ubicacion)
+            :base(Potencia, id, ubicacion)
         {
-            this.ubicacion = "Kitchen";
             this.id = id;
+            this.ubicacion = ubicacion;
             this.estaPrendido = false;
             this.Potencia = Potencia;
             this.potencia = Potencia;
+            tiempoAcc = 0.0;
         }
 
-
-        //-------------------------------------------------------------------------------------------------------
-
-       public override double Consumosuma()  //para saber el consumo de estar prendido 
+        //---------------------------------------------------------------------------------------------------------------
+        public override double Consumosuma()  //para saber el consumo de estar prendido 
         {
             // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
             double tiempoAux = tiempoAcc;

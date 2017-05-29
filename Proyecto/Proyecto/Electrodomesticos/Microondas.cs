@@ -21,7 +21,7 @@ namespace Proyecto
             this.estaPrendido = false;
             this.Potencia = Potencia;
             this.potencia = Potencia;
-            
+            tiempoAcc = 0.0;
             
         }
 

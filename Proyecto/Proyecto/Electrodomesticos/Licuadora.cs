@@ -6,23 +6,29 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Tostador: Electro_master
+    class Licuadora:Electro_master
     {
+
+       
         DateTime tiempoIni;		// En fecha
-        double tiempoAcc;       // En hora 
+        double tiempoAcc;       // En horas 
         double Potencia;
 
-        public Tostador(double Potencia, string id)
-            :base(Potencia, id, "Cocina")
+        public Licuadora(double Potencia,string id)
+            :base(Potencia,id,"Kitchen")
         {
-            this.ubicacion = "Cocina";
+            this.ubicacion = "Kitchen";
+            this.id = id;
             this.estaPrendido = false;
             this.Potencia = Potencia;
             this.potencia = Potencia;
+            tiempoAcc = 0.0;
         }
 
-        //---------------------------------------------------------------------------------------------------------------------
-        public override double Consumosuma() //para saber el consumo de estar prendido 
+
+        //-------------------------------------------------------------------------------------------------------
+
+       public override double Consumosuma()  //para saber el consumo de estar prendido 
         {
             // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
             double tiempoAux = tiempoAcc;
@@ -33,6 +39,7 @@ namespace Proyecto
 
             return Potencia * tiempoAux; //me da el consumo de Wh
         }
+
 
         public override void Apagar() //para cambiar estado
         {
@@ -47,6 +54,7 @@ namespace Proyecto
                 tiempoAcc = tiempoAcc + (tiempoFin.Subtract(tiempoIni).TotalHours);
             }
         }
+
 
         public override void Prender() //para cambiar el estado inicial 
         {
