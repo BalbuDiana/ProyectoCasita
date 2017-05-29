@@ -47,7 +47,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Clase_prueba.cs" />
+    <Compile Include="Consumo.cs" />
+    <Compile Include="Electrodomesticos\Consola.cs" />
+    <Compile Include="Electrodomesticos\Estereo.cs" />
     <Compile Include="Electrodomesticos\Estufa.cs" />
+    <Compile Include="Electrodomesticos\Lavadora.cs" />
+    <Compile Include="Electrodomesticos\Refrigerador.cs" />
+    <Compile Include="Electrodomesticos\Television.cs" />
     <Compile Include="IDrawElectro.cs" />
     <Compile Include="Electrodomesticos\DVD_video.cs" />
     <Compile Include="Electro_master.cs" />
@@ -57,7 +63,7 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Electrodomesticos\laptop.cs" />
+    <Compile Include="Electrodomesticos\Laptop.cs" />
     <Compile Include="Electrodomesticos\Licuadora.cs" />
     <Compile Include="Electrodomesticos\Microondas.cs" />
     <Compile Include="Electrodomesticos\Plancha.cs" />
