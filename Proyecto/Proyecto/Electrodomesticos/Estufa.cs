@@ -10,14 +10,14 @@ namespace Proyecto
     {
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En hora 
-        double Potencia;
+        double Potencia = 3456;
 
-        public Estufa(double Potencia, string id)
-            :base(Potencia, id, "Cocina")
+        public Estufa( string id)
+            :base( id, "Cocina")
         {
             this.ubicacion = "Cocina";
             this.estaPrendido = false;
-            this.Potencia = Potencia;
+            
             this.potencia = Potencia;
             tiempoAcc = 0.0;
         }
