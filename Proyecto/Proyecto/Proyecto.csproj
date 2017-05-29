@@ -51,6 +51,8 @@
     <Compile Include="Electrodomesticos\Consola.cs" />
     <Compile Include="Electrodomesticos\Estereo.cs" />
     <Compile Include="Electrodomesticos\Estufa.cs" />
+    <Compile Include="Electrodomesticos\Foco.cs" />
+    <Compile Include="Electrodomesticos\Lampara.cs" />
     <Compile Include="Electrodomesticos\Lavadora.cs" />
     <Compile Include="Electrodomesticos\Refrigerador.cs" />
     <Compile Include="Electrodomesticos\Television.cs" />
