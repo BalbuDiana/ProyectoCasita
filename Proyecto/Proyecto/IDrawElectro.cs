@@ -10,5 +10,6 @@ namespace Proyecto
     interface IDrawElectro
     {
         void Draw(Graphics d);
+        
     }
 }
