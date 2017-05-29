@@ -16,51 +16,7 @@ namespace Proyecto
         {
             InitializeComponent();
         }
-        
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            double potencia = Convert.ToDouble(textBox1.Text);
-            Microondas m = new Microondas("dos");
-
-            m.Prender();
-            if (m.GetEstaPrendido() == true)
-            {
-                MessageBox.Show("Esta prendido Microondas con potencia de :" + m.GetPotencia() + "\n Consumo = " +m.Consumosuma());
-                //m.Apagar();
-            }
-            else
-            {
-
-                MessageBox.Show("No esta prendido");
-              
-            }
-           
-
-            MessageBox.Show("Esta apagado Microondas con potencia de :" +m.GetId()+ "\n Consumo = " + m.Consumosuma());
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-         //   double potencia = Convert.ToDouble(textBox1.Text);
-            Laptop m = new Laptop("uno", "habitacion");
-
-            m.Prender();
-            if (m.GetEstaPrendido() == true)
-            {
-                MessageBox.Show("Esta prendido Microondas con potencia de :" + m.GetPotencia() + "\n Consumo = " + m.Consumosuma());
-                //m.Apagar();
-            }
-            else
-            {
-
-                MessageBox.Show("No esta prendido");
-
-            }
-
-            MessageBox.Show("Esta apagado Microondas con potencia de :" + m.GetPotencia() + "\n Consumo = " + m.Consumosuma());
-
-            MessageBox.Show("Esta apagado Microondas con potencia de :" + m.GetId() + "\n Consumo = " + m.Consumosuma());
-        }
+       
     }
 }
