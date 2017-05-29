@@ -1,4 +1,4 @@
-﻿xusing System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class DVD_video:Electro_master
+    class Secadora: Electro_master
     {
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
         double Potencia;
 
-        public DVD_video(double Potencia, string id, string ubicacion)
-            :base(Potencia,id,ubicacion)
+        public Secadora(double Potencia, string id, string ubicacion)
+            :base(Potencia, id, ubicacion)
         {
             this.id = id;
             this.ubicacion = ubicacion;
@@ -22,8 +22,7 @@ namespace Proyecto
             this.potencia = Potencia;
         }
 
-        //--------------------------------------------------------------------------------------------------------------------
-
+        //---------------------------------------------------------------------------------------------------------------
         public override double Consumosuma()  //para saber el consumo de estar prendido 
         {
             // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
@@ -62,5 +61,6 @@ namespace Proyecto
         }
 
         //-------------------------------------------------------------------------------------------------------------------
+
     }
 }

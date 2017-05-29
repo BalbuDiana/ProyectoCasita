@@ -1,4 +1,4 @@
-﻿xusing System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,25 +6,23 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class DVD_video:Electro_master
+    class Tostador: Electro_master
     {
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
         double Potencia;
 
-        public DVD_video(double Potencia, string id, string ubicacion)
-            :base(Potencia,id,ubicacion)
+        public Tostador(double Potencia, string id)
+            :base(Potencia, id, "Cocina")
         {
-            this.id = id;
-            this.ubicacion = ubicacion;
+            this.ubicacion = "Cocina";
             this.estaPrendido = false;
             this.Potencia = Potencia;
             this.potencia = Potencia;
         }
 
-        //--------------------------------------------------------------------------------------------------------------------
-
-        public override double Consumosuma()  //para saber el consumo de estar prendido 
+        //---------------------------------------------------------------------------------------------------------------------
+        public override double Consumosuma() //para saber el consumo de estar prendido 
         {
             // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
             double tiempoAux = tiempoAcc;
@@ -35,7 +33,6 @@ namespace Proyecto
 
             return Potencia * tiempoAux; //me da el consumo de Wh
         }
-
 
         public override void Apagar() //para cambiar estado
         {
@@ -51,7 +48,6 @@ namespace Proyecto
             }
         }
 
-
         public override void Prender() //para cambiar el estado inicial 
         {
             if (!estaPrendido)
@@ -62,5 +58,6 @@ namespace Proyecto
         }
 
         //-------------------------------------------------------------------------------------------------------------------
+
     }
 }
