@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    class Electro_master:Consumo
+     abstract class Electro_master
     {
-       
-        
+
+
         protected double potencia;
         protected static double LimConsumo = 1000; //para saber cuando se apaga
         protected static double PotenciaMayor = 0; //para saber quien es el que consume mas   
@@ -20,7 +20,7 @@ namespace Proyecto
         protected string id = " ";  //solo para saber, Para recorrer la lista
         protected bool estaPrendido; //para saber estado
 
-        public Electro_master(double potencia, string id, string ubicacion ) //solo creamos un foco que esta en la cocina XD
+        public Electro_master(double potencia, string id, string ubicacion) //solo creamos un foco que esta en la cocina XD
         {
             this.ubicacion = ubicacion;
             this.id = id;
@@ -33,45 +33,22 @@ namespace Proyecto
             }
         }
 
-       //----------------------------------------------------------------------------------------------------------------------
+        //----------------------------------------------------------------------------------------------------------------------
 
-        public override double Consumosuma()  //para saber el consumo de estar prendido 
-        {
-            // SI el aparato esta actualmente prendido, se suma "temporalmente el tiempo que lleva encendido. 
-            double tiempoAux = tiempoAcc;
-            if (estaPrendido)
-            {
-                tiempoAux = tiempoAux + (DateTime.Now.Subtract(tiempoIni).TotalHours);
-            }
-
-            return potencia * tiempoAux; //me da el consumo de Wh
-        }
+        public abstract  double Consumosuma(); //para saber el consumo de estar prendido 
 
 
-        public override void Apagar() //para cambiar estado
-        {
-            if (estaPrendido)
-            {
-                estaPrendido = false;
-                DateTime tiempoFin = DateTime.Now; //es local porque no se utiliza en otro lugar
-
-                // Al operar DateTime (sumar, restart, etc ),  nos devuelve una objeto
-                // de tipo TimeSpan, el cual representa un intervalo de tiempo (no una fecha)
-                // Este intervalos lo podemos obtener en horas la variable TotalHours.
-                tiempoAcc = tiempoAcc + (tiempoFin.Subtract(tiempoIni).TotalHours);
-            }
-        }
+        public abstract void Apagar(); //para cambiar estado
 
 
-        public override void Prender() //para cambiar el estado inicial 
-        {
-            if (!estaPrendido)
-            {
-                estaPrendido = true;
-                tiempoIni = DateTime.Now; //guardo el tiempo 
-            }
-        }
 
+        public abstract void Prender(); //para cambiar el estado inicial 
+      
+
+
+
+
+        //-------------------------------------------------------------------------------------------------------------------
 
         public bool AltoConsumo() //para saber cuando es muy alto su consumo
         {
@@ -86,7 +63,6 @@ namespace Proyecto
         }
 
 
-        //-------------------------------------------------------------------------------------------------------------------
 
         public static void SetLimConsumo(double valor) //para cambiar //no regresa nada
         {
