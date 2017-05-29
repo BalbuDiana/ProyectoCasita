@@ -13,7 +13,7 @@ namespace Proyecto
         double Potencia = 1234;
 
         public Plancha (string id, string ubicacion)
-            :base(id, ubicacion)
+            :base(1234,id, ubicacion)
         {
             this.id = id;
             this.ubicacion = ubicacion;

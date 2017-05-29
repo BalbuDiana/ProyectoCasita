@@ -11,15 +11,15 @@ namespace Proyecto
 
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
-      
+        double Potencia = 2000; 
 
         public Laptop(string id,string ubicacion)
-            :base(id, ubicacion)
+            :base(2000, id, ubicacion)
         {
             this.id = id;
             this.ubicacion = ubicacion;
             this.estaPrendido = false;
-            this.potencia = 2000;
+            this.potencia = Potencia;
             tiempoAcc = 0.0;
         }
 
@@ -33,7 +33,7 @@ namespace Proyecto
                 tiempoAux = tiempoAux + (DateTime.Now.Subtract(tiempoIni).TotalHours);
             }
 
-            return potencia * tiempoAux; //me da el consumo de Wh
+            return Potencia * tiempoAux; //me da el consumo de Wh
         }
 
 

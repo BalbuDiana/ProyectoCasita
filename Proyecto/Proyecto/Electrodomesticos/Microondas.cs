@@ -15,7 +15,7 @@ namespace Proyecto
         double Potencia = 1800;
 
         public Microondas(string id)
-            :base(id,"Kitchen")
+            :base(1800,id,"Kitchen")
         {
             this.ubicacion = "Kitche";
             this.estaPrendido = false;

@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Proyecto.Electrodomesticos
 {
-    class Television: Electro_master
+    class Television
     {
-        public Television(double potencia, string id, string ubicacion)
+       /* public Television(double potencia, string id, string ubicacion)
             :base(potencia, id, ubicacion)
         {
 
-        }
+        }*/
     }
 }

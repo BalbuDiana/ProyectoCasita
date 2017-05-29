@@ -13,11 +13,11 @@ namespace Proyecto
         double Potencia = 3456;
 
         public Estufa( string id)
-            :base( id, "Cocina")
+            :base(3456, id, "Cocina")
         {
             this.ubicacion = "Cocina";
             this.estaPrendido = false;
-            
+
             this.potencia = Potencia;
             tiempoAcc = 0.0;
         }
