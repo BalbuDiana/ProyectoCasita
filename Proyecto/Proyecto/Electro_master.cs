@@ -17,10 +17,10 @@ namespace Proyecto
         double tiempoAcc;       // En horas 
 
         protected string ubicacion = ""; //es para saber la ubicacion del electrodomestico
-        protected string id = " ";  //solo para saber, Para recorrer la lista
+        protected string id = " ";  //solo para saber, Para recorrer la lista//
         protected bool estaPrendido; //para saber estado
 
-        public Electro_master(string id, string ubicacion) //solo creamos un foco que esta en la cocina XD
+        public Electro_master(string id, string ubicacion) //solo creamos un foco que esta en la cocina XD//
         {
             this.ubicacion = ubicacion;
             this.id = id;
