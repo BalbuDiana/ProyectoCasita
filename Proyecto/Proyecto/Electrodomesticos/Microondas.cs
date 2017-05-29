@@ -12,14 +12,14 @@ namespace Proyecto
 
         DateTime tiempoIni;		// En fecha
         double tiempoAcc = 0.0;       // En horas 
-        double Potencia;
+        double Potencia = 1800;
 
-        public Microondas(string id,double Potencia)
-            :base(Potencia,id,"Kitchen")
+        public Microondas(string id)
+            :base(id,"Kitchen")
         {
             this.ubicacion = "Kitche";
             this.estaPrendido = false;
-            this.Potencia = Potencia;
+            
             this.potencia = Potencia;
             tiempoAcc = 0.0;
             

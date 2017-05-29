@@ -20,11 +20,11 @@ namespace Proyecto
         protected string id = " ";  //solo para saber, Para recorrer la lista
         protected bool estaPrendido; //para saber estado
 
-        public Electro_master(double potencia, string id, string ubicacion) //solo creamos un foco que esta en la cocina XD
+        public Electro_master(string id, string ubicacion) //solo creamos un foco que esta en la cocina XD
         {
             this.ubicacion = ubicacion;
             this.id = id;
-            this.potencia = potencia;
+            this.potencia = 1000; //Wh
             estaPrendido = false;
             tiempoAcc = 0.0;
             if (potencia < PotenciaMayor)

@@ -10,15 +10,14 @@ namespace Proyecto
     {
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En hora 
-        double Potencia;
+        
 
-        public Tostador(double Potencia, string id)
-            :base(Potencia, id, "Cocina")
+        public Tostador(string id)
+            :base( id, "Cocina")
         {
             this.ubicacion = "Cocina";
             this.estaPrendido = false;
-            this.Potencia = Potencia;
-            this.potencia = Potencia;
+            this.potencia = 238;
             tiempoAcc = 0.0;
         }
 
@@ -32,7 +31,7 @@ namespace Proyecto
                 tiempoAux = tiempoAux + (DateTime.Now.Subtract(tiempoIni).TotalHours);
             }
 
-            return Potencia * tiempoAux; //me da el consumo de Wh
+            return potencia * tiempoAux; //me da el consumo de Wh
         }
 
         public override void Apagar() //para cambiar estado
