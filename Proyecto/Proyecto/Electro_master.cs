@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Proyecto
 {
-    abstract class Electro_master
+     abstract class Electro_master
     {
-       
-        
+
+
         protected double potencia;
         protected static double LimConsumo = 1000; //para saber cuando se apaga
         protected static double PotenciaMayor = 0; //para saber quien es el que consume mas   
@@ -20,11 +20,11 @@ namespace Proyecto
         protected string id = " ";  //solo para saber, Para recorrer la lista
         protected bool estaPrendido; //para saber estado
 
-        public Electro_master(double potencia, string id, string ubicacion ) //solo creamos un foco que esta en la cocina XD
+        public Electro_master(double potencia, string id, string ubicacion) //solo creamos un foco que esta en la cocina XD
         {
             this.ubicacion = ubicacion;
             this.id = id;
-            this.potencia = potencia;
+            this.potencia = potencia; //Wh
             estaPrendido = false;
             tiempoAcc = 0.0;
             if (potencia < PotenciaMayor)
@@ -35,16 +35,22 @@ namespace Proyecto
 
         //----------------------------------------------------------------------------------------------------------------------
 
-        public abstract double Consumosuma();
-    
+        public abstract  double Consumosuma(); //para saber el consumo de estar prendido 
+
 
         public abstract void Apagar(); //para cambiar estado
-       
 
-        public abstract void Prender();
-       
+
+
+        public abstract void Prender(); //para cambiar el estado inicial 
+      
+
+
+
+
+        //-------------------------------------------------------------------------------------------------------------------
+
         public bool AltoConsumo() //para saber cuando es muy alto su consumo
-        
         {
             double ConsumoActual = Consumosuma();
             //todos los aparatos tendran el mismo consumo por eso es static
@@ -56,8 +62,7 @@ namespace Proyecto
             return false;
         }
 
-    
-        //-------------------------------------------------------------------------------------------------------------------
+
 
         public static void SetLimConsumo(double valor) //para cambiar //no regresa nada
         {

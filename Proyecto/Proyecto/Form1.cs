@@ -21,7 +21,7 @@ namespace Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             double potencia = Convert.ToDouble(textBox1.Text);
-            Microondas m = new Microondas("dos",potencia);
+            Microondas m = new Microondas("dos");
 
             m.Prender();
             if (m.GetEstaPrendido() == true)
@@ -42,8 +42,8 @@ namespace Proyecto
 
         private void button2_Click(object sender, EventArgs e)
         {
-            double potencia = Convert.ToDouble(textBox1.Text);
-            Licuadora m = new Licuadora(potencia, "uno");
+         //   double potencia = Convert.ToDouble(textBox1.Text);
+            Laptop m = new Laptop("uno", "habitacion");
 
             m.Prender();
             if (m.GetEstaPrendido() == true)
@@ -58,6 +58,7 @@ namespace Proyecto
 
             }
 
+            MessageBox.Show("Esta apagado Microondas con potencia de :" + m.GetPotencia() + "\n Consumo = " + m.Consumosuma());
 
             MessageBox.Show("Esta apagado Microondas con potencia de :" + m.GetId() + "\n Consumo = " + m.Consumosuma());
         }

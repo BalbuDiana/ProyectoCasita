@@ -10,16 +10,16 @@ namespace Proyecto
     {
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
-        double Potencia;
+        double P = 2890;
 
-        public DVD_video(double Potencia, string id, string ubicacion)
-            :base(Potencia,id,ubicacion)
+        public DVD_video( double Potencia, string id, string ubicacion)
+            :base(Potencia, id,ubicacion)
         {
             this.id = id;
             this.ubicacion = ubicacion;
             this.estaPrendido = false;
-            this.Potencia = Potencia;
-            this.potencia = Potencia;
+            Potencia = P;
+            this.potencia = P;
             tiempoAcc = 0.0;
         }
 
@@ -34,7 +34,7 @@ namespace Proyecto
                 tiempoAux = tiempoAux + (DateTime.Now.Subtract(tiempoIni).TotalHours);
             }
 
-            return Potencia * tiempoAux; //me da el consumo de Wh
+            return base.potencia * tiempoAux; //me da el consumo de Wh
         }
 
 
