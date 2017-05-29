@@ -13,20 +13,6 @@ namespace Proyecto.Electrodomesticos
         {
 
         }
-
-        public override void Apagar()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override double Consumosuma()
-        {
-            throw new NotImplementedException();
-        }
-
-        public override void Prender()
-        {
-            throw new NotImplementedException();
-        }
+ 
     }
 }
