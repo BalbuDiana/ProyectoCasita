@@ -9,8 +9,8 @@ namespace Proyecto.Electrodomesticos
     class Consola: Electro_master
 
     {
-        public Consola(double potencia, string id, string ubicacion)
-            :base(potencia, id, ubicacion)
+        public Consola(string id, string ubicacion)
+            :base(1200, id, ubicacion)
         {
 
         }

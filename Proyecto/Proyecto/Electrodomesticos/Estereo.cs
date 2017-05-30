@@ -8,8 +8,8 @@ namespace Proyecto.Electrodomesticos
 {
     class Estereo: Electro_master
     {
-        public Estereo(double potencia, string id, string ubicacion)
-            :base(potencia, id, ubicacion)
+        public Estereo(string id, string ubicacion)
+            :base(1342, id, ubicacion)
         {
 
         }

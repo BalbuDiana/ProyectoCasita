@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Proyecto
 {
     public partial class Form1 : Form
@@ -147,13 +149,88 @@ namespace Proyecto
         private void button1_Click(object sender, EventArgs e)
         {
             string opcion = comboBox2.Text;
+            string id = textBox2.Text;
+
+            if(id=="")
+            
             if (opcion == "Consola")
+            {
+                Electrodomesticos.Consola consola = new Electrodomesticos.Consola(id, comboBox1.Text);
+                listaDeObjetos.Add(consola);
+            }
+            else if (opcion == "DVD")
+            {
+                DVD_video dvd = new DVD_video(id, comboBox1.Text);
+
+            }
+            else if (opcion == "Estereo")
+            {
+                Electrodomesticos.Estereo estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
+            }
+            else if (opcion == "Estufa")
+            {
+                Estufa estufa = new Estufa(id);
+
+            }
+            else if (opcion == "Foco")
+            {
+                try
+                {
+
+                }
+                catch (FormatException)
+                {
+
+                }
+                Electrodomesticos.Foco foco = new Electrodomesticos.Foco();
+            }
+            else if (opcion == "Lampara")
             {
 
             }
-            else if (opcion == "")
+            else if (opcion == "Laptop")
             {
 
+            }
+            else if (opcion == "Lavadora")
+            {
+
+            }
+            else if (opcion == "Licuadora")
+            {
+
+            }
+            else if (opcion == "Microondas")
+            {
+
+            }
+            else if (opcion == "Plancha")
+            {
+
+            }
+            else if (opcion == "Refrigerador")
+            {
+
+            }
+            else if (opcion == "Secadora")
+            {
+
+            }
+            else if (opcion == "Teléfono")
+            {
+
+            }
+            else if (opcion == "Televisión")
+            {
+
+            }
+            else if (opcion == "Tostador")
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("La opción es incorrecta, no se generará ningún objeto");
             }
         }
     }
