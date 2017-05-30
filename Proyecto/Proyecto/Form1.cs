@@ -154,7 +154,7 @@ namespace Proyecto
             {
 
             }
-            else if (opcion == "lampara")
+            else if (opcion == "")
             {
             }
 
