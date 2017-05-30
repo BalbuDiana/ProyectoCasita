@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreaObjetosForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreaObjetosForm.Designer.cs">
+      <DependentUpon>CreaObjetosForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Electrodomesticos\Consola.cs" />
     <Compile Include="Electrodomesticos\Estereo.cs" />
     <Compile Include="Electrodomesticos\Estufa.cs" />
@@ -79,6 +85,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Electrodomesticos\Secadora.cs" />
     <Compile Include="Electrodomesticos\Tostador.cs" />
+    <EmbeddedResource Include="CreaObjetosForm.resx">
+      <DependentUpon>CreaObjetosForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,7 +116,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="lic.png" />
