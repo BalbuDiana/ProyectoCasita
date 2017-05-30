@@ -289,6 +289,7 @@
             this.groupBox8.TabIndex = 11;
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "groupBox8";
+            this.groupBox8.Visible = false;
             // 
             // textBox2
             // 

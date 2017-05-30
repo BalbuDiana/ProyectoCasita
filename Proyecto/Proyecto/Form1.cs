@@ -31,10 +31,16 @@ namespace Proyecto
 
         private void GenerarButton_Click(object sender, EventArgs e)
         {
+            
+            
             CreaObjetosForm creador = new CreaObjetosForm();
 
             string opcion = comboBox1.Text;
-            
+
+            if (opcion != "")
+            {
+                groupBox8.Visible = true;
+            }
 
             if (opcion == "Cocina")
             {
@@ -49,7 +55,7 @@ namespace Proyecto
                 comboBox2.Items.Add("Microondas");
                 comboBox2.Items.Add("Refrigerador");
                 comboBox2.Items.Add("Tostador");
-                
+
             }
             else if (opcion == "Comedor")
             {
@@ -100,7 +106,7 @@ namespace Proyecto
                 comboBox2.SelectedIndex = -1;
 
                 comboBox2.Items.Clear();
-                
+
                 comboBox2.Items.Add("Foco");
                 comboBox2.Items.Add("Lampara");
                 comboBox2.Items.Add("Lavadora");
@@ -131,9 +137,12 @@ namespace Proyecto
             else
             {
                 MessageBox.Show("Lo sentimos, la opción seleccionada no es correcta");
+
             }
 
         }
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
