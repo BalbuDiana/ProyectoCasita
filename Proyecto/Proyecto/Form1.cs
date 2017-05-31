@@ -246,7 +246,9 @@ namespace Proyecto
         private void button2_Click(object sender, EventArgs e)
         {
             //g = CocinaPanel.CreateGraphics();
-            Electrodomesticos.Lampara l = new Electrodomesticos.Lampara("asd", "asd");
+            //  Licuadora l = new Licuadora("Hola");
+            // Microondas l = new Microondas("hola");
+            Electrodomesticos.Foco l = new Electrodomesticos.Foco(453, "foquito", "sala");
             l.CrearIcono();
             pictureBox2.Image = l.ObtenerIMagen();
 
