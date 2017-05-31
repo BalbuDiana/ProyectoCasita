@@ -31,6 +31,12 @@ namespace Proyecto
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
         }
 
+        /*public void ejercicio()
+        {
+            Grafica formulario = new Grafica();
+            formulario.Show();
+        }*/
+
         private void GenerarButton_Click(object sender, EventArgs e)
         {
             
@@ -144,7 +150,7 @@ namespace Proyecto
 
         }
 
-        
+        Class_paso obj_formulario = new Class_paso();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -249,6 +255,8 @@ namespace Proyecto
             {
                 MessageBox.Show("La opción es incorrecta, no se generará ningún objeto");
             }
+
+            obj_formulario.ejercicio();
         }
     }
 }
