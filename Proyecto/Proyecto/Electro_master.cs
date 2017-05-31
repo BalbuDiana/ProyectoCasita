@@ -123,5 +123,7 @@ namespace Proyecto
             return estaPrendido;
         }
 
+        //abstract public void CrearIcono(); Esta es la firma del método que tendrán todos
+
     }
 }

@@ -36,8 +36,6 @@ namespace Proyecto
         private void GenerarButton_Click(object sender, EventArgs e)
         {
             
-            
-            CreaObjetosForm creador = new CreaObjetosForm();
 
             string opcion = comboBox1.Text;
 
@@ -154,6 +152,8 @@ namespace Proyecto
             string opcion = comboBox2.Text;
             string id = textBox2.Text;
 
+
+
             if(id=="")
             
             if (opcion == "Consola")
@@ -177,15 +177,20 @@ namespace Proyecto
             }
             else if (opcion == "Foco")
             {
+                
+                double w = 0;
                 try
                 {
-
+                    w = Convert.ToDouble(textBox3.Text);
+                    Electrodomesticos.Foco foco = new Electrodomesticos.Foco(w,id, comboBox1.Text);
                 }
                 catch (FormatException)
                 {
+                    MessageBox.Show("Lo sentimos, lo que ha ingresado no ha sido un núnmero, inténtelo nuevamente");
+                    return;
 
                 }
-                Electrodomesticos.Foco foco = new Electrodomesticos.Foco();
+                
             }
             else if (opcion == "Lampara")
             {
@@ -233,6 +238,25 @@ namespace Proyecto
 
 
             }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Electrodomesticos.Lampara l = new Electrodomesticos.Lampara("asd", "asd");
+            l.CrearIcono();
+            pictureBox2.Image = l.ObtenerIMagen();
+            //pictureBox1.Refresh();
         }
+
+        private void pictureBox2_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox2.Image = null;
+        }
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+    }
     }
 

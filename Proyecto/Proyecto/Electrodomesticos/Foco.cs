@@ -15,5 +15,9 @@ namespace Proyecto.Electrodomesticos
 
         }
 
+        /*public override void CrearIcono()
+        {
+            throw new NotImplementedException();
+        }*/
     }
 }
