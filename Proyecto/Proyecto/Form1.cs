@@ -69,7 +69,7 @@ namespace Proyecto
                 comboBox2.Items.Add("Foco");
                 comboBox2.Items.Add("Televisión");
             }
-            else if (opcion == "Habitacion")
+            else if (opcion == "Habitación")
             {
                 comboBox2.Text = "";
                 comboBox2.SelectedItem = null;
@@ -150,30 +150,31 @@ namespace Proyecto
         {
             string opcion = comboBox2.Text;
             string id = textBox2.Text;
-
-            if(id=="")
+           
+           // if(id=="")
             
             if (opcion == "Consola")
             {
-                Electrodomesticos.Consola consola = new Electrodomesticos.Consola(id, comboBox1.Text);
+               Electro_master consola = new Electrodomesticos.Consola(id, comboBox1.Text);
                 listaDeObjetos.Add(consola);
             }
             else if (opcion == "DVD")
             {
-                DVD_video dvd = new DVD_video(id, comboBox1.Text);
+                    Electro_master dvd = new DVD_video(id, comboBox1.Text);
                     listaDeObjetos.Add(dvd);
 
             }
             else if (opcion == "Estereo")
             {
-                Electrodomesticos.Estereo estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
+                    Electro_master estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
                     listaDeObjetos.Add(estereo);
                 }
             else if (opcion == "Estufa")
             {
-                Estufa estufa = new Estufa(id);
-                    listaDeObjetos.Add(estufa);
+                    
+                   Electro_master estufa = new Estufa(id);
 
+                    listaDeObjetos.Add(estufa);
                 }
             else if (opcion == "Foco")
             {
@@ -185,70 +186,93 @@ namespace Proyecto
                 {
 
                 }
-                Electrodomesticos.Foco foco = new Electrodomesticos.Foco(100,id,comboBox1.Text);
+                    Electro_master foco = new Electrodomesticos.Foco(100,id,comboBox1.Text);
                     listaDeObjetos.Add(foco);
 
                 }
             else if (opcion == "Lampara")
             {
-                    Electrodomesticos.Lampara lampara = new Electrodomesticos.Lampara(id, comboBox1.Text);
+                    Electro_master lampara =  new Electrodomesticos.Lampara(id, comboBox1.Text);
                     listaDeObjetos.Add(lampara);
+                    
 
                 }
             else if (opcion == "Laptop")
             {
-                    Laptop laptop = new Laptop(id, comboBox1.Text);
+                    Electro_master laptop =  new Laptop(id, comboBox1.Text);
                     listaDeObjetos.Add(laptop);
                 }
             else if (opcion == "Lavadora")
             {
-                    Electrodomesticos.Lavadora lavadora = new Electrodomesticos.Lavadora(250, id, comboBox1.Text);
+                    Electro_master lavadora = new Electrodomesticos.Lavadora(250, id, comboBox1.Text);
                     listaDeObjetos.Add(lavadora);
                 }
             else if (opcion == "Licuadora")
             {
-                    Licuadora licuadora = new Licuadora(id);
+                    Electro_master licuadora =  new Licuadora(id);
                     listaDeObjetos.Add(licuadora);
                 }
             else if (opcion == "Microondas")
             {
-                    Microondas microondas = new Microondas(id);
+                    Electro_master microondas = new Microondas(id);
                     listaDeObjetos.Add(microondas);
                 }
             else if (opcion == "Plancha")
             {
-                    Plancha plancha = new Plancha(id, comboBox1.Text);
+                    Electro_master plancha = new Plancha(id, comboBox1.Text);
                     listaDeObjetos.Add(plancha);
                 }
             else if (opcion == "Refrigerador")
             {
-                    Electrodomesticos.Refrigerador refrigerador = new Electrodomesticos.Refrigerador(id, comboBox1.Text);
+                    Electro_master refrigerador =  new Electrodomesticos.Refrigerador(id, comboBox1.Text);
                     listaDeObjetos.Add(refrigerador);
                 }
             else if (opcion == "Secadora")
             {
-                    Secadora secadora = new Secadora(id, comboBox1.Text);
+                    Electro_master secadora =new Secadora(id, comboBox1.Text);
                     listaDeObjetos.Add(secadora);
                 }
             else if (opcion == "Teléfono")
             {
-                    Electrodomesticos.Telefono telefono = new Electrodomesticos.Telefono(id, comboBox1.Text);
+                    Electro_master telefono =  new Electrodomesticos.Telefono(id, comboBox1.Text);
                     listaDeObjetos.Add(telefono);
                 }
             else if (opcion == "Televisión")
             {
-                    Electrodomesticos.Television tv = new Electrodomesticos.Television(id, comboBox1.Text);
+                    Electro_master tv = new Electrodomesticos.Television(id, comboBox1.Text);
                     listaDeObjetos.Add(tv);
                 }
             else if (opcion == "Tostador")
             {
-                    Tostador tostador = new Tostador(id);
+                    Electro_master tostador = new Tostador(id);
                     listaDeObjetos.Add(tostador);
                 }
+            
             else
             {
                 MessageBox.Show("La opción es incorrecta, no se generará ningún objeto");
             }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (listaDeObjetos == null)
+            {
+                label5.Text = ("No hay objetos");
+            }
+            else
+            {
+                for (int i = 0; i < listaDeObjetos.Count; i++)
+                {
+
+                    label5.Text = ("se creo un:" +listaDeObjetos[i]+"\n");
+                }
+
+            }
+            
+
+            
         }
     }
 }
