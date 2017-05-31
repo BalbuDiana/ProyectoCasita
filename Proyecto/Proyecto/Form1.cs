@@ -72,7 +72,7 @@ namespace Proyecto
                 comboBox2.Items.Add("Foco");
                 comboBox2.Items.Add("Televisión");
             }
-            else if (opcion == "Habitacion")
+            else if (opcion == "Habitación")
             {
                 comboBox2.Text = "";
                 comboBox2.SelectedItem = null;
@@ -153,43 +153,52 @@ namespace Proyecto
         {
             string opcion = comboBox2.Text;
             string id = textBox2.Text;
+            Electro_master nuevo = null;
 
 
-            if (opcion == "Foco") //balbu aqui lo que querias hacer para potencia
+           /* if (opcion == "Foco") //balbu aqui lo que querias hacer para potencia
             {
+                
                 MessageBox.Show("Generaste un foco.", "por favor ingresa Potencia",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 gbPotencia.Visible = true;
+               // nuevo = new Electrodomesticos.Foco(Convert.ToDouble(textBox3.Text), id, comboBox1.Text);
             }
-
-            if(id=="")
+            */
+           // if(id=="")
             
             if (opcion == "Consola")
             {
-                Electrodomesticos.Consola consola = new Electrodomesticos.Consola(id, comboBox1.Text);
-                listaDeObjetos.Add(consola);
+                nuevo = new Electrodomesticos.Consola(id, comboBox1.Text);
+                MessageBox.Show("generaste una conconsola en: " + comboBox1.Text);
+                listaDeObjetos.Add(nuevo);
             }
             else if (opcion == "DVD")
             {
-                DVD_video dvd = new DVD_video(id, comboBox1.Text);
+                    nuevo = new DVD_video(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
 
-            }
+
+                }
             else if (opcion == "Estereo")
             {
-                Electrodomesticos.Estereo estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
-            }
+                    nuevo = new Electrodomesticos.Estereo(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Estufa")
             {
-                Estufa estufa = new Estufa(id);
+                nuevo = new Estufa(id);
 
             }
             else if (opcion == "Foco")
             {
-               
-                double w = 0;
+                   /* //MessageBox.Show("Generaste un foco.", "por favor ingresa Potencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    //gbPotencia.Visible = true;
+
+                    //double w = 0;
                 try
                 {
                     w = Convert.ToDouble(textBox3.Text);
-                    Electrodomesticos.Foco foco = new Electrodomesticos.Foco(w,id, comboBox1.Text);
+                   
                 }
                 catch (FormatException)
                 {
@@ -197,54 +206,71 @@ namespace Proyecto
                     return;
 
                 }
-                
-            }
+                */
+                    nuevo = new Electrodomesticos.Foco(100, id, comboBox1.Text);
+                MessageBox.Show("generaste una Foco en: " + comboBox1.Text);
+                listaDeObjetos.Add(nuevo);
+
+                }
             else if (opcion == "Lampara")
             {
-
-            }
+                    nuevo = new Electrodomesticos.Lampara(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Laptop")
             {
-
-            }
+                    nuevo = new Laptop(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Lavadora")
             {
-
-            }
+                    nuevo = new Electrodomesticos.Lavadora(1200, id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Licuadora")
             {
-
-            }
+                    nuevo = new Licuadora(id);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Microondas")
             {
-
-            }
+                    nuevo = new Microondas(id);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Plancha")
             {
-
-            }
+                    nuevo = new Plancha(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Refrigerador")
             {
-
-            }
+                    nuevo = new Electrodomesticos.Refrigerador(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Secadora")
             {
-
-            }
+                    nuevo = new Secadora(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Teléfono")
             {
-
-            }
+                    nuevo = new Electrodomesticos.Telefono(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Televisión")
             {
-
-            }
+                    nuevo = new Electrodomesticos.Telefono(id, comboBox1.Text);
+                    listaDeObjetos.Add(nuevo);
+                }
             else if (opcion == "Tostador")
             {
-            }
+                    nuevo = new Tostador(id);
+                    listaDeObjetos.Add(nuevo);
+                }
 
-           
-            }
+            //listaDeObjetos.Add(nuevo);
+
+        }
 
 
         //------------------------------------------------------------------------------------------------------
