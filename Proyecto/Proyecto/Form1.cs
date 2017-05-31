@@ -145,7 +145,7 @@ namespace Proyecto
 
         }
 
-        Class_paso formulario = new Class_paso();
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -236,7 +236,7 @@ namespace Proyecto
             {
             }
 
-            formulario.ejercicio();
+           
             }
 
 
@@ -291,6 +291,12 @@ namespace Proyecto
             posMousePictureX = e.Location.X;
             posMousePictureY = e.Location.Y;
             pictureclick = true; //cuando le da clic que sea cierto y se mueva respecto al mause
+        }
+
+        Class_paso formulario = new Class_paso();
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formulario.ejercicio();
         }
 
         private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
