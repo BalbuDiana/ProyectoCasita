@@ -14,6 +14,8 @@ namespace Proyecto
 {
     public partial class Form1 : Form
     {
+     //   Graphics g;
+
         int tiempo = 0;
         List<Electro_master> listaDeObjetos = new List<Electro_master>();
         public Form1()
@@ -55,6 +57,7 @@ namespace Proyecto
                 comboBox2.Items.Add("Foco");
                 comboBox2.Items.Add("Licuadora");
                 comboBox2.Items.Add("Microondas");
+                comboBox2.Items.Add("Lampara");
                 comboBox2.Items.Add("Refrigerador");
                 comboBox2.Items.Add("Tostador");
 
@@ -226,12 +229,10 @@ namespace Proyecto
             }
             else if (opcion == "Tostador")
             {
-
             }
-            else
-            {
-                MessageBox.Show("La opción es incorrecta, no se generará ningún objeto");
+
+
             }
         }
     }
-}
+
