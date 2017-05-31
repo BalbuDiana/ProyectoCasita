@@ -145,7 +145,7 @@ namespace Proyecto
 
         }
 
-        
+        Class_paso formulario = new Class_paso();
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -236,7 +236,7 @@ namespace Proyecto
             {
             }
 
-
+            formulario.ejercicio();
             }
 
 
