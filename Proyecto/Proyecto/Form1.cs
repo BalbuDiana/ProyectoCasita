@@ -14,6 +14,8 @@ namespace Proyecto
 {
     public partial class Form1 : Form
     {
+      //  Graphics g;
+
         int tiempo = 0;
         List<Electro_master> listaDeObjetos = new List<Electro_master>();
         public Form1()
@@ -26,16 +28,16 @@ namespace Proyecto
             t.Start();
         }
 
+        Random r = new Random();
         private void T_Tick(object sender, EventArgs e)
         {
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
+            chart1.Series[0].Points.AddY(r.NextDouble());
         }
 
         private void GenerarButton_Click(object sender, EventArgs e)
         {
             
-            
-            CreaObjetosForm creador = new CreaObjetosForm();
 
             string opcion = comboBox1.Text;
 
@@ -55,6 +57,7 @@ namespace Proyecto
                 comboBox2.Items.Add("Foco");
                 comboBox2.Items.Add("Licuadora");
                 comboBox2.Items.Add("Microondas");
+                comboBox2.Items.Add("Lampara");
                 comboBox2.Items.Add("Refrigerador");
                 comboBox2.Items.Add("Tostador");
 
@@ -69,7 +72,7 @@ namespace Proyecto
                 comboBox2.Items.Add("Foco");
                 comboBox2.Items.Add("Televisión");
             }
-            else if (opcion == "Habitación")
+            else if (opcion == "Habitacion")
             {
                 comboBox2.Text = "";
                 comboBox2.SelectedItem = null;
@@ -150,129 +153,194 @@ namespace Proyecto
         {
             string opcion = comboBox2.Text;
             string id = textBox2.Text;
-           
-           // if(id=="")
+
+
+            if (opcion == "Foco") //balbu aqui lo que querias hacer para potencia
+            {
+                MessageBox.Show("Generaste un foco.", "por favor ingresa Potencia",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                gbPotencia.Visible = true;
+            }
+
+            if(id=="")
             
             if (opcion == "Consola")
             {
-               Electro_master consola = new Electrodomesticos.Consola(id, comboBox1.Text);
+                Electrodomesticos.Consola consola = new Electrodomesticos.Consola(id, comboBox1.Text);
                 listaDeObjetos.Add(consola);
             }
             else if (opcion == "DVD")
             {
-                    Electro_master dvd = new DVD_video(id, comboBox1.Text);
-                    listaDeObjetos.Add(dvd);
+                DVD_video dvd = new DVD_video(id, comboBox1.Text);
 
             }
             else if (opcion == "Estereo")
             {
-                    Electro_master estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
-                    listaDeObjetos.Add(estereo);
-                }
+                Electrodomesticos.Estereo estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
+            }
             else if (opcion == "Estufa")
             {
-                    
-                   Electro_master estufa = new Estufa(id);
+                Estufa estufa = new Estufa(id);
 
-                    listaDeObjetos.Add(estufa);
-                }
+            }
             else if (opcion == "Foco")
             {
+               
+                double w = 0;
                 try
                 {
-
+                    w = Convert.ToDouble(textBox3.Text);
+                    Electrodomesticos.Foco foco = new Electrodomesticos.Foco(w,id, comboBox1.Text);
                 }
                 catch (FormatException)
                 {
+                    MessageBox.Show("Lo sentimos, lo que ha ingresado no ha sido un núnmero, inténtelo nuevamente");
+                    return;
 
                 }
-                    Electro_master foco = new Electrodomesticos.Foco(100,id,comboBox1.Text);
-                    listaDeObjetos.Add(foco);
-
-                }
+                
+            }
             else if (opcion == "Lampara")
             {
-                    Electro_master lampara =  new Electrodomesticos.Lampara(id, comboBox1.Text);
-                    listaDeObjetos.Add(lampara);
-                    
 
-                }
+            }
             else if (opcion == "Laptop")
             {
-                    Electro_master laptop =  new Laptop(id, comboBox1.Text);
-                    listaDeObjetos.Add(laptop);
-                }
+
+            }
             else if (opcion == "Lavadora")
             {
-                    Electro_master lavadora = new Electrodomesticos.Lavadora(250, id, comboBox1.Text);
-                    listaDeObjetos.Add(lavadora);
-                }
+
+            }
             else if (opcion == "Licuadora")
             {
-                    Electro_master licuadora =  new Licuadora(id);
-                    listaDeObjetos.Add(licuadora);
-                }
+
+            }
             else if (opcion == "Microondas")
             {
-                    Electro_master microondas = new Microondas(id);
-                    listaDeObjetos.Add(microondas);
-                }
+
+            }
             else if (opcion == "Plancha")
             {
-                    Electro_master plancha = new Plancha(id, comboBox1.Text);
-                    listaDeObjetos.Add(plancha);
-                }
+
+            }
             else if (opcion == "Refrigerador")
             {
-                    Electro_master refrigerador =  new Electrodomesticos.Refrigerador(id, comboBox1.Text);
-                    listaDeObjetos.Add(refrigerador);
-                }
+
+            }
             else if (opcion == "Secadora")
             {
-                    Electro_master secadora =new Secadora(id, comboBox1.Text);
-                    listaDeObjetos.Add(secadora);
-                }
+
+            }
             else if (opcion == "Teléfono")
             {
-                    Electro_master telefono =  new Electrodomesticos.Telefono(id, comboBox1.Text);
-                    listaDeObjetos.Add(telefono);
-                }
+
+            }
             else if (opcion == "Televisión")
             {
-                    Electro_master tv = new Electrodomesticos.Television(id, comboBox1.Text);
-                    listaDeObjetos.Add(tv);
-                }
+
+            }
             else if (opcion == "Tostador")
             {
-                    Electro_master tostador = new Tostador(id);
-                    listaDeObjetos.Add(tostador);
-                }
-            
-            else
-            {
-                MessageBox.Show("La opción es incorrecta, no se generará ningún objeto");
             }
-            
-        }
+
+           
+            }
+
+
+        //------------------------------------------------------------------------------------------------------
+      //generando imagen
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (listaDeObjetos == null)
-            {
-                label5.Text = ("No hay objetos");
-            }
-            else
-            {
-                for (int i = 0; i < listaDeObjetos.Count; i++)
-                {
+            //g = CocinaPanel.CreateGraphics();
+            //  Licuadora l = new Licuadora("Hola");
+             Microondas l = new Microondas("hola");
+            // Electrodomesticos.Foco l = new Electrodomesticos.Foco(453, "foquito", "sala");
+            //Electrodomesticos.Lampara l = new Electrodomesticos.Lampara("hu", "hue");
+            l.CrearIcono();
+            pictureBox2.Image = l.ObtenerIMagen();
 
-                    label5.Text = ("se creo un:" +listaDeObjetos[i]+"\n");
-                }
-
-            }
-            
-
-            
+            //pictureBox1.Refresh();
         }
+
+        //Generando movimiento de picturebox
+
+        int posMouseFormX, posMouseFormY;
+        int posMousePictureX, posMousePictureY;
+        int posActBotonX, posActBotonY;
+        bool pictureclick = false;
+
+        private void pictureBox2_DoubleClick(object sender, EventArgs e)  
+        {
+            pictureBox2.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox2.Location.X;
+            posActBotonY = pictureBox2.Location.Y;
+        }
+
+        private void pictureBox2_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+
+
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            //posiciones de mouse cuando pasapor formulario
+            posMouseFormX = e.Location.X;
+            posMouseFormY = e.Location.Y;
+        }
+
+        private void pictureBox2_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true; //cuando le da clic que sea cierto y se mueva respecto al mause
+        }
+
+        Class_paso formulario = new Class_paso();
+        private void button3_Click(object sender, EventArgs e)
+        {
+            formulario.ejercicio();
+        }
+
+        private void pictureBox2_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+
+        private void pictureBox2_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;  
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture(); //se debe de mover el picture
+           
+        }
+
+      private void moverpicture()
+        {
+            pictureBox2.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY-posMousePictureY);
+            posActBotonX = pictureBox2.Location.X;
+            posActBotonY = pictureBox2.Location.Y;
+        }
+
+      public string imprimir_lista()
+        {
+            string s = "";
+
+            s = "hola";
+
+            return s;
+        }
+
+
+
+
+
     }
-}
+    }
+

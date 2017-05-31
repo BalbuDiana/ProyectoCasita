@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -53,10 +56,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.gbPotencia = new System.Windows.Forms.GroupBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -67,6 +76,9 @@
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
+            this.gbPotencia.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -179,7 +191,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(202, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(323, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(21, 27);
@@ -270,7 +282,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(331, 197);
+            this.textBox1.Location = new System.Drawing.Point(615, 34);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(276, 20);
@@ -297,7 +309,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 133);
+            this.button1.Location = new System.Drawing.Point(60, 192);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 19);
@@ -308,6 +320,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.gbPotencia);
             this.groupBox8.Controls.Add(this.label4);
             this.groupBox8.Controls.Add(this.textBox2);
             this.groupBox8.Controls.Add(this.label3);
@@ -317,11 +330,41 @@
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox8.Size = new System.Drawing.Size(194, 165);
+            this.groupBox8.Size = new System.Drawing.Size(194, 215);
             this.groupBox8.TabIndex = 11;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Creador";
             this.groupBox8.Visible = false;
+            // 
+            // gbPotencia
+            // 
+            this.gbPotencia.Controls.Add(this.textBox3);
+            this.gbPotencia.Controls.Add(this.label5);
+            this.gbPotencia.Location = new System.Drawing.Point(24, 125);
+            this.gbPotencia.Margin = new System.Windows.Forms.Padding(2);
+            this.gbPotencia.Name = "gbPotencia";
+            this.gbPotencia.Padding = new System.Windows.Forms.Padding(2);
+            this.gbPotencia.Size = new System.Drawing.Size(150, 62);
+            this.gbPotencia.TabIndex = 13;
+            this.gbPotencia.TabStop = false;
+            this.gbPotencia.Visible = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(36, 39);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(76, 20);
+            this.textBox3.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 15);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(138, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Ingrese la potencia del foco";
             // 
             // label4
             // 
@@ -341,31 +384,77 @@
             this.textBox2.Size = new System.Drawing.Size(76, 20);
             this.textBox2.TabIndex = 11;
             // 
-            // label5
+            // pictureBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(766, 67);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 13);
-            this.label5.TabIndex = 12;
+            this.pictureBox2.Location = new System.Drawing.Point(666, 140);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 12;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.DoubleClick += new System.EventHandler(this.pictureBox2_DoubleClick);
+            this.pictureBox2.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
+            this.pictureBox2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseDown);
+            this.pictureBox2.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseMove);
+            this.pictureBox2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseUp);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(648, 20);
+            this.button2.Location = new System.Drawing.Point(591, 140);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(142, 31);
+            this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 13;
-            this.button2.Text = "Elementos creados";
+            this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(612, 67);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(103, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Grafica de Consumo";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(740, 67);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 15;
+            this.button3.Text = "Graficar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // chart1
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(412, 28);
+            this.chart1.Name = "chart1";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(198, 107);
+            this.chart1.TabIndex = 16;
+            this.chart1.Text = "chart1";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1016, 596);
+            this.ClientSize = new System.Drawing.Size(951, 625);
+            this.Controls.Add(this.chart1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.GenerarButton);
@@ -381,6 +470,8 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.pictureBox2_DoubleClick);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -392,6 +483,10 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
+            this.gbPotencia.ResumeLayout(false);
+            this.gbPotencia.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -424,8 +519,14 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.GroupBox gbPotencia;
+        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }
 

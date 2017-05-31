@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class_paso.cs" />
     <Compile Include="CreaObjetosForm.cs">
       <SubType>Form</SubType>
     </Compile>
