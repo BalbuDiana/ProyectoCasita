@@ -28,9 +28,11 @@ namespace Proyecto
             t.Start();
         }
 
+        Random r = new Random();
         private void T_Tick(object sender, EventArgs e)
         {
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
+            chart1.Series[0].Points.AddY(r.NextDouble());
         }
 
         private void GenerarButton_Click(object sender, EventArgs e)
