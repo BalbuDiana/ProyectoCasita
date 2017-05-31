@@ -56,7 +56,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.gbPotencia = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -76,7 +76,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.groupBox9.SuspendLayout();
+            this.gbPotencia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
@@ -320,7 +320,7 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.groupBox9);
+            this.groupBox8.Controls.Add(this.gbPotencia);
             this.groupBox8.Controls.Add(this.label4);
             this.groupBox8.Controls.Add(this.textBox2);
             this.groupBox8.Controls.Add(this.label3);
@@ -335,18 +335,18 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Visible = false;
             // 
-            // groupBox9
+            // gbPotencia
             // 
-            this.groupBox9.Controls.Add(this.textBox3);
-            this.groupBox9.Controls.Add(this.label5);
-            this.groupBox9.Location = new System.Drawing.Point(24, 125);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox9.Size = new System.Drawing.Size(150, 62);
-            this.groupBox9.TabIndex = 13;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Visible = false;
+            this.gbPotencia.Controls.Add(this.textBox3);
+            this.gbPotencia.Controls.Add(this.label5);
+            this.gbPotencia.Location = new System.Drawing.Point(24, 125);
+            this.gbPotencia.Margin = new System.Windows.Forms.Padding(2);
+            this.gbPotencia.Name = "gbPotencia";
+            this.gbPotencia.Padding = new System.Windows.Forms.Padding(2);
+            this.gbPotencia.Size = new System.Drawing.Size(150, 62);
+            this.gbPotencia.TabIndex = 13;
+            this.gbPotencia.TabStop = false;
+            this.gbPotencia.Visible = false;
             // 
             // textBox3
             // 
@@ -386,10 +386,10 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(681, 117);
+            this.pictureBox2.Location = new System.Drawing.Point(666, 140);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(57, 65);
+            this.pictureBox2.Size = new System.Drawing.Size(20, 20);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 12;
             this.pictureBox2.TabStop = false;
@@ -483,8 +483,8 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
+            this.gbPotencia.ResumeLayout(false);
+            this.gbPotencia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
@@ -519,7 +519,7 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.GroupBox gbPotencia;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;

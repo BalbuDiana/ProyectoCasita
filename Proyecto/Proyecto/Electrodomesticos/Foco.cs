@@ -15,7 +15,7 @@ namespace Proyecto.Electrodomesticos
             :base(potencia, id, ubicacion)
 
         {
-
+            
         }
 
         public override void CrearIcono()
@@ -23,7 +23,7 @@ namespace Proyecto.Electrodomesticos
             foco = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\foquito.jpg");
         }
 
-        public Image ObtenerIMagen()
+        public virtual Image ObtenerIMagen()
         {
             return foco;
         }

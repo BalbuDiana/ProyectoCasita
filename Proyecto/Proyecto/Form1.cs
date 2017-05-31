@@ -155,6 +155,11 @@ namespace Proyecto
             string id = textBox2.Text;
 
 
+            if (opcion == "Foco") //balbu aqui lo que querias hacer para potencia
+            {
+                MessageBox.Show("Generaste un foco.", "por favor ingresa Potencia",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                gbPotencia.Visible = true;
+            }
 
             if(id=="")
             
@@ -179,7 +184,7 @@ namespace Proyecto
             }
             else if (opcion == "Foco")
             {
-                
+               
                 double w = 0;
                 try
                 {
@@ -249,8 +254,9 @@ namespace Proyecto
         {
             //g = CocinaPanel.CreateGraphics();
             //  Licuadora l = new Licuadora("Hola");
-            // Microondas l = new Microondas("hola");
-            Electrodomesticos.Foco l = new Electrodomesticos.Foco(453, "foquito", "sala");
+             Microondas l = new Microondas("hola");
+            // Electrodomesticos.Foco l = new Electrodomesticos.Foco(453, "foquito", "sala");
+            //Electrodomesticos.Lampara l = new Electrodomesticos.Lampara("hu", "hue");
             l.CrearIcono();
             pictureBox2.Image = l.ObtenerIMagen();
 
@@ -322,7 +328,14 @@ namespace Proyecto
             posActBotonY = pictureBox2.Location.Y;
         }
 
-      
+      public string imprimir_lista()
+        {
+            string s = "";
+
+            s = "hola";
+
+            return s;
+        }
 
 
 

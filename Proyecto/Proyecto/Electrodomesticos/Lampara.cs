@@ -28,7 +28,7 @@ namespace Proyecto.Electrodomesticos
              //*@"C:\Users\Balbu\Source\Repos\ProyectoCasita\Proyecto\Proyecto\lic.png"
         }
 
-        public Image ObtenerIMagen()
+        public  override Image ObtenerIMagen()
         {
            
                 return lamp;

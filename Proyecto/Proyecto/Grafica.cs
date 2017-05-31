@@ -35,6 +35,11 @@ namespace Proyecto
 
             
             }
+
+            Form1 n = new Form1();
+            Lblista.Text = n.imprimir_lista();
         }
+
+
     }
 }
