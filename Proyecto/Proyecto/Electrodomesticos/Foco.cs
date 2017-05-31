@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Proyecto.Electrodomesticos
 {
     class Foco: Electro_master
     {
+        Image foco;
+
         public Foco(double potencia, string id, string ubicacion)
             :base(potencia, id, ubicacion)
 
@@ -15,9 +18,15 @@ namespace Proyecto.Electrodomesticos
 
         }
 
-        /*public override void CrearIcono()
+        public override void CrearIcono()
         {
-            throw new NotImplementedException();
-        }*/
+            foco = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\foquito.jpg");
+        }
+
+        public Image ObtenerIMagen()
+        {
+            return foco;
+        }
+
     }
 }

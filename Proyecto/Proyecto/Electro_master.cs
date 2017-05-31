@@ -88,6 +88,10 @@ namespace Proyecto
             return false;
         }
 
+        //----------------------------------------------------------------------------------------------------------------
+        //-----  Crear Icono
+
+        abstract public void CrearIcono(); //Esta es la firma del método que tendrán todos
 
 
         public static void SetLimConsumo(double valor) //para cambiar //no regresa nada
@@ -123,7 +127,7 @@ namespace Proyecto
             return estaPrendido;
         }
 
-        //abstract public void CrearIcono(); Esta es la firma del método que tendrán todos
+     
 
     }
 }

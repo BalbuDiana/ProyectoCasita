@@ -10,7 +10,7 @@ namespace Proyecto.Electrodomesticos
 {
     class Lampara: Foco
     {
-        Image licua;
+        Image lamp;
 
         public Lampara(string id, string ubicacion)
             :base(150,id,ubicacion)
@@ -18,18 +18,20 @@ namespace Proyecto.Electrodomesticos
 
         }
 
-        public void CrearIcono() //Se harán override, porque vendrán de un método abstracto
+        public override void CrearIcono() //Se harán override, porque vendrán de un método abstracto
         {
             // necesitamos meter todas las imágenes en un sola carpeta y hacer archivos locales para que se puede leer
             //Mitch, aquí necesitas poner tu ruta porque si no te marcará error a la hora de realizar tu programa en 
             // tu computadora
-           licua = Image.FromFile(@"C:\Users\Balbu\Source\Repos\ProyectoCasita\Proyecto\Proyecto\lic.png");
-          
+           lamp = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\lampara.jpg");
+            
+             //*@"C:\Users\Balbu\Source\Repos\ProyectoCasita\Proyecto\Proyecto\lic.png"
         }
 
-        public   Image ObtenerIMagen()
+        public Image ObtenerIMagen()
         {
-            return licua;
+           
+                return lamp;
         }
     }
 }
