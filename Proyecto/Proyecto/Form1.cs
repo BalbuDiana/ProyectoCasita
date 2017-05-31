@@ -161,17 +161,20 @@ namespace Proyecto
             else if (opcion == "DVD")
             {
                 DVD_video dvd = new DVD_video(id, comboBox1.Text);
+                    listaDeObjetos.Add(dvd);
 
             }
             else if (opcion == "Estereo")
             {
                 Electrodomesticos.Estereo estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
-            }
+                    listaDeObjetos.Add(estereo);
+                }
             else if (opcion == "Estufa")
             {
                 Estufa estufa = new Estufa(id);
+                    listaDeObjetos.Add(estufa);
 
-            }
+                }
             else if (opcion == "Foco")
             {
                 try
@@ -182,52 +185,66 @@ namespace Proyecto
                 {
 
                 }
-                Electrodomesticos.Foco foco = new Electrodomesticos.Foco();
-            }
+                Electrodomesticos.Foco foco = new Electrodomesticos.Foco(100,id,comboBox1.Text);
+                    listaDeObjetos.Add(foco);
+
+                }
             else if (opcion == "Lampara")
             {
+                    Electrodomesticos.Lampara lampara = new Electrodomesticos.Lampara(id, comboBox1.Text);
+                    listaDeObjetos.Add(lampara);
 
-            }
+                }
             else if (opcion == "Laptop")
             {
-
-            }
+                    Laptop laptop = new Laptop(id, comboBox1.Text);
+                    listaDeObjetos.Add(laptop);
+                }
             else if (opcion == "Lavadora")
             {
-
-            }
+                    Electrodomesticos.Lavadora lavadora = new Electrodomesticos.Lavadora(250, id, comboBox1.Text);
+                    listaDeObjetos.Add(lavadora);
+                }
             else if (opcion == "Licuadora")
             {
-
-            }
+                    Licuadora licuadora = new Licuadora(id);
+                    listaDeObjetos.Add(licuadora);
+                }
             else if (opcion == "Microondas")
             {
-
-            }
+                    Microondas microondas = new Microondas(id);
+                    listaDeObjetos.Add(microondas);
+                }
             else if (opcion == "Plancha")
             {
-
-            }
+                    Plancha plancha = new Plancha(id, comboBox1.Text);
+                    listaDeObjetos.Add(plancha);
+                }
             else if (opcion == "Refrigerador")
             {
-
-            }
+                    Electrodomesticos.Refrigerador refrigerador = new Electrodomesticos.Refrigerador(id, comboBox1.Text);
+                    listaDeObjetos.Add(refrigerador);
+                }
             else if (opcion == "Secadora")
             {
-
-            }
+                    Secadora secadora = new Secadora(id, comboBox1.Text);
+                    listaDeObjetos.Add(secadora);
+                }
             else if (opcion == "Teléfono")
             {
-
-            }
+                    Electrodomesticos.Telefono telefono = new Electrodomesticos.Telefono(id, comboBox1.Text);
+                    listaDeObjetos.Add(telefono);
+                }
             else if (opcion == "Televisión")
             {
-
-            }
+                    Electrodomesticos.Television tv = new Electrodomesticos.Television(id, comboBox1.Text);
+                    listaDeObjetos.Add(tv);
+                }
             else if (opcion == "Tostador")
             {
-
-            }
+                    Tostador tostador = new Tostador(id);
+                    listaDeObjetos.Add(tostador);
+                }
             else
             {
                 MessageBox.Show("La opción es incorrecta, no se generará ningún objeto");

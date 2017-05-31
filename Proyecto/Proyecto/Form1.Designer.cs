@@ -39,6 +39,7 @@
             this.ComedorPanel = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.HabitacionPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.SalaPanel = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -47,23 +48,22 @@
             this.PatioPanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.GenerarButton = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.HabitacionPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox8.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,78 +78,89 @@
             "Patio",
             "Sala",
             "WC"});
-            this.comboBox1.Location = new System.Drawing.Point(15, 79);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.comboBox1.Location = new System.Drawing.Point(11, 64);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(215, 24);
+            this.comboBox1.Size = new System.Drawing.Size(162, 21);
             this.comboBox1.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 18);
+            this.label1.Location = new System.Drawing.Point(19, 15);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(196, 17);
+            this.label1.Size = new System.Drawing.Size(149, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Seleccione la habitación en la";
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.HuespedPanel);
-            this.groupBox1.Location = new System.Drawing.Point(42, 286);
+            this.groupBox1.Location = new System.Drawing.Point(32, 232);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(345, 171);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(259, 139);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "H. Huéspedes";
             // 
             // HuespedPanel
             // 
-            this.HuespedPanel.Location = new System.Drawing.Point(6, 21);
+            this.HuespedPanel.Location = new System.Drawing.Point(4, 17);
+            this.HuespedPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HuespedPanel.Name = "HuespedPanel";
-            this.HuespedPanel.Size = new System.Drawing.Size(321, 144);
+            this.HuespedPanel.Size = new System.Drawing.Size(241, 117);
             this.HuespedPanel.TabIndex = 6;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.CocinaPanel);
-            this.groupBox2.Location = new System.Drawing.Point(42, 471);
+            this.groupBox2.Location = new System.Drawing.Point(32, 383);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(345, 399);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(259, 324);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Cocina";
             // 
             // CocinaPanel
             // 
-            this.CocinaPanel.Location = new System.Drawing.Point(6, 21);
+            this.CocinaPanel.Location = new System.Drawing.Point(4, 17);
+            this.CocinaPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CocinaPanel.Name = "CocinaPanel";
-            this.CocinaPanel.Size = new System.Drawing.Size(321, 350);
+            this.CocinaPanel.Size = new System.Drawing.Size(241, 284);
             this.CocinaPanel.TabIndex = 6;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.ComedorPanel);
-            this.groupBox3.Location = new System.Drawing.Point(393, 468);
+            this.groupBox3.Location = new System.Drawing.Point(295, 380);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(337, 411);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Size = new System.Drawing.Size(253, 334);
             this.groupBox3.TabIndex = 4;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Comedor";
             // 
             // ComedorPanel
             // 
-            this.ComedorPanel.Location = new System.Drawing.Point(0, 21);
+            this.ComedorPanel.Location = new System.Drawing.Point(0, 17);
+            this.ComedorPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ComedorPanel.Name = "ComedorPanel";
-            this.ComedorPanel.Size = new System.Drawing.Size(337, 381);
+            this.ComedorPanel.Size = new System.Drawing.Size(253, 310);
             this.ComedorPanel.TabIndex = 6;
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.HabitacionPanel);
-            this.groupBox4.Location = new System.Drawing.Point(570, 289);
+            this.groupBox4.Location = new System.Drawing.Point(428, 235);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(483, 168);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Size = new System.Drawing.Size(362, 136);
             this.groupBox4.TabIndex = 4;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Habitación";
@@ -157,120 +168,137 @@
             // HabitacionPanel
             // 
             this.HabitacionPanel.Controls.Add(this.pictureBox1);
-            this.HabitacionPanel.Location = new System.Drawing.Point(9, 18);
+            this.HabitacionPanel.Location = new System.Drawing.Point(7, 15);
+            this.HabitacionPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.HabitacionPanel.Name = "HabitacionPanel";
-            this.HabitacionPanel.Size = new System.Drawing.Size(468, 129);
+            this.HabitacionPanel.Size = new System.Drawing.Size(351, 105);
             this.HabitacionPanel.TabIndex = 6;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(202, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 27);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.SalaPanel);
-            this.groupBox5.Location = new System.Drawing.Point(736, 468);
+            this.groupBox5.Location = new System.Drawing.Point(552, 380);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(317, 411);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Size = new System.Drawing.Size(238, 334);
             this.groupBox5.TabIndex = 4;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Sala";
             // 
             // SalaPanel
             // 
-            this.SalaPanel.Location = new System.Drawing.Point(6, 21);
+            this.SalaPanel.Location = new System.Drawing.Point(4, 17);
+            this.SalaPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SalaPanel.Name = "SalaPanel";
-            this.SalaPanel.Size = new System.Drawing.Size(297, 381);
+            this.SalaPanel.Size = new System.Drawing.Size(223, 310);
             this.SalaPanel.TabIndex = 6;
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.WcPanel);
-            this.groupBox6.Location = new System.Drawing.Point(393, 289);
+            this.groupBox6.Location = new System.Drawing.Point(295, 235);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(184, 162);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox6.Size = new System.Drawing.Size(138, 132);
             this.groupBox6.TabIndex = 4;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "WC";
             // 
             // WcPanel
             // 
-            this.WcPanel.Location = new System.Drawing.Point(6, 21);
+            this.WcPanel.Location = new System.Drawing.Point(4, 17);
+            this.WcPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.WcPanel.Name = "WcPanel";
-            this.WcPanel.Size = new System.Drawing.Size(165, 135);
+            this.WcPanel.Size = new System.Drawing.Size(124, 110);
             this.WcPanel.TabIndex = 6;
             // 
             // groupBox7
             // 
             this.groupBox7.Controls.Add(this.PatioPanel);
-            this.groupBox7.Location = new System.Drawing.Point(1059, 286);
+            this.groupBox7.Location = new System.Drawing.Point(794, 232);
+            this.groupBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(164, 617);
+            this.groupBox7.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox7.Size = new System.Drawing.Size(123, 501);
             this.groupBox7.TabIndex = 4;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Patio";
             // 
             // PatioPanel
             // 
-            this.PatioPanel.Location = new System.Drawing.Point(0, 21);
+            this.PatioPanel.Location = new System.Drawing.Point(0, 17);
+            this.PatioPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.PatioPanel.Name = "PatioPanel";
-            this.PatioPanel.Size = new System.Drawing.Size(153, 563);
+            this.PatioPanel.Size = new System.Drawing.Size(115, 457);
             this.PatioPanel.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 47);
+            this.label2.Location = new System.Drawing.Point(9, 38);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(218, 17);
+            this.label2.Size = new System.Drawing.Size(164, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "que desea poner un componente";
             // 
             // GenerarButton
             // 
-            this.GenerarButton.Location = new System.Drawing.Point(82, 123);
+            this.GenerarButton.Location = new System.Drawing.Point(62, 100);
+            this.GenerarButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GenerarButton.Name = "GenerarButton";
-            this.GenerarButton.Size = new System.Drawing.Size(75, 23);
+            this.GenerarButton.Size = new System.Drawing.Size(56, 19);
             this.GenerarButton.TabIndex = 6;
             this.GenerarButton.Text = "Generar";
             this.GenerarButton.UseVisualStyleBackColor = true;
             this.GenerarButton.Click += new System.EventHandler(this.GenerarButton_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(269, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(28, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(441, 242);
+            this.textBox1.Location = new System.Drawing.Point(331, 197);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(366, 22);
+            this.textBox1.Size = new System.Drawing.Size(276, 20);
             this.textBox1.TabIndex = 7;
             // 
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(32, 50);
+            this.comboBox2.Location = new System.Drawing.Point(24, 41);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(200, 24);
+            this.comboBox2.Size = new System.Drawing.Size(151, 21);
             this.comboBox2.TabIndex = 8;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 18);
+            this.label3.Location = new System.Drawing.Point(13, 15);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(213, 17);
+            this.label3.Size = new System.Drawing.Size(161, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Ingrese qué artículo desea crear";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(80, 164);
+            this.button1.Location = new System.Drawing.Point(60, 133);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 23);
+            this.button1.Size = new System.Drawing.Size(79, 19);
             this.button1.TabIndex = 10;
             this.button1.Text = "Crear Objeto";
             this.button1.UseVisualStyleBackColor = true;
@@ -283,35 +311,39 @@
             this.groupBox8.Controls.Add(this.label3);
             this.groupBox8.Controls.Add(this.button1);
             this.groupBox8.Controls.Add(this.comboBox2);
-            this.groupBox8.Location = new System.Drawing.Point(272, 18);
+            this.groupBox8.Location = new System.Drawing.Point(204, 15);
+            this.groupBox8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(258, 203);
+            this.groupBox8.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox8.Size = new System.Drawing.Size(194, 165);
             this.groupBox8.TabIndex = 11;
             this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "groupBox8";
+            this.groupBox8.Text = "Creador";
             this.groupBox8.Visible = false;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(85, 126);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 11;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(47, 92);
+            this.label4.Location = new System.Drawing.Point(35, 75);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(183, 17);
+            this.label4.Size = new System.Drawing.Size(138, 13);
             this.label4.TabIndex = 12;
             this.label4.Text = "Ingrese un ID para el objeto";
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(64, 102);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(76, 20);
+            this.textBox2.TabIndex = 11;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1841, 903);
+            this.ClientSize = new System.Drawing.Size(1016, 596);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.GenerarButton);
@@ -325,7 +357,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
@@ -333,10 +364,10 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.HabitacionPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
             this.ResumeLayout(false);
