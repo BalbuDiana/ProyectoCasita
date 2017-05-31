@@ -70,7 +70,7 @@ namespace Proyecto
                 comboBox2.Items.Add("Foco");
                 comboBox2.Items.Add("Televisión");
             }
-            else if (opcion == "Habitacion")
+            else if (opcion == "Habitación")
             {
                 comboBox2.Text = "";
                 comboBox2.SelectedItem = null;
@@ -145,7 +145,7 @@ namespace Proyecto
 
         }
 
-        
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -154,8 +154,11 @@ namespace Proyecto
 
 
 
-            if(id=="")
-            
+            if (id == "")
+            {
+                MessageBox.Show("No ha ingresado un id");
+            }
+
             if (opcion == "Consola")
             {
                 Electrodomesticos.Consola consola = new Electrodomesticos.Consola(id, comboBox1.Text);
@@ -164,25 +167,31 @@ namespace Proyecto
             else if (opcion == "DVD")
             {
                 DVD_video dvd = new DVD_video(id, comboBox1.Text);
-
+                listaDeObjetos.Add(dvd);
             }
             else if (opcion == "Estereo")
             {
                 Electrodomesticos.Estereo estereo = new Electrodomesticos.Estereo(id, comboBox1.Text);
+                listaDeObjetos.Add(estereo);
             }
             else if (opcion == "Estufa")
             {
                 Estufa estufa = new Estufa(id);
-
+                listaDeObjetos.Add(estufa);
             }
             else if (opcion == "Foco")
             {
-                
+                groupBox9.Visible = true;
+                string aux = textBox3.Text;
                 double w = 0;
+
                 try
                 {
-                    w = Convert.ToDouble(textBox3.Text);
-                    Electrodomesticos.Foco foco = new Electrodomesticos.Foco(w,id, comboBox1.Text);
+                    
+                    w = Convert.ToDouble(aux);
+                    
+                    Electrodomesticos.Foco foco = new Electrodomesticos.Foco(w, id, comboBox1.Text);
+                    listaDeObjetos.Add(foco);
                 }
                 catch (FormatException)
                 {
@@ -190,54 +199,71 @@ namespace Proyecto
                     return;
 
                 }
-                
+
             }
             else if (opcion == "Lampara")
             {
+                Electrodomesticos.Lampara lampara = new Electrodomesticos.Lampara(id, comboBox1.Text);
+                listaDeObjetos.Add(lampara);
 
             }
             else if (opcion == "Laptop")
             {
-
+                Laptop computadora = new Laptop(id, comboBox1.Text);
+                listaDeObjetos.Add(computadora);
             }
             else if (opcion == "Lavadora")
             {
-
+                Electrodomesticos.Lavadora lavadora = new Electrodomesticos.Lavadora(id, comboBox1.Text);
+                listaDeObjetos.Add(lavadora);
             }
             else if (opcion == "Licuadora")
             {
-
+                Licuadora licuadora = new Licuadora(id);
+                listaDeObjetos.Add(licuadora);
             }
             else if (opcion == "Microondas")
             {
-
+                Microondas microondas = new Microondas(id);
+                listaDeObjetos.Add(microondas);
             }
             else if (opcion == "Plancha")
             {
-
+                Plancha plancha = new Plancha(id, comboBox1.Text);
+                listaDeObjetos.Add(plancha);
             }
             else if (opcion == "Refrigerador")
             {
-
+                Electrodomesticos.Refrigerador refri = new Electrodomesticos.Refrigerador(id, textBox1.Text);
+                listaDeObjetos.Add(refri);
             }
             else if (opcion == "Secadora")
             {
-
+                Secadora secadora = new Secadora(id, textBox1.Text);
+                listaDeObjetos.Add(secadora);
             }
             else if (opcion == "Teléfono")
             {
+                Electrodomesticos.Telefono telefono = new Electrodomesticos.Telefono(id, textBox1.Text);
+                listaDeObjetos.Add(telefono);
 
             }
             else if (opcion == "Televisión")
             {
-
+                Electrodomesticos.Television tv = new Electrodomesticos.Television(id, textBox1.Text);
+                listaDeObjetos.Add(tv);
             }
             else if (opcion == "Tostador")
             {
+                Tostador tostador = new Tostador(id);
+                listaDeObjetos.Add(tostador);
+            }
+            else
+            {
+                MessageBox.Show("Lo sentimos, esa no es una opción v´lida, inténtelo nuevamente");
             }
 
-
-            }
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {

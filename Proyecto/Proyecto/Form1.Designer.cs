@@ -275,7 +275,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(80, 236);
+            this.button1.Location = new System.Drawing.Point(85, 154);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 23);
             this.button1.TabIndex = 10;
@@ -302,7 +302,7 @@
             // 
             this.groupBox9.Controls.Add(this.textBox3);
             this.groupBox9.Controls.Add(this.label5);
-            this.groupBox9.Location = new System.Drawing.Point(32, 154);
+            this.groupBox9.Location = new System.Drawing.Point(32, 183);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(200, 76);
             this.groupBox9.TabIndex = 13;

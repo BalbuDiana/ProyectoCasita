@@ -8,8 +8,8 @@ namespace Proyecto.Electrodomesticos
 {
     class Lavadora: Electro_master
     {
-        public Lavadora(double potencia, string id, string ubicacion)
-            :base(potencia, id, ubicacion)
+        public Lavadora(string id, string ubicacion)
+            :base(2000, id, ubicacion)
         {
 
         }
