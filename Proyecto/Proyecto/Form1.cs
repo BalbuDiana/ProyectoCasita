@@ -207,7 +207,7 @@ namespace Proyecto
 
                 }
                 */
-                    nuevo = new Electrodomesticos.Foco(100, id, comboBox1.Text);
+                nuevo = new Electrodomesticos.Foco(100, id, comboBox1.Text);
                 MessageBox.Show("generaste una Foco en: " + comboBox1.Text);
                 listaDeObjetos.Add(nuevo);
 
