@@ -27,12 +27,24 @@ namespace Proyecto
             t.Tick += T_Tick;
             t.Start();
         }
-
+        //double rt = 0;
+        private double[] cpuArray = new double[10];
         Random r = new Random();
         private void T_Tick(object sender, EventArgs e)
         {
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
             chart1.Series[0].Points.AddY(r.NextDouble());
+            //chart1.Series["Series 1"].Points.Clear();
+            for (int i = 0; i < cpuArray.Length; i++)
+            {
+                //chart1.Series[0].Points.AddY(r.NextDouble());
+                if (i == (cpuArray.Count() - 1))
+                {
+                        chart1.Series["Series1"].Points.Clear();
+                }
+             }
+            //rt = rt + 0.1;
+
         }
 
         private void GenerarButton_Click(object sender, EventArgs e)
@@ -385,6 +397,10 @@ namespace Proyecto
             pictureclick = true; //cuando le da clic que sea cierto y se mueva respecto al mause
         }
 
+        private void chart1_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine("Hola");
+        }
 
 
         private void pictureBox1_MouseMove_1(object sender, MouseEventArgs e)
