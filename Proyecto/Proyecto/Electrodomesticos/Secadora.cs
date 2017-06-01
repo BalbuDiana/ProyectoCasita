@@ -12,7 +12,7 @@ namespace Proyecto
         Image secadora;
        
         public Secadora(string id, string ubicacion)
-            :base(2891,id, ubicacion)
+            :base(2891,id, ubicacion,"secadora")
         {
             
         }

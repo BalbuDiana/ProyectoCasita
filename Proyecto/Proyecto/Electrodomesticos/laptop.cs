@@ -12,7 +12,7 @@ namespace Proyecto
         Image laptop;
 
         public Laptop(string id,string ubicacion)
-            :base(2000, id, ubicacion)
+            :base(2000, id, ubicacion,"laptop")
         {
            
         }

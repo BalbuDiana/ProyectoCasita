@@ -13,7 +13,7 @@ namespace Proyecto
         Image micro;
         
         public Microondas(string id)
-            :base(1800,id,"Cocina")
+            :base(1800,id,"Cocina","micro")
         {
             
         }

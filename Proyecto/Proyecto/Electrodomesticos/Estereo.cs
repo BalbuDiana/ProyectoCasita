@@ -12,7 +12,7 @@ namespace Proyecto.Electrodomesticos
         Image estereo;
 
         public Estereo(string id, string ubicacion)
-            :base(1342, id, ubicacion)
+            :base(1342, id, ubicacion,"estereo")
         {
 
         }

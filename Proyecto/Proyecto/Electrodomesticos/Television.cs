@@ -12,7 +12,7 @@ namespace Proyecto.Electrodomesticos
 
         Image tv;
         public Television(string id, string ubicacion)
-            :base(1456, id, ubicacion)
+            :base(1456, id, ubicacion,"tv")
         {
 
         }

@@ -12,7 +12,7 @@ namespace Proyecto
         Image licuadora;
 
         public Licuadora(string id)
-            :base(250,id,"Kitchen")
+            :base(250,id,"Kitchen","licuadora")
         {
         }
 

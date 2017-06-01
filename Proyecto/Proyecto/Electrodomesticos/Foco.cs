@@ -12,7 +12,7 @@ namespace Proyecto.Electrodomesticos
         Image foco;
 
         public Foco(double potencia, string id, string ubicacion)
-            :base(potencia, id, ubicacion)
+            :base(potencia, id, ubicacion,"foco")
 
         {
             

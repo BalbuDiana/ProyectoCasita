@@ -13,9 +13,9 @@ namespace Proyecto.Electrodomesticos
         Image consola;
 
         public Consola(string id, string ubicacion)
-            :base(1200, id, ubicacion)
+            :base(1200, id, ubicacion,"Consola")
         {
-
+            this.tipo = "Consola";
         }
 
         public override void CrearIcono()

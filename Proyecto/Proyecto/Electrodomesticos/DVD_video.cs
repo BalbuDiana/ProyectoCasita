@@ -12,7 +12,7 @@ namespace Proyecto
         Image dvd;
        
         public DVD_video(string id, string ubicacion)
-            :base(2890, id,ubicacion)
+            :base(2890, id,ubicacion,"dvd")
         {
         }
 
