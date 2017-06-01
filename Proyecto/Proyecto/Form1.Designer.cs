@@ -55,9 +55,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.gbPotencia = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -107,7 +104,6 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.gbPotencia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -368,7 +364,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 192);
+            this.button1.Location = new System.Drawing.Point(61, 164);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 19);
@@ -379,7 +375,6 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.gbPotencia);
             this.groupBox8.Controls.Add(this.label4);
             this.groupBox8.Controls.Add(this.textBox2);
             this.groupBox8.Controls.Add(this.label3);
@@ -394,37 +389,6 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Visible = false;
             // 
-            // gbPotencia
-            // 
-            this.gbPotencia.Controls.Add(this.textBox3);
-            this.gbPotencia.Controls.Add(this.label5);
-            this.gbPotencia.Location = new System.Drawing.Point(24, 125);
-            this.gbPotencia.Margin = new System.Windows.Forms.Padding(2);
-            this.gbPotencia.Name = "gbPotencia";
-            this.gbPotencia.Padding = new System.Windows.Forms.Padding(2);
-            this.gbPotencia.Size = new System.Drawing.Size(150, 62);
-            this.gbPotencia.TabIndex = 13;
-            this.gbPotencia.TabStop = false;
-            this.gbPotencia.Visible = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(36, 39);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 15);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Ingrese la potencia del foco";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -437,7 +401,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(64, 102);
+            this.textBox2.Location = new System.Drawing.Point(61, 112);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(76, 20);
@@ -1079,8 +1043,6 @@
             this.groupBox6.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.gbPotencia.ResumeLayout(false);
-            this.gbPotencia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -1148,9 +1110,6 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.GroupBox gbPotencia;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;

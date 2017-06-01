@@ -163,92 +163,56 @@ namespace Proyecto
             string opcion = comboBox2.Text;
             string id = textBox2.Text;
 
-
-
-            /* if (opcion == "Foco") //balbu aqui lo que querias hacer para potencia
-             {
-
-                 MessageBox.Show("Generaste un foco.", "por favor ingresa Potencia",MessageBoxButtons.OK,MessageBoxIcon.Information);
-                 gbPotencia.Visible = true;
-                // nuevo = new Electrodomesticos.Foco(Convert.ToDouble(textBox3.Text), id, comboBox1.Text);
-             }
-             */
-            // if(id=="")
+            Electro_master l = null;
 
             if (opcion == "Consola")
             {
-                Electrodomesticos.Consola l = new Electrodomesticos.Consola(id, comboBox1.Text);
+                l = new Electrodomesticos.Consola(id, comboBox1.Text);
                 if (l.GetUbicacion() == "Habitación")
                 {
-
-                    MessageBox.Show("generaste una conconsola en: " + comboBox1.Text, listaDeObjetos.Count().ToString());
                     l.CrearIcono();
                     pictureBox18.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
-
 
                 }
-
             }
             else if (opcion == "DVD")
             {
-                DVD_video l = new DVD_video(id, comboBox1.Text);
+                l = new DVD_video(id, comboBox1.Text);
                 l.CrearIcono();
                 pictureBox17.Image = l.ObtenerIMagen();
-                //  pictureBox17.Refresh();
-                listaDeObjetos.Add(l);
+
 
             }
             else if (opcion == "Estereo")
             {
-                Electrodomesticos.Estereo l = new Electrodomesticos.Estereo(id, comboBox1.Text);
+                l = new Electrodomesticos.Estereo(id, comboBox1.Text);
                 l.CrearIcono();
                 pictureBox16.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
             else if (opcion == "Estufa")
             {
 
-                Estufa l = new Estufa(id);
-                l.CrearIcono();
+                l = new Estufa(id);
                 pictureBox15.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
-
 
             }
             else if (opcion == "Foco")
             {
-                /* //MessageBox.Show("Generaste un foco.", "por favor ingresa Potencia", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                 //gbPotencia.Visible = true;
 
-                 //double w = 0;
-             try
-             {
-                 w = Convert.ToDouble(textBox3.Text);
-
-             }
-             catch (FormatException)
-             {
-                 MessageBox.Show("Lo sentimos, lo que ha ingresado no ha sido un núnmero, inténtelo nuevamente");
-                 return;
-
-             }
-             */
-                Electrodomesticos.Foco l = new Electrodomesticos.Foco(100, id, comboBox1.Text);
-                MessageBox.Show("generaste una Foco en: " + comboBox1.Text);
+                l = new Electrodomesticos.Foco(100, id, comboBox1.Text);
+               
                 if (l.GetUbicacion() == "WC")
                 {
                     l.CrearIcono();
                     pictureBox14.Image = l.ObtenerIMagen();
-                    listaDeObjetos.Add(l);
-                }  
-               else if (l.GetUbicacion() == "Cocina")
+                    
+                }
+                else if (l.GetUbicacion() == "Cocina")
                 {
                     l.CrearIcono();
                     pictureBox30.Image = l.ObtenerIMagen();
-                    //pictureBox19.Refresh();
-                    listaDeObjetos.Add(l); l.CrearIcono();
+                    
 
                 }
                 else if (l.GetUbicacion() == "Habitación")
@@ -256,17 +220,14 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox31.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
-
+                    
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
                 {
 
                     l.CrearIcono();
                     pictureBox32.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                    
 
                 }
                 else if (l.GetUbicacion() == "Patio")
@@ -274,8 +235,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox34.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                    
 
                 }
                 else if (l.GetUbicacion() == "Sala")
@@ -283,8 +243,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox36.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                    
 
                 }
                 else if (l.GetUbicacion() == "Comedor")
@@ -292,8 +251,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox28.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                    
 
                 }
                 else
@@ -303,13 +261,13 @@ namespace Proyecto
             }
             else if (opcion == "Lampara")
             {
-                Electrodomesticos.Lampara l = new Electrodomesticos.Lampara(id, comboBox1.Text);
+                l = new Electrodomesticos.Lampara(id, comboBox1.Text);
+               
                 if (l.GetUbicacion() == "Cocina")
                 {
                     l.CrearIcono();
                     pictureBox19.Image = l.ObtenerIMagen();
-                    //pictureBox19.Refresh();
-                    listaDeObjetos.Add(l); l.CrearIcono();
+                    
 
                 }
                 else if (l.GetUbicacion() == "Habitación")
@@ -317,8 +275,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox4.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                   
 
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
@@ -326,8 +283,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox3.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                   
 
                 }
                 else if (l.GetUbicacion() == "Patio")
@@ -335,8 +291,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox24.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                    
 
                 }
                 else if (l.GetUbicacion() == "Sala")
@@ -344,8 +299,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox26.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                    
 
                 }
                 else
@@ -356,72 +310,81 @@ namespace Proyecto
             }
             else if (opcion == "Laptop")
             {
-                Laptop l = new Laptop(id, comboBox1.Text);
+                l = new Laptop(id, comboBox1.Text);
+                
                 l.CrearIcono();
                 pictureBox13.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
             else if (opcion == "Lavadora")
             {
-                Electrodomesticos.Lavadora l = new Electrodomesticos.Lavadora(1200, id, comboBox1.Text);
+                l = new Electrodomesticos.Lavadora(1200, id, comboBox1.Text);
+               
                 l.CrearIcono();
                 pictureBox12.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
             else if (opcion == "Licuadora")
             {
-                Licuadora l = new Licuadora(id);
+                l = new Licuadora(id);
+                
                 l.CrearIcono();
                 pictureBox11.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
             else if (opcion == "Microondas")
             {
-                Microondas l = new Microondas(id);
+                l = new Microondas(id);
+               
+
                 l.CrearIcono();
                 pictureBox2.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
 
-                //pictureBox1.Refresh();
+
+
 
             }
             else if (opcion == "Plancha")
             {
-                Plancha l = new Plancha(id, comboBox1.Text);
+                l = new Plancha(id, comboBox1.Text);
+               
+
                 l.CrearIcono();
                 pictureBox10.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
             else if (opcion == "Refrigerador")
             {
-                Electrodomesticos.Refrigerador l = new Electrodomesticos.Refrigerador(id, comboBox1.Text);
+                l = new Electrodomesticos.Refrigerador(id, comboBox1.Text);
+               
                 l.CrearIcono();
                 pictureBox9.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
             else if (opcion == "Secadora")
             {
-                Secadora l = new Secadora(id, comboBox1.Text);
+                l = new Secadora(id, comboBox1.Text);
+               
+
                 l.CrearIcono();
                 pictureBox8.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
             else if (opcion == "Teléfono")
             {
-                Electrodomesticos.Telefono l = new Electrodomesticos.Telefono(id, comboBox1.Text);
+                l = new Electrodomesticos.Telefono(id, comboBox1.Text);
                 if (l.GetUbicacion() == "Habitación de huéspedes")
                 {
                     l.CrearIcono();
                     pictureBox7.Image = l.ObtenerIMagen();
-                    listaDeObjetos.Add(l);
+                   
                 }
-                 else if (l.GetUbicacion() == "Habitación")
+                else if (l.GetUbicacion() == "Habitación")
                 {
 
                     l.CrearIcono();
                     pictureBox114.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                    
 
                 }
                 else if (l.GetUbicacion() == "Sala")
@@ -429,27 +392,26 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox115.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
-
+                    
                 }
             }
             else if (opcion == "Televisión")
             {
-                Electrodomesticos.Television l = new Electrodomesticos.Television(id, comboBox1.Text);
+                l = new Electrodomesticos.Television(id, comboBox1.Text);
+                
+
                 if (l.GetUbicacion() == "Sala")
                 {
                     l.CrearIcono();
                     pictureBox6.Image = l.ObtenerIMagen();
-                    listaDeObjetos.Add(l);
+                   
                 }
                 else if (l.GetUbicacion() == "Habitación")
                 {
 
                     l.CrearIcono();
                     pictureBox111.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                 
 
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
@@ -457,8 +419,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox112.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                  
 
                 }
                 else if (l.GetUbicacion() == "Comedor")
@@ -466,23 +427,25 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox113.Image = l.ObtenerIMagen();
-                    //pictureBox18.Refresh();
-                    listaDeObjetos.Add(l);
+                
 
                 }
             }
             else if (opcion == "Tostador")
             {
-                Tostador l = new Tostador(id);
+                l = new Tostador(id);
                 l.CrearIcono();
                 pictureBox5.Image = l.ObtenerIMagen();
-                listaDeObjetos.Add(l);
+
             }
 
-            //listaDeObjetos.Add(nuevo);
+               
 
+            
+            MessageBox.Show("Generaste un objeto tipo : " + opcion + "\n  Ubicación: " + comboBox1.Text);
+            listaDeObjetos.Add(l);
+        
         }
-
 
         //------------------------------------------------------------------------------------------------------
       //generando imagen
