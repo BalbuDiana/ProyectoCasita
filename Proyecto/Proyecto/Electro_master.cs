@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace Proyecto
 {
      abstract class Electro_master
     {
-
 
         double potencia;
         protected string tipo;
@@ -95,6 +95,8 @@ namespace Proyecto
 
         abstract public void CrearIcono(); //Esta es la firma del método que tendrán todos
 
+
+       
 
         public static void SetLimConsumo(double valor) //para cambiar //no regresa nada
         {

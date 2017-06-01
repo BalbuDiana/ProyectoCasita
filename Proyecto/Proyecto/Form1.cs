@@ -479,20 +479,21 @@ namespace Proyecto
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Microondas l = new Microondas("hola");
+           Microondas l = new Microondas("hola");
             l.CrearIcono();
 
             //separar funciones de moverpicture para que no se genere el error 
 
             //pictureBox36.Image = l.ObtenerIMagen();  //checar
-           // pictureBox29.Image = l.ObtenerIMagen(); 
-           // pictureBox30.Image = l.ObtenerIMagen(); //checar
-          //  pictureBox31.Image = l.ObtenerIMagen(); //**
+            // pictureBox29.Image = l.ObtenerIMagen(); 
+            // pictureBox30.Image = l.ObtenerIMagen(); //checar
+            //  pictureBox31.Image = l.ObtenerIMagen(); //**
             //pictureBox32.Image = l.ObtenerIMagen();**
-          // pictureBox34.Image = l.ObtenerIMagen();
-            pictureBox1.Image = l.ObtenerIMagen(); //solo se ve en panel
-            pictureBox2.Image = l.ObtenerIMagen(); // Ya no se ve Xc
+            // pictureBox34.Image = l.ObtenerIMagen();
+            //  pictureBox1.Image = l.ObtenerIMagen(); //solo se ve en panel
+            //pictureBox2.Image = l.ObtenerIMagen(); // Ya no se ve Xc
             //pictureBox1.Refresh();
+            pictureBox7.Image = l.ObtenerIMagen();
         }
 
 
@@ -549,6 +550,7 @@ namespace Proyecto
             if (pictureclick == true) moverpicture2(); //se debe de mover el picture
 
         }
+
         private void pictureBox1_DoubleClick(object sender, EventArgs e)
         {
             pictureBox1.Image = null;
@@ -580,6 +582,7 @@ namespace Proyecto
             posMouseFormY = posMouseFormY + e.Location.Y;
             if (pictureclick == true) moverpicture1(); //se debe de mover el picture
         }
+
         private void pictureBox36_MouseDown(object sender, MouseEventArgs e)
         {
             //posiciones de picture
@@ -603,9 +606,15 @@ namespace Proyecto
             pictureBox36.Image = null;
 
             //abrir formulario campura posiciones 
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
+            posActBotonX = pictureBox36.Location.X;
+            posActBotonY = pictureBox36.Location.Y;
         }
+        private void pictureBox36_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+
         private void pictureBox34_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -629,13 +638,22 @@ namespace Proyecto
         {
             pictureclick = false; //si se suelta que sea falso que no se mueva 
         }
+        private void pictureBox34_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox34.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox34.Location.X;
+            posActBotonY = pictureBox34.Location.Y;
+        }
+
         private void pictureBox32_DoubleClick(object sender, EventArgs e)
         {
             pictureBox32.Image = null;
 
             //abrir formulario campura posiciones 
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
+            posActBotonX = pictureBox32.Location.X;
+            posActBotonY = pictureBox32.Location.Y;
         }
         private void pictureBox32_MouseClick(object sender, MouseEventArgs e)
         {
@@ -660,13 +678,14 @@ namespace Proyecto
         {
             pictureclick = false; //si se suelta que sea falso que no se mueva 
         }
+
         private void pictureBox31_DoubleClick(object sender, EventArgs e)
         {
             pictureBox31.Image = null;
 
             //abrir formulario campura posiciones 
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
+            posActBotonX = pictureBox31.Location.X;
+            posActBotonY = pictureBox31.Location.Y;
         }
         private void pictureBox31_MouseClick(object sender, MouseEventArgs e)
         {
@@ -691,13 +710,14 @@ namespace Proyecto
         {
             pictureclick = false; //si se suelta que sea falso que no se mueva 
         }
+
         private void pictureBox30_DoubleClick(object sender, EventArgs e)
         {
             pictureBox30.Image = null;
 
             //abrir formulario campura posiciones 
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
+            posActBotonX = pictureBox30.Location.X;
+            posActBotonY = pictureBox30.Location.Y;
         }
         private void pictureBox30_MouseClick(object sender, MouseEventArgs e)
         {
@@ -728,21 +748,18 @@ namespace Proyecto
             pictureBox29.Image = null;
 
             //abrir formulario campura posiciones 
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
+            posActBotonX = pictureBox29.Location.X;
+            posActBotonY = pictureBox29.Location.Y;
         }
-
         private void pictureBox29_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 textBox1.Text = "hola";
         }
-
         private void pictureBox29_MouseUp(object sender, MouseEventArgs e)
         {
             pictureclick = false; //si se suelta que sea falso que no se mueva 
         }
-
         private void pictureBox29_MouseDown(object sender, MouseEventArgs e)
         {
             //posiciones de picture
@@ -750,7 +767,6 @@ namespace Proyecto
             posMousePictureY = e.Location.Y;
             pictureclick = true; //cuando le da clic que sea cierto y se mueva respecto al mause
         }
-
         private void pictureBox29_MouseMove(object sender, MouseEventArgs e)
         {
             //que se asignen las posiciones
@@ -759,33 +775,22 @@ namespace Proyecto
             if (pictureclick == true) moverpicture29(); //se debe de mover el picture
         }
 
-        private void pictureBox36_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-                textBox1.Text = "hola";
-        }
-        private void pictureBox34_DoubleClick(object sender, EventArgs e)
-        {
-            pictureBox34.Image = null;
-
-            //abrir formulario campura posiciones 
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
-        }
+        
+       
+        //-------------------------------------------------------------------------nuevos
         private void pictureBox7_DoubleClick(object sender, EventArgs e)
         {
             pictureBox7.Image = null;
 
             //abrir formulario campura posiciones 
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
+            posActBotonX = pictureBox7.Location.X;
+            posActBotonY = pictureBox7.Location.Y;
         }
         private void pictureBox7_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 textBox1.Text = "hola";
         }
-
         private void pictureBox7_MouseMove(object sender, MouseEventArgs e)
         {
             //que se asignen las posiciones
@@ -800,12 +805,82 @@ namespace Proyecto
             posMousePictureY = e.Location.Y;
             pictureclick = true; 
         }
-
         private void pictureBox7_MouseUp(object sender, MouseEventArgs e)
         {
             pictureclick = false; //si se suelta que sea falso que no se mueva 
         }
-        //----------------------secundarios
+
+        private void pictureBox12_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox12.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox12.Location.X;
+            posActBotonY = pictureBox12.Location.Y;
+        }
+        private void pictureBox12_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox12_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox12_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture12(); //se debe de mover el picture
+        }
+        private void pictureBox12_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+
+        private void pictureBox3_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox3.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox3.Location.X;
+            posActBotonY = pictureBox3.Location.Y;
+        }
+
+        private void pictureBox3_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+
+        private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+
+        private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture3(); //se debe de mover el picture
+        }
+
+        private void pictureBox3_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+
+
+
+        //----------------------secundarios    ------------------ Mover picture    -------------------
         private void moverpicture1()
         {
             //box1
@@ -827,7 +902,6 @@ namespace Proyecto
             posActBotonX = pictureBox31.Location.X;
             posActBotonY = pictureBox31.Location.Y;
         }
-
         private void moverpicture36()
         {
             //box 36
@@ -835,7 +909,6 @@ namespace Proyecto
             posActBotonX = pictureBox36.Location.X;
             posActBotonY = pictureBox36.Location.Y;
         }
-
         private void moverpicture34()
         {
             //box34
@@ -1087,6 +1160,241 @@ namespace Proyecto
             posActBotonX = pictureBox117.Location.X;
             posActBotonY = pictureBox117.Location.Y;
         }
+
+        private void pictureBox8_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox8.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox8.Location.X;
+            posActBotonY = pictureBox8.Location.Y;
+        }
+
+        private void pictureBox13_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox13.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox13.Location.X;
+            posActBotonY = pictureBox13.Location.Y;
+        }
+
+        private void pictureBox4_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox4.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox4.Location.X;
+            posActBotonY = pictureBox4.Location.Y;
+        }
+
+        private void pictureBox9_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox9.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox9.Location.X;
+            posActBotonY = pictureBox9.Location.Y;
+        }
+
+        private void pictureBox14_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox14.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox14.Location.X;
+            posActBotonY = pictureBox14.Location.Y;
+        }
+
+        private void pictureBox5_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox5.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox5.Location.X;
+            posActBotonY = pictureBox5.Location.Y;
+        }
+
+        private void pictureBox10_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox10.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox10.Location.X;
+            posActBotonY = pictureBox10.Location.Y;
+        }
+
+        private void pictureBox15_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox15.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox15.Location.X;
+            posActBotonY = pictureBox15.Location.Y;
+        }
+
+        private void pictureBox6_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox6.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox6.Location.X;
+            posActBotonY = pictureBox6.Location.Y;
+        }
+
+        private void pictureBox11_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox11.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox11.Location.X;
+            posActBotonY = pictureBox11.Location.Y;
+        }
+
+        private void pictureBox16_Click(object sender, EventArgs e)
+        {
+            pictureBox16.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox16.Location.X;
+            posActBotonY = pictureBox16.Location.Y;
+        }
+
+        private void pictureBox17_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox17.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox17.Location.X;
+            posActBotonY = pictureBox17.Location.Y;
+        }
+
+        private void pictureBox18_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox18.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox18.Location.X;
+            posActBotonY = pictureBox18.Location.Y;
+        }
+
+        private void pictureBox19_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox19.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox19.Location.X;
+            posActBotonY = pictureBox19.Location.Y;
+        }
+
+        private void pictureBox28_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox28.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox28.Location.X;
+            posActBotonY = pictureBox28.Location.Y;
+        }
+
+        private void pictureBox26_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox26.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox26.Location.X;
+            posActBotonY = pictureBox26.Location.Y;
+        }
+
+        private void pictureBox24_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox24.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox24.Location.X;
+            posActBotonY = pictureBox24.Location.Y;
+        }
+
+        private void pictureBox111_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox111.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox111.Location.X;
+            posActBotonY = pictureBox111.Location.Y;
+        }
+
+        private void pictureBox112_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox112.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox112.Location.X;
+            posActBotonY = pictureBox112.Location.Y;
+        }
+
+        private void pictureBox113_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox113.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox113.Location.X;
+            posActBotonY = pictureBox113.Location.Y;
+        }
+
+        private void pictureBox114_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox114.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox114.Location.X;
+            posActBotonY = pictureBox114.Location.Y;
+        }
+
+        private void pictureBox115_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox115.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox115.Location.X;
+            posActBotonY = pictureBox115.Location.Y;
+        }
+
+        private void pictureBox116_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox116.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox116.Location.X;
+            posActBotonY = pictureBox116.Location.Y;
+        }
+
+        private void pictureBox117_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox117.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox117.Location.X;
+            posActBotonY = pictureBox117.Location.Y;
+        }
+
+        private void pictureBox118_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox118.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox118.Location.X;
+            posActBotonY = pictureBox118.Location.Y;
+        }
+
+        private void pictureBox119_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox119.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox119.Location.X;
+            posActBotonY = pictureBox119.Location.Y;
+        }
+
         private void moverpicture118()
         {
 
