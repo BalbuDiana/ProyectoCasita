@@ -11,7 +11,7 @@ namespace Proyecto
     {
         Image tostador;
         public Tostador(string id)
-            : base(238, id, "Cocina")
+            : base(238, id, "Cocina","tostador")
         {
         }
 

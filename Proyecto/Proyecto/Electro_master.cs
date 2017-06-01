@@ -11,6 +11,7 @@ namespace Proyecto
 
 
         double potencia;
+        protected string tipo;
         protected static double LimConsumo = 1000; //para saber cuando se apaga
         protected static double PotenciaMayor = 0; //para saber quien es el que consume mas   
         DateTime tiempoIni;		// En fecha
@@ -20,10 +21,11 @@ namespace Proyecto
         protected string id = " ";  //solo para saber, Para recorrer la lista
         protected bool estaPrendido; //para saber estado
 
-        public Electro_master(double potencia, string id, string ubicacion) //solo creamos un foco que esta en la cocina XD
+        public Electro_master(double potencia, string id, string ubicacion, string tipo) //solo creamos un foco que esta en la cocina XD
         {
             this.ubicacion = ubicacion;
             this.id = id;
+            this.tipo = tipo;
             this.potencia = potencia; //Wh
             estaPrendido = false;
             tiempoAcc = 0.0;
@@ -127,7 +129,10 @@ namespace Proyecto
             return estaPrendido;
         }
 
-     
+      public string Gettipo()
+        {
+            return tipo;
+        }
 
     }
 }

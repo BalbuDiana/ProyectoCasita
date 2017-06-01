@@ -11,7 +11,7 @@ namespace Proyecto.Electrodomesticos
     {
         Image telefono;
         public Telefono( string id, string ubicacion)
-            :base(100, id, ubicacion)
+            :base(100, id, ubicacion,"telefono")
         {
 
         }

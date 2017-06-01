@@ -12,7 +12,7 @@ namespace Proyecto.Electrodomesticos
         Image refri;
 
         public Refrigerador(string id, string ubicacion)
-            :base(1050, id, ubicacion)
+            :base(1050, id, ubicacion,"refri")
         {
 
         }

@@ -12,7 +12,7 @@ namespace Proyecto
         Image plancha;
 
         public Plancha (string id, string ubicacion)
-            :base(1234,id, ubicacion)
+            :base(1234,id, ubicacion,"plancha")
         {
             
         }

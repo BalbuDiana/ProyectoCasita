@@ -12,7 +12,7 @@ namespace Proyecto
         Image estufa;
 
         public Estufa( string id)
-            :base(3456, id, "Cocina")
+            :base(3456, id, "Cocina","estufa")
         {
             
         }
