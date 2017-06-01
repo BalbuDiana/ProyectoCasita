@@ -481,8 +481,17 @@ namespace Proyecto
 
             Microondas l = new Microondas("hola");
             l.CrearIcono();
-            pictureBox34.Image = l.ObtenerIMagen();
 
+            //separar funciones de moverpicture para que no se genere el error 
+
+            //pictureBox36.Image = l.ObtenerIMagen();  //checar
+           // pictureBox29.Image = l.ObtenerIMagen(); 
+           // pictureBox30.Image = l.ObtenerIMagen(); //checar
+          //  pictureBox31.Image = l.ObtenerIMagen(); //**
+            //pictureBox32.Image = l.ObtenerIMagen();**
+          // pictureBox34.Image = l.ObtenerIMagen();
+            pictureBox1.Image = l.ObtenerIMagen(); //solo se ve en panel
+            pictureBox2.Image = l.ObtenerIMagen(); // Ya no se ve Xc
             //pictureBox1.Refresh();
         }
 
@@ -503,42 +512,7 @@ namespace Proyecto
             posMouseFormY = e.Location.Y;
         }
 
-        //----------------------secundarios
-
-        private void moverpicture()
-        {
-            //box1
-            pictureBox1.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
-            posActBotonX = pictureBox1.Location.X;
-            posActBotonY = pictureBox1.Location.Y;
-
-            //box 2
-            pictureBox2.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
-            posActBotonX = pictureBox2.Location.X;
-            posActBotonY = pictureBox2.Location.Y;
-
-            //box 36
-            pictureBox36.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
-            posActBotonX = pictureBox36.Location.X;
-            posActBotonY = pictureBox36.Location.Y;
-
-            //box34
-            pictureBox34.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
-            posActBotonX = pictureBox34.Location.X;
-            posActBotonY = pictureBox34.Location.Y;
-
-            //box 32
-            pictureBox32.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
-            posActBotonX = pictureBox32.Location.X;
-            posActBotonY = pictureBox32.Location.Y;
-
-            //box 31
-            pictureBox31.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
-            posActBotonX = pictureBox31.Location.X;
-            posActBotonY = pictureBox31.Location.Y;
-
-            //box 
-        }
+      
         //---------------------------------------------------------------------------------------------
 
             //generando movimiento por mouse
@@ -572,7 +546,7 @@ namespace Proyecto
             //que se asignen las posiciones
             posMouseFormX = posActBotonX + e.Location.X;
             posMouseFormY = posMouseFormY + e.Location.Y;
-            if (pictureclick == true) moverpicture(); //se debe de mover el picture
+            if (pictureclick == true) moverpicture2(); //se debe de mover el picture
 
         }
         private void pictureBox1_DoubleClick(object sender, EventArgs e)
@@ -604,7 +578,7 @@ namespace Proyecto
             //que se asignen las posiciones
             posMouseFormX = posActBotonX + e.Location.X;
             posMouseFormY = posMouseFormY + e.Location.Y;
-            if (pictureclick == true) moverpicture(); //se debe de mover el picture
+            if (pictureclick == true) moverpicture1(); //se debe de mover el picture
         }
         private void pictureBox36_MouseDown(object sender, MouseEventArgs e)
         {
@@ -711,12 +685,80 @@ namespace Proyecto
             //que se asignen las posiciones
             posMouseFormX = posActBotonX + e.Location.X;
             posMouseFormY = posMouseFormY + e.Location.Y;
-            if (pictureclick == true) moverpicture(); //se debe de mover el picture
+            if (pictureclick == true) moverpicture31(); //se debe de mover el picture
         }
         private void pictureBox31_MouseUp(object sender, MouseEventArgs e)
         {
             pictureclick = false; //si se suelta que sea falso que no se mueva 
         }
+        private void pictureBox30_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox30.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox1.Location.X;
+            posActBotonY = pictureBox1.Location.Y;
+        }
+        private void pictureBox30_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox30_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true; //cuando le da clic que sea cierto y se mueva respecto al mause
+        }
+        private void pictureBox30_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture(); //se debe de mover el picture
+        }
+        private void pictureBox30_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+
+        private void pictureBox29_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox29.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox1.Location.X;
+            posActBotonY = pictureBox1.Location.Y;
+        }
+
+        private void pictureBox29_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+
+        private void pictureBox29_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+
+        private void pictureBox29_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true; //cuando le da clic que sea cierto y se mueva respecto al mause
+        }
+
+        private void pictureBox29_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture(); //se debe de mover el picture
+        }
+
         private void pictureBox36_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
@@ -729,6 +771,64 @@ namespace Proyecto
             //abrir formulario campura posiciones 
             posActBotonX = pictureBox1.Location.X;
             posActBotonY = pictureBox1.Location.Y;
+        }
+
+        //----------------------secundarios
+        private void moverpicture1()
+        {
+            //box1
+            pictureBox1.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox1.Location.X;
+            posActBotonY = pictureBox1.Location.Y;
+        }
+        private void moverpicture2()
+        {
+            //box 2
+            pictureBox2.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox2.Location.X;
+            posActBotonY = pictureBox2.Location.Y;
+        }
+        private void moverpicture31()
+        {
+            //box 31
+            pictureBox31.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox31.Location.X;
+            posActBotonY = pictureBox31.Location.Y;
+        }
+
+        private void moverpicture()
+        {
+        
+
+           
+
+            //box 36
+            pictureBox36.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox36.Location.X;
+            posActBotonY = pictureBox36.Location.Y;
+
+            //box34
+            pictureBox34.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox34.Location.X;
+            posActBotonY = pictureBox34.Location.Y;
+
+            //box 32
+            pictureBox32.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox32.Location.X;
+            posActBotonY = pictureBox32.Location.Y;
+
+          
+
+            //box 30
+            pictureBox30.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox30.Location.X;
+            posActBotonY = pictureBox30.Location.Y;
+
+            //box29
+
+            pictureBox29.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox29.Location.X;
+            posActBotonY = pictureBox29.Location.Y;
         }
 
         //-----------------------------------------------------------------------------------------------------------------

@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea15 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend15 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series15 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -101,7 +101,6 @@
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.HabitacionPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -246,7 +245,6 @@
             // 
             // HabitacionPanel
             // 
-            this.HabitacionPanel.Controls.Add(this.pictureBox1);
             this.HabitacionPanel.Location = new System.Drawing.Point(7, 15);
             this.HabitacionPanel.Margin = new System.Windows.Forms.Padding(2);
             this.HabitacionPanel.Name = "HabitacionPanel";
@@ -256,7 +254,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(246, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(797, 235);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(21, 27);
@@ -461,16 +459,16 @@
             // 
             // chart1
             // 
-            chartArea15.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea15);
-            legend15.Name = "Legend1";
-            this.chart1.Legends.Add(legend15);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(412, 28);
             this.chart1.Name = "chart1";
-            series15.ChartArea = "ChartArea1";
-            series15.Legend = "Legend1";
-            series15.Name = "Series1";
-            this.chart1.Series.Add(series15);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(198, 107);
             this.chart1.TabIndex = 16;
             this.chart1.Text = "chart1";
@@ -684,6 +682,11 @@
             this.pictureBox29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox29.TabIndex = 50;
             this.pictureBox29.TabStop = false;
+            this.pictureBox29.DoubleClick += new System.EventHandler(this.pictureBox29_DoubleClick);
+            this.pictureBox29.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseClick);
+            this.pictureBox29.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseDown);
+            this.pictureBox29.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseMove);
+            this.pictureBox29.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox29_MouseUp);
             // 
             // pictureBox30
             // 
@@ -694,6 +697,11 @@
             this.pictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox30.TabIndex = 42;
             this.pictureBox30.TabStop = false;
+            this.pictureBox30.DoubleClick += new System.EventHandler(this.pictureBox30_DoubleClick);
+            this.pictureBox30.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseClick);
+            this.pictureBox30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseDown);
+            this.pictureBox30.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseMove);
+            this.pictureBox30.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox30_MouseUp);
             // 
             // pictureBox31
             // 
@@ -727,7 +735,7 @@
             // 
             // pictureBox34
             // 
-            this.pictureBox34.Location = new System.Drawing.Point(615, 172);
+            this.pictureBox34.Location = new System.Drawing.Point(615, 170);
             this.pictureBox34.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox34.Name = "pictureBox34";
             this.pictureBox34.Size = new System.Drawing.Size(22, 28);
@@ -742,14 +750,13 @@
             // 
             // pictureBox36
             // 
-            this.pictureBox36.Location = new System.Drawing.Point(615, 142);
+            this.pictureBox36.Location = new System.Drawing.Point(615, 140);
             this.pictureBox36.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox36.Name = "pictureBox36";
             this.pictureBox36.Size = new System.Drawing.Size(22, 28);
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 44;
             this.pictureBox36.TabStop = false;
-            this.pictureBox36.DoubleClick += new System.EventHandler(this.pictureBox36_DoubleClick);
             this.pictureBox36.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseClick);
             this.pictureBox36.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseDown);
             this.pictureBox36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseMove);
@@ -850,6 +857,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(951, 625);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox119);
             this.Controls.Add(this.pictureBox118);
             this.Controls.Add(this.pictureBox117);
@@ -902,12 +910,12 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.pictureBox29_DoubleClick);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
-            this.HabitacionPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
