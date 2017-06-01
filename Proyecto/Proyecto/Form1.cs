@@ -772,7 +772,39 @@ namespace Proyecto
             posActBotonX = pictureBox1.Location.X;
             posActBotonY = pictureBox1.Location.Y;
         }
+        private void pictureBox7_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox7.Image = null;
 
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox1.Location.X;
+            posActBotonY = pictureBox1.Location.Y;
+        }
+        private void pictureBox7_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+
+        private void pictureBox7_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture7(); //se debe de mover el picture
+        }
+        private void pictureBox7_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true; 
+        }
+
+        private void pictureBox7_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
         //----------------------secundarios
         private void moverpicture1()
         {
@@ -820,6 +852,9 @@ namespace Proyecto
             posActBotonY = pictureBox32.Location.Y;
 
         }
+        //nuevos---------------------------
+       
+
         private void moverpicture30()
         {
             //box 30
@@ -836,8 +871,239 @@ namespace Proyecto
             posActBotonX = pictureBox29.Location.X;
             posActBotonY = pictureBox29.Location.Y;
         }
+        private void moverpicture7()
+        {
 
+            //box7
+            pictureBox7.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox7.Location.X;
+            posActBotonY = pictureBox7.Location.Y;
+        }
+        private void moverpicture12()
+        {
 
+            //box12
+            pictureBox12.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox12.Location.X;
+            posActBotonY = pictureBox12.Location.Y;
+        }
+        private void moverpicture3()
+        {
+
+            //box3
+            pictureBox3.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox3.Location.X;
+            posActBotonY = pictureBox3.Location.Y;
+        }
+        private void moverpicture8()
+        {
+
+            //box8
+            pictureBox8.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox8.Location.X;
+            posActBotonY = pictureBox8.Location.Y;
+        }
+        private void moverpicture13()
+        {
+
+            //box13
+            pictureBox13.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox13.Location.X;
+            posActBotonY = pictureBox13.Location.Y;
+        }
+        private void moverpicture4()
+        {
+
+            //box4
+            pictureBox4.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox4.Location.X;
+            posActBotonY = pictureBox4.Location.Y;
+        }
+        private void moverpicture9()
+        {
+
+            //box9
+            pictureBox9.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox9.Location.X;
+            posActBotonY = pictureBox9.Location.Y;
+        }
+        private void moverpicture14()
+        {
+
+            //box14
+            pictureBox14.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox14.Location.X;
+            posActBotonY = pictureBox14.Location.Y;
+        }
+        private void moverpicture5()
+        {
+
+            //box5
+            pictureBox5.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox5.Location.X;
+            posActBotonY = pictureBox5.Location.Y;
+        }
+        private void moverpicture10()
+        {
+
+            //box10
+            pictureBox10.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox10.Location.X;
+            posActBotonY = pictureBox10.Location.Y;
+        }
+        private void moverpicture15()
+        {
+
+            //box15
+            pictureBox15.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox15.Location.X;
+            posActBotonY = pictureBox15.Location.Y;
+        }
+        private void moverpicture6()
+        {
+
+            //box6
+            pictureBox6.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox6.Location.X;
+            posActBotonY = pictureBox6.Location.Y;
+        }
+        private void moverpicture11()
+        {
+
+            //box11
+            pictureBox11.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox11.Location.X;
+            posActBotonY = pictureBox11.Location.Y;
+        }
+        private void moverpicture16()
+        {
+
+            //box16
+            pictureBox16.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox16.Location.X;
+            posActBotonY = pictureBox16.Location.Y;
+        }
+        private void moverpicture17()
+        {
+
+            //box17
+            pictureBox17.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox17.Location.X;
+            posActBotonY = pictureBox17.Location.Y;
+        }
+        private void moverpicture18()
+        {
+
+            //box18
+            pictureBox18.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox18.Location.X;
+            posActBotonY = pictureBox18.Location.Y;
+        }
+        private void moverpicture19()
+        {
+
+            //box19
+            pictureBox19.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox19.Location.X;
+            posActBotonY = pictureBox19.Location.Y;
+        }
+        private void moverpicture28()
+        {
+
+            //box28
+            pictureBox28.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox28.Location.X;
+            posActBotonY = pictureBox28.Location.Y;
+        }
+        private void moverpicture26()
+        {
+
+            //box26
+            pictureBox26.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox26.Location.X;
+            posActBotonY = pictureBox26.Location.Y;
+        }
+        private void moverpicture24()
+        {
+
+            //box24
+            pictureBox24.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox24.Location.X;
+            posActBotonY = pictureBox24.Location.Y;
+        }
+        private void moverpicture111()
+        {
+
+            //box111
+            pictureBox111.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox111.Location.X;
+            posActBotonY = pictureBox111.Location.Y;
+        }
+        private void moverpicture112()
+        {
+
+            //box112
+            pictureBox112.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox112.Location.X;
+            posActBotonY = pictureBox112.Location.Y;
+        }
+        private void moverpicture113()
+        {
+
+            //box113
+            pictureBox113.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox113.Location.X;
+            posActBotonY = pictureBox113.Location.Y;
+        }
+        private void moverpicture114()
+        {
+
+            //box114
+            pictureBox114.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox114.Location.X;
+            posActBotonY = pictureBox114.Location.Y;
+        }
+        private void moverpicture115()
+        {
+
+            //box115
+            pictureBox115.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox115.Location.X;
+            posActBotonY = pictureBox115.Location.Y;
+        }
+        private void moverpicture116()
+        {
+
+            //box116
+            pictureBox116.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox116.Location.X;
+            posActBotonY = pictureBox116.Location.Y;
+        }
+        private void moverpicture117()
+        {
+
+            //box117
+            pictureBox117.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox117.Location.X;
+            posActBotonY = pictureBox117.Location.Y;
+        }
+        private void moverpicture118()
+        {
+
+            //box118
+            pictureBox118.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox118.Location.X;
+            posActBotonY = pictureBox118.Location.Y;
+        }
+        private void moverpicture119()
+        {
+
+            //box119
+            pictureBox119.Location = new System.Drawing.Point(posMouseFormX - posMousePictureX, posMouseFormY - posMousePictureY);
+            posActBotonX = pictureBox119.Location.X;
+            posActBotonY = pictureBox119.Location.Y;
+        }
+       
         //-----------------------------------------------------------------------------------------------------------------
 
 
