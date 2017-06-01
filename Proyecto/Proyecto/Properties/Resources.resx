@@ -118,7 +118,82 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="pasto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\pasto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="una-cocina-de-11-4-m2-con-forma-de-u1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\una-cocina-de-11-4-m2-con-forma-de-u.-plano_ampliacion1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano-del-dormitorio_galeria_landscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano-del-dormitorio_galeria_landscape.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano_cocina3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano_cocina3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="habitacion-infantil-para-dos-hermanos-pequenos_reference" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\habitacion-infantil-para-dos-hermanos-pequenos_reference.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_2.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="banos_plano1_ampliacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\banos_plano1_ampliacion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano-del-dormitorio_galeria_landscape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano-del-dormitorio_galeria_landscape2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano_cocina2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano_cocina2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="descarga1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\descarga1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_21.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foto_5_lac_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\foto_5_lac_2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano_galeria_landscape" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano_galeria_landscape.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano_galeria_landscape1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano_galeria_landscape1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano_cocina1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano_cocina1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="a51919403adebc08390c570be633e461" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\a51919403adebc08390c570be633e461.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano_galeria_landscape2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano_galeria_landscape2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano_cocina" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano_cocina.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano-del-dormitorio_galeria_landscape1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano-del-dormitorio_galeria_landscape1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="habitacion-infantil-para-dos-hermanos-pequenos_reference1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\habitacion-infantil-para-dos-hermanos-pequenos_reference1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pasto-02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pasto-02.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="una-cocina-de-11-4-m2-con-forma-de-u.-plano_ampliacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\una-cocina-de-11-4-m2-con-forma-de-u.-plano_ampliacion.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pasto-021" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pasto-021.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

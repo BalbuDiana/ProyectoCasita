@@ -18,7 +18,7 @@ namespace Proyecto.Electrodomesticos
 
         public override void CrearIcono()
         {
-            telefono = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\telefono.png");
+            telefono = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\telefono.png");
         }
 
         public override Image ObtenerIMagen()

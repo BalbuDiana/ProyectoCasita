@@ -18,7 +18,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-           dvd = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\dvd.png");
+           dvd = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\dvd.png");
         }
 
         public override Image ObtenerIMagen()

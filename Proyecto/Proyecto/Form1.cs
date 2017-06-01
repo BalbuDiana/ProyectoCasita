@@ -35,13 +35,9 @@ namespace Proyecto
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
             chart1.Series[0].Points.AddY(r.NextDouble());
             //chart1.Series["Series 1"].Points.Clear();
-            for (int i = 0; i < cpuArray.Length; i++)
+            if (chart1.Series["Series1"].Points.Count > 10)
             {
-                //chart1.Series[0].Points.AddY(r.NextDouble());
-                if (i == (cpuArray.Count() - 1))
-                {
-                    chart1.Series["Series1"].Points.Clear();
-                }
+                chart1.Series["Series1"].Points.RemoveAt(0);
             }
             //rt = rt + 0.1;
         }
@@ -201,18 +197,18 @@ namespace Proyecto
             {
 
                 l = new Electrodomesticos.Foco(100, id, comboBox1.Text);
-               
+
                 if (l.GetUbicacion() == "WC")
                 {
                     l.CrearIcono();
                     pictureBox14.Image = l.ObtenerIMagen();
-                    
+
                 }
                 else if (l.GetUbicacion() == "Cocina")
                 {
                     l.CrearIcono();
                     pictureBox30.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Habitación")
@@ -220,14 +216,14 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox31.Image = l.ObtenerIMagen();
-                    
+
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
                 {
 
                     l.CrearIcono();
                     pictureBox32.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Patio")
@@ -235,7 +231,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox34.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Sala")
@@ -243,7 +239,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox36.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Comedor")
@@ -251,7 +247,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox28.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else
@@ -262,12 +258,12 @@ namespace Proyecto
             else if (opcion == "Lampara")
             {
                 l = new Electrodomesticos.Lampara(id, comboBox1.Text);
-               
+
                 if (l.GetUbicacion() == "Cocina")
                 {
                     l.CrearIcono();
                     pictureBox19.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Habitación")
@@ -275,7 +271,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox4.Image = l.ObtenerIMagen();
-                   
+
 
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
@@ -283,7 +279,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox3.Image = l.ObtenerIMagen();
-                   
+
 
                 }
                 else if (l.GetUbicacion() == "Patio")
@@ -291,7 +287,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox24.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Sala")
@@ -299,7 +295,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox26.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else
@@ -311,7 +307,7 @@ namespace Proyecto
             else if (opcion == "Laptop")
             {
                 l = new Laptop(id, comboBox1.Text);
-                
+
                 l.CrearIcono();
                 pictureBox13.Image = l.ObtenerIMagen();
 
@@ -319,7 +315,7 @@ namespace Proyecto
             else if (opcion == "Lavadora")
             {
                 l = new Electrodomesticos.Lavadora(1200, id, comboBox1.Text);
-               
+
                 l.CrearIcono();
                 pictureBox12.Image = l.ObtenerIMagen();
 
@@ -327,7 +323,7 @@ namespace Proyecto
             else if (opcion == "Licuadora")
             {
                 l = new Licuadora(id);
-                
+
                 l.CrearIcono();
                 pictureBox11.Image = l.ObtenerIMagen();
 
@@ -335,7 +331,7 @@ namespace Proyecto
             else if (opcion == "Microondas")
             {
                 l = new Microondas(id);
-               
+
 
                 l.CrearIcono();
                 pictureBox2.Image = l.ObtenerIMagen();
@@ -347,7 +343,7 @@ namespace Proyecto
             else if (opcion == "Plancha")
             {
                 l = new Plancha(id, comboBox1.Text);
-               
+
 
                 l.CrearIcono();
                 pictureBox10.Image = l.ObtenerIMagen();
@@ -356,7 +352,7 @@ namespace Proyecto
             else if (opcion == "Refrigerador")
             {
                 l = new Electrodomesticos.Refrigerador(id, comboBox1.Text);
-               
+
                 l.CrearIcono();
                 pictureBox9.Image = l.ObtenerIMagen();
 
@@ -364,7 +360,7 @@ namespace Proyecto
             else if (opcion == "Secadora")
             {
                 l = new Secadora(id, comboBox1.Text);
-               
+
 
                 l.CrearIcono();
                 pictureBox8.Image = l.ObtenerIMagen();
@@ -377,14 +373,14 @@ namespace Proyecto
                 {
                     l.CrearIcono();
                     pictureBox7.Image = l.ObtenerIMagen();
-                   
+
                 }
                 else if (l.GetUbicacion() == "Habitación")
                 {
 
                     l.CrearIcono();
                     pictureBox114.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Sala")
@@ -392,26 +388,26 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox115.Image = l.ObtenerIMagen();
-                    
+
                 }
             }
             else if (opcion == "Televisión")
             {
                 l = new Electrodomesticos.Television(id, comboBox1.Text);
-                
+
 
                 if (l.GetUbicacion() == "Sala")
                 {
                     l.CrearIcono();
                     pictureBox6.Image = l.ObtenerIMagen();
-                   
+
                 }
                 else if (l.GetUbicacion() == "Habitación")
                 {
 
                     l.CrearIcono();
                     pictureBox111.Image = l.ObtenerIMagen();
-                 
+
 
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
@@ -419,7 +415,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox112.Image = l.ObtenerIMagen();
-                  
+
 
                 }
                 else if (l.GetUbicacion() == "Comedor")
@@ -427,7 +423,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox113.Image = l.ObtenerIMagen();
-                
+
 
                 }
             }
@@ -439,16 +435,18 @@ namespace Proyecto
 
             }
 
-               
 
-            
+
+
             MessageBox.Show("Generaste un objeto tipo : " + opcion + "\n  Ubicación: " + comboBox1.Text);
             listaDeObjetos.Add(l);
-        
+
+
         }
 
+
         //------------------------------------------------------------------------------------------------------
-      //generando imagen
+        //generando imagen
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -1945,6 +1943,13 @@ namespace Proyecto
             posActBotonX = pictureBox117.Location.X;
             posActBotonY = pictureBox117.Location.Y;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CreaObjetosForm d = new CreaObjetosForm();
+            d.ShowDialog();
+        }
+
         private void moverpicture118()
         {
 

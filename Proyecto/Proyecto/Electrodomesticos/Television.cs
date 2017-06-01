@@ -18,7 +18,7 @@ namespace Proyecto.Electrodomesticos
         }
         public override void CrearIcono()
         {
-            tv = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\televisor.png");
+            tv = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\televisor.png");
         }
 
         public override Image ObtenerIMagen()

@@ -63,9 +63,259 @@ namespace Proyecto.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pasto {
+        internal static System.Drawing.Bitmap a51919403adebc08390c570be633e461 {
             get {
-                object obj = ResourceManager.GetObject("pasto", resourceCulture);
+                object obj = ResourceManager.GetObject("a51919403adebc08390c570be633e461", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap banos_plano1_ampliacion {
+            get {
+                object obj = ResourceManager.GetObject("banos_plano1_ampliacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga {
+            get {
+                object obj = ResourceManager.GetObject("descarga", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap descarga1 {
+            get {
+                object obj = ResourceManager.GetObject("descarga1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap foto_5_lac_2 {
+            get {
+                object obj = ResourceManager.GetObject("foto_5_lac_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap habitacion_infantil_para_dos_hermanos_pequenos_reference {
+            get {
+                object obj = ResourceManager.GetObject("habitacion-infantil-para-dos-hermanos-pequenos_reference", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap habitacion_infantil_para_dos_hermanos_pequenos_reference1 {
+            get {
+                object obj = ResourceManager.GetObject("habitacion-infantil-para-dos-hermanos-pequenos_reference1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Habitaciones_de_huespedes_Woolloomooloo_Woolloomooloo_Waters_2 {
+            get {
+                object obj = ResourceManager.GetObject("Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Habitaciones_de_huespedes_Woolloomooloo_Woolloomooloo_Waters_21 {
+            get {
+                object obj = ResourceManager.GetObject("Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pasto_02 {
+            get {
+                object obj = ResourceManager.GetObject("pasto-02", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pasto_021 {
+            get {
+                object obj = ResourceManager.GetObject("pasto-021", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_cocina {
+            get {
+                object obj = ResourceManager.GetObject("plano_cocina", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_cocina1 {
+            get {
+                object obj = ResourceManager.GetObject("plano_cocina1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_cocina2 {
+            get {
+                object obj = ResourceManager.GetObject("plano_cocina2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_cocina3 {
+            get {
+                object obj = ResourceManager.GetObject("plano_cocina3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_comedor_con_numeros_para_articulos_especial_distribucion_976x881_27ceb3ee {
+            get {
+                object obj = ResourceManager.GetObject("plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_comedor_con_numeros_para_articulos_especial_distribucion_976x881_27ceb3ee1 {
+            get {
+                object obj = ResourceManager.GetObject("plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_comedor_con_numeros_para_articulos_especial_distribucion_976x881_27ceb3ee2 {
+            get {
+                object obj = ResourceManager.GetObject("plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_del_dormitorio_galeria_landscape {
+            get {
+                object obj = ResourceManager.GetObject("plano-del-dormitorio_galeria_landscape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_del_dormitorio_galeria_landscape1 {
+            get {
+                object obj = ResourceManager.GetObject("plano-del-dormitorio_galeria_landscape1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_del_dormitorio_galeria_landscape2 {
+            get {
+                object obj = ResourceManager.GetObject("plano-del-dormitorio_galeria_landscape2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_galeria_landscape {
+            get {
+                object obj = ResourceManager.GetObject("plano_galeria_landscape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_galeria_landscape1 {
+            get {
+                object obj = ResourceManager.GetObject("plano_galeria_landscape1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap plano_galeria_landscape2 {
+            get {
+                object obj = ResourceManager.GetObject("plano_galeria_landscape2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap una_cocina_de_11_4_m2_con_forma_de_u__plano_ampliacion {
+            get {
+                object obj = ResourceManager.GetObject("una-cocina-de-11-4-m2-con-forma-de-u.-plano_ampliacion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap una_cocina_de_11_4_m2_con_forma_de_u1 {
+            get {
+                object obj = ResourceManager.GetObject("una-cocina-de-11-4-m2-con-forma-de-u1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
