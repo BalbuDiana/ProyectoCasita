@@ -14,7 +14,8 @@ namespace Proyecto
 {
     public partial class Form1 : Form
     {
-      //  Graphics g;
+        //  Graphics g;
+        private double[] cpuArray = new double[30];  
 
         int tiempo = 0;
         List<Electro_master> listaDeObjetos = new List<Electro_master>();
@@ -33,6 +34,16 @@ namespace Proyecto
         {
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
             chart1.Series[0].Points.AddY(r.NextDouble());
+            //chart1.Series["Series 1"].Points.Clear();
+            for (int i = 0; i < cpuArray.Length; i++)
+            {
+                //chart1.Series[0].Points.AddY(r.NextDouble());
+                if (i == (cpuArray.Count() - 1))
+                {
+                    chart1.Series["Series1"].Points.Clear();
+                }
+            }
+            //rt = rt + 0.1;
         }
 
         private void GenerarButton_Click(object sender, EventArgs e)
