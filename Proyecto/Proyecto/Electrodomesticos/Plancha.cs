@@ -19,7 +19,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-            plancha = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\Plancha.png");
+            plancha = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\Plancha.png");
         }
 
         public Image ObtenerIMagen()

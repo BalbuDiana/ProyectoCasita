@@ -19,14 +19,12 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-            laptop = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\laptop.png");
+            laptop = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\laptop.png");
         }
 
         public Image ObtenerIMagen()
         {
             return laptop;
         }
-
-
     }
 }

@@ -103,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
@@ -123,6 +124,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lic.png" />
+    <None Include="Resources\foto_5_lac_2.jpg" />
+    <None Include="Resources\descarga1.jpeg" />
+    <None Include="Resources\plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee1.jpg" />
+    <None Include="Resources\una-cocina-de-11-4-m2-con-forma-de-u.-plano_ampliacion1.jpg" />
+    <None Include="Resources\plano_cocina2.jpg" />
+    <None Include="Resources\plano_galeria_landscape1.jpg" />
+    <None Include="Resources\plano_galeria_landscape.jpg" />
+    <None Include="Resources\plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee.jpg" />
+    <None Include="Resources\una-cocina-de-11-4-m2-con-forma-de-u.-plano_ampliacion.jpg" />
+    <None Include="Resources\plano_cocina1.jpg" />
+    <None Include="Resources\Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_2.jpeg" />
+    <None Include="Resources\descarga.jpeg" />
+    <None Include="Resources\plano-del-dormitorio_galeria_landscape1.jpg" />
+    <None Include="Resources\pasto-02.jpg" />
+    <None Include="Resources\plano-del-dormitorio_galeria_landscape.jpg" />
+    <None Include="Resources\habitacion-infantil-para-dos-hermanos-pequenos_reference.jpg" />
+    <None Include="Resources\plano_cocina.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

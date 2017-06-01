@@ -17,7 +17,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-            tostador = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\tostador.jpg");
+            tostador = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\tostador.jpg");
         }
 
         public Image ObtenerIMagen()

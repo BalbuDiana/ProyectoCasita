@@ -35,13 +35,9 @@ namespace Proyecto
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
             chart1.Series[0].Points.AddY(r.NextDouble());
             //chart1.Series["Series 1"].Points.Clear();
-            for (int i = 0; i < cpuArray.Length; i++)
+            if (chart1.Series["Series1"].Points.Count > 10)
             {
-                //chart1.Series[0].Points.AddY(r.NextDouble());
-                if (i == (cpuArray.Count() - 1))
-                {
-                    chart1.Series["Series1"].Points.Clear();
-                }
+                chart1.Series["Series1"].Points.RemoveAt(0);
             }
             //rt = rt + 0.1;
         }
@@ -162,7 +158,7 @@ namespace Proyecto
         {
             string opcion = comboBox2.Text;
             string id = textBox2.Text;
-
+            
 
 
             /* if (opcion == "Foco") //balbu aqui lo que querias hacer para potencia
