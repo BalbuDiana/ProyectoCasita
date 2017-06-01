@@ -21,7 +21,7 @@ namespace Proyecto.Electrodomesticos
             lavadora = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\lavadora.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return lavadora;
         }

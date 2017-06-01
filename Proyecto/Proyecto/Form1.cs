@@ -857,7 +857,6 @@ namespace Proyecto
             posActBotonX = pictureBox8.Location.X;
             posActBotonY = pictureBox8.Location.Y;
         }
-
         private void pictureBox13_DoubleClick(object sender, EventArgs e)
         {
             pictureBox13.Image = null;
@@ -866,7 +865,6 @@ namespace Proyecto
             posActBotonX = pictureBox13.Location.X;
             posActBotonY = pictureBox13.Location.Y;
         }
-
         private void pictureBox4_DoubleClick(object sender, EventArgs e)
         {
             pictureBox4.Image = null;
@@ -875,7 +873,6 @@ namespace Proyecto
             posActBotonX = pictureBox4.Location.X;
             posActBotonY = pictureBox4.Location.Y;
         }
-
         private void pictureBox9_DoubleClick(object sender, EventArgs e)
         {
             pictureBox9.Image = null;
@@ -884,7 +881,6 @@ namespace Proyecto
             posActBotonX = pictureBox9.Location.X;
             posActBotonY = pictureBox9.Location.Y;
         }
-
         private void pictureBox14_DoubleClick(object sender, EventArgs e)
         {
             pictureBox14.Image = null;
@@ -893,7 +889,6 @@ namespace Proyecto
             posActBotonX = pictureBox14.Location.X;
             posActBotonY = pictureBox14.Location.Y;
         }
-
         private void pictureBox5_DoubleClick(object sender, EventArgs e)
         {
             pictureBox5.Image = null;
@@ -902,7 +897,6 @@ namespace Proyecto
             posActBotonX = pictureBox5.Location.X;
             posActBotonY = pictureBox5.Location.Y;
         }
-
         private void pictureBox10_DoubleClick(object sender, EventArgs e)
         {
             pictureBox10.Image = null;
@@ -911,7 +905,6 @@ namespace Proyecto
             posActBotonX = pictureBox10.Location.X;
             posActBotonY = pictureBox10.Location.Y;
         }
-
         private void pictureBox15_DoubleClick(object sender, EventArgs e)
         {
             pictureBox15.Image = null;
@@ -920,7 +913,6 @@ namespace Proyecto
             posActBotonX = pictureBox15.Location.X;
             posActBotonY = pictureBox15.Location.Y;
         }
-
         private void pictureBox6_DoubleClick(object sender, EventArgs e)
         {
             pictureBox6.Image = null;
@@ -929,7 +921,6 @@ namespace Proyecto
             posActBotonX = pictureBox6.Location.X;
             posActBotonY = pictureBox6.Location.Y;
         }
-
         private void pictureBox11_DoubleClick(object sender, EventArgs e)
         {
             pictureBox11.Image = null;
@@ -938,16 +929,6 @@ namespace Proyecto
             posActBotonX = pictureBox11.Location.X;
             posActBotonY = pictureBox11.Location.Y;
         }
-
-        private void pictureBox16_Click(object sender, EventArgs e)
-        {
-            pictureBox16.Image = null;
-
-            //abrir formulario campura posiciones 
-            posActBotonX = pictureBox16.Location.X;
-            posActBotonY = pictureBox16.Location.Y;
-        }
-
         private void pictureBox17_DoubleClick(object sender, EventArgs e)
         {
             pictureBox17.Image = null;
@@ -956,7 +937,6 @@ namespace Proyecto
             posActBotonX = pictureBox17.Location.X;
             posActBotonY = pictureBox17.Location.Y;
         }
-
         private void pictureBox18_DoubleClick(object sender, EventArgs e)
         {
             pictureBox18.Image = null;
@@ -965,7 +945,6 @@ namespace Proyecto
             posActBotonX = pictureBox18.Location.X;
             posActBotonY = pictureBox18.Location.Y;
         }
-
         private void pictureBox19_DoubleClick(object sender, EventArgs e)
         {
             pictureBox19.Image = null;
@@ -974,7 +953,6 @@ namespace Proyecto
             posActBotonX = pictureBox19.Location.X;
             posActBotonY = pictureBox19.Location.Y;
         }
-
         private void pictureBox28_DoubleClick(object sender, EventArgs e)
         {
             pictureBox28.Image = null;
@@ -983,7 +961,6 @@ namespace Proyecto
             posActBotonX = pictureBox28.Location.X;
             posActBotonY = pictureBox28.Location.Y;
         }
-
         private void pictureBox26_DoubleClick(object sender, EventArgs e)
         {
             pictureBox26.Image = null;
@@ -992,7 +969,6 @@ namespace Proyecto
             posActBotonX = pictureBox26.Location.X;
             posActBotonY = pictureBox26.Location.Y;
         }
-
         private void pictureBox24_DoubleClick(object sender, EventArgs e)
         {
             pictureBox24.Image = null;
@@ -1001,7 +977,6 @@ namespace Proyecto
             posActBotonX = pictureBox24.Location.X;
             posActBotonY = pictureBox24.Location.Y;
         }
-
         private void pictureBox111_DoubleClick(object sender, EventArgs e)
         {
             pictureBox111.Image = null;
@@ -1010,7 +985,6 @@ namespace Proyecto
             posActBotonX = pictureBox111.Location.X;
             posActBotonY = pictureBox111.Location.Y;
         }
-
         private void pictureBox112_DoubleClick(object sender, EventArgs e)
         {
             pictureBox112.Image = null;
@@ -1019,7 +993,6 @@ namespace Proyecto
             posActBotonX = pictureBox112.Location.X;
             posActBotonY = pictureBox112.Location.Y;
         }
-
         private void pictureBox113_DoubleClick(object sender, EventArgs e)
         {
             pictureBox113.Image = null;
@@ -1028,7 +1001,6 @@ namespace Proyecto
             posActBotonX = pictureBox113.Location.X;
             posActBotonY = pictureBox113.Location.Y;
         }
-
         private void pictureBox114_DoubleClick(object sender, EventArgs e)
         {
             pictureBox114.Image = null;
@@ -1037,7 +1009,6 @@ namespace Proyecto
             posActBotonX = pictureBox114.Location.X;
             posActBotonY = pictureBox114.Location.Y;
         }
-
         private void pictureBox115_DoubleClick(object sender, EventArgs e)
         {
             pictureBox115.Image = null;
@@ -1046,7 +1017,6 @@ namespace Proyecto
             posActBotonX = pictureBox115.Location.X;
             posActBotonY = pictureBox115.Location.Y;
         }
-
         private void pictureBox116_DoubleClick(object sender, EventArgs e)
         {
             pictureBox116.Image = null;
@@ -1055,7 +1025,6 @@ namespace Proyecto
             posActBotonX = pictureBox116.Location.X;
             posActBotonY = pictureBox116.Location.Y;
         }
-
         private void pictureBox117_DoubleClick(object sender, EventArgs e)
         {
             pictureBox117.Image = null;
@@ -1064,7 +1033,6 @@ namespace Proyecto
             posActBotonX = pictureBox117.Location.X;
             posActBotonY = pictureBox117.Location.Y;
         }
-
         private void pictureBox118_DoubleClick(object sender, EventArgs e)
         {
             pictureBox118.Image = null;
@@ -1073,7 +1041,6 @@ namespace Proyecto
             posActBotonX = pictureBox118.Location.X;
             posActBotonY = pictureBox118.Location.Y;
         }
-
         private void pictureBox119_DoubleClick(object sender, EventArgs e)
         {
             pictureBox119.Image = null;
@@ -1082,9 +1049,617 @@ namespace Proyecto
             posActBotonX = pictureBox119.Location.X;
             posActBotonY = pictureBox119.Location.Y;
         }
+        private void pictureBox16_DoubleClick(object sender, EventArgs e)
+        {
+            pictureBox16.Image = null;
 
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox16.Location.X;
+            posActBotonY = pictureBox16.Location.Y;
+        }
 
-//-------------------------------------------------------------------------------------------------------
+        private void pictureBox8_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox13_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox4_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox9_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox14_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox5_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox10_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox15_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox6_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox11_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox16_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox17_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox18_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox19_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox28_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox26_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox24_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox111_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox112_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox113_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox114_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox115_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox116_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox117_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox118_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+        private void pictureBox119_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                textBox1.Text = "hola";
+        }
+
+        private void pictureBox8_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox13_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox4_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox9_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox14_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox5_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox10_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox15_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox6_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox11_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox16_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox17_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox18_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox19_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox28_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox26_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox24_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox111_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox112_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox113_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox114_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox115_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox116_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox117_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox118_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+        private void pictureBox119_MouseDown(object sender, MouseEventArgs e)
+        {
+            //posiciones de picture
+            posMousePictureX = e.Location.X;
+            posMousePictureY = e.Location.Y;
+            pictureclick = true;
+        }
+
+        private void pictureBox8_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture8(); //se debe de mover el picture
+        }
+        private void pictureBox13_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture13(); //se debe de mover el picture
+        }
+        private void pictureBox9_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture9(); //se debe de mover el picture
+        }
+        private void pictureBox4_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture4(); //se debe de mover el picture
+        }
+        private void pictureBox14_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture14(); //se debe de mover el picture
+        }
+        private void pictureBox5_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture5(); //se debe de mover el picture
+        }
+        private void pictureBox10_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture10(); //se debe de mover el picture
+        }
+        private void pictureBox15_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture15(); //se debe de mover el picture
+        }
+        private void pictureBox6_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture6(); //se debe de mover el picture
+        }
+        private void pictureBox11_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture11(); //se debe de mover el picture
+        }
+        private void pictureBox16_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture16(); //se debe de mover el picture
+        }
+        private void pictureBox17_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture17(); //se debe de mover el picture
+        }
+        private void pictureBox18_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture18(); //se debe de mover el picture
+        }
+        private void pictureBox19_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture19(); //se debe de mover el picture
+        }
+        private void pictureBox28_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture28(); //se debe de mover el picture
+        }
+        private void pictureBox26_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture26(); //se debe de mover el picture
+        }
+        private void pictureBox24_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture24(); //se debe de mover el picture
+        }
+        private void pictureBox111_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture111(); //se debe de mover el picture
+        }
+        private void pictureBox112_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture112(); //se debe de mover el picture
+        }
+        private void pictureBox113_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture113(); //se debe de mover el picture
+        }
+        private void pictureBox114_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture114(); //se debe de mover el picture
+        }
+        private void pictureBox115_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture115(); //se debe de mover el picture
+        }
+        private void pictureBox116_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture116(); //se debe de mover el picture
+        }
+        private void pictureBox117_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture117(); //se debe de mover el picture
+        }
+        private void pictureBox118_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture118(); //se debe de mover el picture
+        }
+        private void pictureBox119_MouseMove(object sender, MouseEventArgs e)
+        {
+            //que se asignen las posiciones
+            posMouseFormX = posActBotonX + e.Location.X;
+            posMouseFormY = posMouseFormY + e.Location.Y;
+            if (pictureclick == true) moverpicture119(); //se debe de mover el picture
+        }
+
+        private void pictureBox8_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox13_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox4_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox9_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox14_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox5_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox10_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox15_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox6_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox11_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox16_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox17_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox18_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox19_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox28_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox26_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox24_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox111_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox115_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox112_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox113_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox114_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox116_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox117_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox118_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        private void pictureBox119_MouseUp(object sender, MouseEventArgs e)
+        {
+            pictureclick = false; //si se suelta que sea falso que no se mueva 
+        }
+        //-------------------------------------------------------------------------------------------------------
         private void pictureBox3_DoubleClick(object sender, EventArgs e)
         {
             pictureBox3.Image = null;
@@ -1403,22 +1978,6 @@ namespace Proyecto
             posActBotonX = pictureBox117.Location.X;
             posActBotonY = pictureBox117.Location.Y;
         }
-
-      
-
-
-        private void pictureBox8_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-                textBox1.Text = "hola";
-        }
-
-        private void pictureBox13_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-                textBox1.Text = "hola";
-        }
-
         private void moverpicture118()
         {
 
@@ -1438,7 +1997,7 @@ namespace Proyecto
        
         //-----------------------------------------------------------------------------------------------------------------
 
-
+           
 
 
 

@@ -95,8 +95,9 @@ namespace Proyecto
 
         abstract public void CrearIcono(); //Esta es la firma del método que tendrán todos
 
+        abstract public Image ObtenerIMagen();
 
-       
+
 
         public static void SetLimConsumo(double valor) //para cambiar //no regresa nada
         {

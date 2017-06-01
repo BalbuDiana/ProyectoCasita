@@ -21,7 +21,7 @@ namespace Proyecto
            dvd = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\dvd.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return dvd;
         }

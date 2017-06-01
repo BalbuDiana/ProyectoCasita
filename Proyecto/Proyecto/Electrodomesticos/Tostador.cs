@@ -20,7 +20,7 @@ namespace Proyecto
             tostador = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\tostador.jpg");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return tostador;
         }

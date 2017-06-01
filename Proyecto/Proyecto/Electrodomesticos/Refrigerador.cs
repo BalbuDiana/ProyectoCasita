@@ -21,7 +21,7 @@ namespace Proyecto.Electrodomesticos
             refri = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\refrigerador.jpg");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return refri;
         }

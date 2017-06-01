@@ -23,7 +23,7 @@ namespace Proyecto.Electrodomesticos
             foco = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\foquito.jpg");
         }
 
-        public virtual Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return foco;
         }

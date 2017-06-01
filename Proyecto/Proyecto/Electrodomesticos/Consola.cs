@@ -23,7 +23,7 @@ namespace Proyecto.Electrodomesticos
             consola = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\Consolajuegos.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return consola;
         }

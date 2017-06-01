@@ -21,7 +21,7 @@ namespace Proyecto.Electrodomesticos
             telefono = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\telefono.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return telefono;
         }
