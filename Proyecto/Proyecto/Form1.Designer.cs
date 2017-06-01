@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,7 +45,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox119 = new System.Windows.Forms.PictureBox();
             this.pictureBox118 = new System.Windows.Forms.PictureBox();
@@ -89,6 +88,8 @@
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,7 +142,7 @@
             "Patio",
             "Sala",
             "WC"});
-            this.comboBox1.Location = new System.Drawing.Point(11, 64);
+            this.comboBox1.Location = new System.Drawing.Point(12, 101);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(162, 21);
             this.comboBox1.TabIndex = 1;
@@ -149,7 +150,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 15);
+            this.label1.Location = new System.Drawing.Point(24, 30);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(149, 13);
@@ -159,7 +160,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(9, 38);
+            this.label2.Location = new System.Drawing.Point(9, 64);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 13);
@@ -168,7 +169,7 @@
             // 
             // GenerarButton
             // 
-            this.GenerarButton.Location = new System.Drawing.Point(62, 100);
+            this.GenerarButton.Location = new System.Drawing.Point(61, 149);
             this.GenerarButton.Margin = new System.Windows.Forms.Padding(2);
             this.GenerarButton.Name = "GenerarButton";
             this.GenerarButton.Size = new System.Drawing.Size(56, 19);
@@ -206,7 +207,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(60, 192);
+            this.button1.Location = new System.Drawing.Point(61, 134);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 19);
@@ -217,6 +218,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.button3);
             this.groupBox8.Controls.Add(this.label4);
             this.groupBox8.Controls.Add(this.textBox2);
             this.groupBox8.Controls.Add(this.label3);
@@ -262,30 +264,20 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(403, 15);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(260, 107);
             this.chart1.TabIndex = 16;
             this.chart1.Text = "chart1";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox7.Location = new System.Drawing.Point(800, 235);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(200, 420);
-            this.groupBox7.TabIndex = 60;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Patio";
             // 
             // pictureBox1
             // 
@@ -740,6 +732,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackgroundImage = global::Proyecto.Properties.Resources.plano_cocina3;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox2.Location = new System.Drawing.Point(32, 383);
@@ -753,6 +746,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.BackgroundImage = global::Proyecto.Properties.Resources.plano_comedor_con_numeros_para_articulos_especial_distribucion_976x881_27ceb3ee2;
             this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox3.Location = new System.Drawing.Point(295, 380);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
@@ -765,6 +759,7 @@
             // 
             // groupBox4
             // 
+            this.groupBox4.BackgroundImage = global::Proyecto.Properties.Resources.habitacion_infantil_para_dos_hermanos_pequenos_reference1;
             this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox4.Location = new System.Drawing.Point(428, 235);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
@@ -777,6 +772,7 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.BackgroundImage = global::Proyecto.Properties.Resources.plano_galeria_landscape2;
             this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox5.Location = new System.Drawing.Point(552, 380);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
@@ -789,9 +785,10 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.BackgroundImage = global::Proyecto.Properties.Resources.banos_plano1_ampliacion;
             this.groupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.groupBox6.Location = new System.Drawing.Point(295, 235);
+            this.groupBox6.Location = new System.Drawing.Point(275, 235);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
@@ -802,15 +799,37 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackgroundImage = global::Proyecto.Properties.Resources.Habitaciones_de_huespedes_Woolloomooloo_Woolloomooloo_Waters_21;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.groupBox1.Location = new System.Drawing.Point(32, 232);
+            this.groupBox1.Location = new System.Drawing.Point(11, 235);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(259, 139);
+            this.groupBox1.Size = new System.Drawing.Size(260, 138);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "H. Huéspedes";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.BackgroundImage = global::Proyecto.Properties.Resources.pasto_021;
+            this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.groupBox7.Location = new System.Drawing.Point(800, 235);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(200, 420);
+            this.groupBox7.TabIndex = 60;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Patio";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(47, 171);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(108, 23);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Enceder/Apagar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -976,6 +995,7 @@
         private System.Windows.Forms.PictureBox pictureBox112;
         private System.Windows.Forms.PictureBox pictureBox111;
         private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Button button3;
     }
 }
 

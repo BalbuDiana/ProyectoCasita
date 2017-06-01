@@ -47,7 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class_paso.cs" />
     <Compile Include="CreaObjetosForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,13 +62,6 @@
     <Compile Include="Electrodomesticos\Refrigerador.cs" />
     <Compile Include="Electrodomesticos\Telefono.cs" />
     <Compile Include="Electrodomesticos\Television.cs" />
-    <Compile Include="Grafica.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Grafica.Designer.cs">
-      <DependentUpon>Grafica.cs</DependentUpon>
-    </Compile>
-    <Compile Include="IDrawElectro.cs" />
     <Compile Include="Electrodomesticos\DVD_video.cs" />
     <Compile Include="Electro_master.cs" />
     <Compile Include="Form1.cs">
@@ -91,9 +83,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Grafica.resx">
-      <DependentUpon>Grafica.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +113,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lic.png" />
+    <None Include="Resources\pasto-021.jpg" />
+    <None Include="Resources\plano_galeria_landscape2.jpg" />
+    <None Include="Resources\plano-del-dormitorio_galeria_landscape2.jpg" />
+    <None Include="Resources\plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee2.jpg" />
+    <None Include="Resources\plano_cocina3.jpg" />
+    <None Include="Resources\habitacion-infantil-para-dos-hermanos-pequenos_reference1.jpg" />
+    <None Include="Resources\a51919403adebc08390c570be633e461.jpg" />
+    <None Include="Resources\banos_plano1_ampliacion.jpg" />
+    <None Include="Resources\Habitaciones-de-huespedes-Woolloomooloo-Woolloomooloo-Waters_21.jpeg" />
     <None Include="Resources\foto_5_lac_2.jpg" />
     <None Include="Resources\descarga1.jpeg" />
     <None Include="Resources\plano-comedor-con-numeros-para-articulos-especial-distribucion_976x881_27ceb3ee1.jpg" />
