@@ -23,7 +23,7 @@ namespace Proyecto
             micro = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\microondas.jpg");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return micro;
         }

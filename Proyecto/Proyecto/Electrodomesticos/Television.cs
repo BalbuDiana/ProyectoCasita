@@ -21,7 +21,7 @@ namespace Proyecto.Electrodomesticos
             tv = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\televisor.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return tv;
         }

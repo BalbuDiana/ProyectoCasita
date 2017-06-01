@@ -21,7 +21,7 @@ namespace Proyecto.Electrodomesticos
             lavadora = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\lavadora.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return lavadora;
         }

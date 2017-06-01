@@ -20,7 +20,7 @@ namespace Proyecto
             tostador = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\tostador.jpg");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return tostador;
         }

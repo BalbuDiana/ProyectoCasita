@@ -22,7 +22,7 @@ namespace Proyecto
             plancha = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\Plancha.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return plancha;
         }

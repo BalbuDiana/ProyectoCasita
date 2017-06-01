@@ -21,7 +21,7 @@ namespace Proyecto.Electrodomesticos
             telefono = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\telefono.png");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return telefono;
         }

@@ -21,7 +21,7 @@ namespace Proyecto.Electrodomesticos
             refri = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\refrigerador.jpg");
         }
 
-        public Image ObtenerIMagen()
+        public override Image ObtenerIMagen()
         {
             return refri;
         }
