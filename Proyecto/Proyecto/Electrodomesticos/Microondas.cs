@@ -20,7 +20,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-            micro = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\microondas.jpg");
+            micro = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\microondas.jpg");
         }
 
         public Image ObtenerIMagen()

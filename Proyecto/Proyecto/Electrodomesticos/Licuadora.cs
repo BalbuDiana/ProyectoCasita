@@ -18,7 +18,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-            licuadora = Image.FromFile(@"E:\Visual Studio 2015\ProyectoCasita\Proyecto\Proyecto\Iconos\licuadora.png");
+            licuadora = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\licuadora.png");
         }
 
         public Image ObtenerIMagen()
