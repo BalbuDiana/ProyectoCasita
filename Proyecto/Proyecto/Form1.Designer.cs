@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,9 +41,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.gbPotencia = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -93,7 +90,6 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox8.SuspendLayout();
-            this.gbPotencia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox119)).BeginInit();
@@ -221,7 +217,6 @@
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.gbPotencia);
             this.groupBox8.Controls.Add(this.label4);
             this.groupBox8.Controls.Add(this.textBox2);
             this.groupBox8.Controls.Add(this.label3);
@@ -235,37 +230,6 @@
             this.groupBox8.TabIndex = 11;
             this.groupBox8.TabStop = false;
             this.groupBox8.Visible = false;
-            // 
-            // gbPotencia
-            // 
-            this.gbPotencia.Controls.Add(this.textBox3);
-            this.gbPotencia.Controls.Add(this.label5);
-            this.gbPotencia.Location = new System.Drawing.Point(24, 125);
-            this.gbPotencia.Margin = new System.Windows.Forms.Padding(2);
-            this.gbPotencia.Name = "gbPotencia";
-            this.gbPotencia.Padding = new System.Windows.Forms.Padding(2);
-            this.gbPotencia.Size = new System.Drawing.Size(150, 62);
-            this.gbPotencia.TabIndex = 13;
-            this.gbPotencia.TabStop = false;
-            this.gbPotencia.Visible = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(36, 39);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 20);
-            this.textBox3.TabIndex = 1;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(9, 15);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(138, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Ingrese la potencia del foco";
             // 
             // label4
             // 
@@ -298,24 +262,23 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(403, 15);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(260, 107);
             this.chart1.TabIndex = 16;
             this.chart1.Text = "chart1";
             // 
             // groupBox7
             // 
-            this.groupBox7.BackgroundImage = global::Proyecto.Properties.Resources.foto_5_lac_2;
             this.groupBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox7.Location = new System.Drawing.Point(800, 235);
             this.groupBox7.Name = "groupBox7";
@@ -602,7 +565,6 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 30;
             this.pictureBox16.TabStop = false;
-            this.pictureBox16.Click += new System.EventHandler(this.pictureBox16_Click);
             // 
             // pictureBox15
             // 
@@ -778,7 +740,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackgroundImage = global::Proyecto.Properties.Resources.una_cocina_de_11_4_m2_con_forma_de_u1;
             this.groupBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox2.Location = new System.Drawing.Point(32, 383);
@@ -792,7 +753,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackgroundImage = global::Proyecto.Properties.Resources.plano_comedor_con_numeros_para_articulos_especial_distribucion_976x881_27ceb3ee1;
             this.groupBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox3.Location = new System.Drawing.Point(295, 380);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
@@ -805,7 +765,6 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackgroundImage = global::Proyecto.Properties.Resources.plano_del_dormitorio_galeria_landscape1;
             this.groupBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox4.Location = new System.Drawing.Point(428, 235);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
@@ -818,7 +777,6 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.BackgroundImage = global::Proyecto.Properties.Resources.plano_galeria_landscape1;
             this.groupBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox5.Location = new System.Drawing.Point(552, 380);
             this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
@@ -831,7 +789,6 @@
             // 
             // groupBox6
             // 
-            this.groupBox6.BackgroundImage = global::Proyecto.Properties.Resources.descarga1;
             this.groupBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.groupBox6.Location = new System.Drawing.Point(295, 235);
@@ -845,7 +802,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackgroundImage = global::Proyecto.Properties.Resources.Habitaciones_de_huespedes_Woolloomooloo_Woolloomooloo_Waters_2;
             this.groupBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.groupBox1.Location = new System.Drawing.Point(32, 232);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
@@ -919,8 +875,6 @@
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox2_MouseClick);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.gbPotencia.ResumeLayout(false);
-            this.gbPotencia.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox119)).EndInit();
@@ -983,9 +937,6 @@
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.GroupBox gbPotencia;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
