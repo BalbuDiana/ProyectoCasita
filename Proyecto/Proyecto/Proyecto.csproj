@@ -101,6 +101,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="ClassDiagram2.cd" />
@@ -121,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="lic.png" />
+    <None Include="Resources\pasto.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
