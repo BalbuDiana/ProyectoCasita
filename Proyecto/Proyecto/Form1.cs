@@ -2067,7 +2067,7 @@ namespace Proyecto
                         txtStatusAc.Text = (n.GetEstaPrendido()) ? "Prendido" : "Apagado";
                         txtPotAct.Text = (n.GetPotencia().ToString());
                         return true; //si encuentra regresa un true
-                    }
+                    } 
                 }
 
             }
