@@ -63,17 +63,22 @@ namespace Proyecto
         }
         private void T_Tick1(object sender, EventArgs e)
         {
+
             for (int i = 0; i < listaDeObjetos.Count; i++)
             {
                 listaDeObjetos[i].Apagar();
-                
             }
                 t1.Stop();//detiene el temporizador
+            MessageBox.Show("Casa Apagada","LISTO!!!", MessageBoxButtons.OK, MessageBoxIcon.None);
 
         }
         Timer t1;
         private void button6_Click(object sender, EventArgs e)
         {
+            if (txalarma.Text == "")
+            {
+                MessageBox.Show("Favor de ingresar datos");
+            }
             int tiempo = Convert.ToInt16(txalarma.Text) * (60000); //para que sean minutos
             t1 = new Timer();
             t1.Interval = tiempo;
@@ -2046,7 +2051,10 @@ namespace Proyecto
         Electro_master n;
         private bool Buscar()
         {
-
+            if (txtBus.Text == "" || txbbubi.Text == "")
+            {
+                MessageBox.Show("Favor de ingresar datos");
+            }
             string Buscar = txtBus.Text;
             string b = txbbubi.Text;
             for (int i = 0; i < listaDeObjetos.Count; i++) //busco
