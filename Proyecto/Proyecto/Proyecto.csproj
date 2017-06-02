@@ -74,6 +74,9 @@
     <Compile Include="Electrodomesticos\Licuadora.cs" />
     <Compile Include="Electrodomesticos\Microondas.cs" />
     <Compile Include="Electrodomesticos\Plancha.cs" />
+    <Compile Include="hombre.cs" />
+    <Compile Include="osito.cs" />
+    <Compile Include="Pelota.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Electrodomesticos\Secadora.cs" />

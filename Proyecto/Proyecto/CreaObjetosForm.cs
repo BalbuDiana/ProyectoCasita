@@ -12,13 +12,12 @@ namespace Proyecto
 {
     public partial class CreaObjetosForm : Form
     {
-        
+          
         public CreaObjetosForm()
         {
             InitializeComponent();
 
         }
-
        
     }
 }

@@ -12,7 +12,7 @@ namespace Proyecto
 
         double potencia;
         protected string tipo;
-        protected static double LimConsumo = 1000; //para saber cuando se apaga
+        protected static double LimConsumo = 10000; //para saber cuando se apaga
         protected static double PotenciaMayor = 0; //para saber quien es el que consume mas   
         DateTime tiempoIni;		// En fecha
         double tiempoAcc;       // En horas 
@@ -27,7 +27,7 @@ namespace Proyecto
             this.id = id;
             this.tipo = tipo;
             this.potencia = potencia; //Wh
-            estaPrendido = true;
+            estaPrendido = false;
             tiempoAcc = 0.0;
             if (potencia < PotenciaMayor)
             {

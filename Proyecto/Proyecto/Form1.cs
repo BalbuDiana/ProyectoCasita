@@ -13,15 +13,15 @@ namespace Proyecto
     public partial class Form1 : Form
     {
         //  Graphics g;
-        private double[] cpuArray = new double[30];  
+        private double[] cpuArray = new double[30];
 
         int tiempo = 0;
         public List<Electro_master> listaDeObjetos = new List<Electro_master>();
         public Form1()
         {
             InitializeComponent();
-            
-        Timer t = new Timer();
+
+            Timer t = new Timer();
             t.Interval = 1000;
             t.Tick += T_Tick;
             t.Start();
@@ -51,19 +51,18 @@ namespace Proyecto
             }
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
 
-            if (chart1.Series["Series1"].Points.Count > 20) //Error porque el rango era 10 cambio por 1000000
+            if (chart1.Series["Series1"].Points.Count > 200000) //Error porque el rango era 10 cambio por 1000000
             {
                 chart1.Series["Series1"].Points.RemoveAt(0);
             }
             chart1.Series[0].Points.AddY(consumoT);
-            
+
             //chart1.Series["Series 1"].Points.Clear();
             //rt = rt + 0.1;
         }
 
         private void GenerarButton_Click(object sender, EventArgs e)
         {
-            
 
             string opcion = comboBox1.Text;
 
@@ -178,6 +177,15 @@ namespace Proyecto
             string opcion = comboBox2.Text;
             string id = textBox2.Text;
 
+           
+
+            if (comboBox2.Text == "" || textBox2.Text == "")
+            {
+                MessageBox.Show("ERROR", "NO hay texto", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+            label6.Visible = false;
+
             Electro_master l = null;
 
             if (opcion == "Consola")
@@ -215,20 +223,20 @@ namespace Proyecto
             else if (opcion == "Foco")
             {
 
-                l = new Electrodomesticos.Foco( id, comboBox1.Text);
+                l = new Electrodomesticos.Foco(id, comboBox1.Text);
 
                 if (l.GetUbicacion() == "WC")
                 {
                     l.CrearIcono();
                     pictureBox14.Image = l.ObtenerIMagen();
-                    
+
 
                 }
                 else if (l.GetUbicacion() == "Cocina")
                 {
                     l.CrearIcono();
                     pictureBox30.Image = l.ObtenerIMagen();
-                    
+                    l.Prender();
 
                 }
                 else if (l.GetUbicacion() == "Habitación")
@@ -236,7 +244,8 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox31.Image = l.ObtenerIMagen();
-                    
+                    l.Prender();
+
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
                 {
@@ -455,15 +464,30 @@ namespace Proyecto
 
             }
 
-            MessageBox.Show("Generaste un objeto tipo : " + opcion, "\n  Ubicación: " + comboBox1.Text,MessageBoxButtons.OK, MessageBoxIcon.Information);
-            listaDeObjetos.Add(l);
+            if (comboBox2.Text != "" && textBox2.Text != "")
+            {
+                MessageBox.Show("Generaste un objeto tipo : " + opcion, "\n  Ubicación: " + comboBox1.Text, MessageBoxButtons.OK, MessageBoxIcon.Information);
+                listaDeObjetos.Add(l);
+
+                label6.Visible = true;
+                if (label6.Visible == true)
+                {
+                    label6.Text = "Estado:  " + l.GetEstaPrendido();
+                }
+                textBox2.Clear();
+                
+            }
+
+           
+
+            
 
             /*label5.Visible = true;
             if(label5.Visible == true)
             {
                 label5.Text = imprimir_listaobjetos();  //solo era para verificar
             }*/
-            
+
 
         }
 
@@ -473,24 +497,21 @@ namespace Proyecto
 
         private void button2_Click(object sender, EventArgs e)
         {
-
-           Microondas l = new Microondas("hola");
+            hombre r = new hombre();
+            r.CrearIcono();
+            Microondas l = new Microondas("hola");
             l.CrearIcono();
-
+            Pelota n = new Pelota();
+            n.CrearIcono();
+            osito o = new osito();
+            o.CrearIcono();
             //separar funciones de moverpicture para que no se genere el error 
-
-            //pictureBox36.Image = l.ObtenerIMagen();  //checar
-            // pictureBox29.Image = l.ObtenerIMagen(); 
-            // pictureBox30.Image = l.ObtenerIMagen(); //checar
-            //  pictureBox31.Image = l.ObtenerIMagen(); //**
-            //pictureBox32.Image = l.ObtenerIMagen();**
-            // pictureBox34.Image = l.ObtenerIMagen();
-            //  pictureBox1.Image = l.ObtenerIMagen(); //solo se ve en panel
-            //pictureBox2.Image = l.ObtenerIMagen(); // Ya no se ve Xc
-            //pictureBox1.Refresh();
+            pictureBox117.Image = o.ObtenerIMagen();
+            pictureBox116.Image = n.ObtenerIMagen();
             pictureBox119.Image = l.ObtenerIMagen();
+            pictureBox118.Image = r.ObtenerIMagen();
 
-           
+
         }
 
 
@@ -514,9 +535,6 @@ namespace Proyecto
         //---------------------------------------------------------------------------------------------
 
         //generando movimiento por mouse
-
-
-
 
         private void pictureBox2_DoubleClick(object sender, EventArgs e)
         {
@@ -1661,13 +1679,11 @@ namespace Proyecto
             posActBotonX = pictureBox3.Location.X;
             posActBotonY = pictureBox3.Location.Y;
         }
-
         private void pictureBox3_MouseClick(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Right)
                 textBox1.Text = "hola";
         }
-
         private void pictureBox3_MouseDown(object sender, MouseEventArgs e)
         {
             //posiciones de picture
@@ -1675,7 +1691,6 @@ namespace Proyecto
             posMousePictureY = e.Location.Y;
             pictureclick = true;
         }
-
         private void pictureBox3_MouseMove(object sender, MouseEventArgs e)
         {
             //que se asignen las posiciones
@@ -1980,7 +1995,6 @@ namespace Proyecto
             posActBotonX = pictureBox36.Location.X;
             posActBotonY = pictureBox36.Location.Y;
         }
-
         private void pictureBox16_DoubleClick_1(object sender, EventArgs e)
         {
             pictureBox16.Image = null;
@@ -1990,15 +2004,80 @@ namespace Proyecto
             posActBotonY = pictureBox16.Location.Y;
         }
 
+
+        CreaObjetosForm pik;
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            pik = new CreaObjetosForm();
             // para borrar lista hago esto
-            
-            CreaObjetosForm pik = new CreaObjetosForm();
             pik.Show();
             pik.label3.Refresh();
             pik.label3.Text = imprimir_listaobjetos();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            groupBox9.Visible = true;
+        }
+
+        Electro_master n;
+        private bool Buscar()
+        {
+
+            string Buscar = txtBus.Text;
+            string b = txbbubi.Text;
+            for (int i = 0; i < listaDeObjetos.Count; i++) //busco
+            {
+                if (listaDeObjetos[i].GetUbicacion() == b) // si encuentro 
+                {
+                    if (listaDeObjetos[i].GetId() == Buscar) // si encuentro 
+                    {
+                        n = listaDeObjetos[i]; //asigno referencia a foco encontrado
+                        txtStatusAc.Text = (n.GetEstaPrendido()) ? "Prendido" : "Apagado";
+                        txtPotAct.Text = (n.GetPotencia().ToString());
+                        return true; //si encuentra regresa un true
+                    }
+                }
+
+            }
+            n = null; //si no lo encuentra se le asigna un null
+            return false; //si no le encuentra regresa un false
+        }
+
+        private void Buscar_Foco_Click(object sender, EventArgs e)
+        {
+            bool b = Buscar();
+            if (b == true) //si lo encontro regresa un true y entra 
+            {
+                string encontrado = "Objeto encontrado";  //en pantalla 
+                txtAlerta.Text = encontrado;
+                MessageBox.Show( "SI ENCONTRADO","Aceptar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                string noencontrado = "Objeto no existe"; //enpantalla
+                txtAlerta.Text = noencontrado;
+                MessageBox.Show( "NO ENCONTRADO","ERROR", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void On_Act_Click(object sender, EventArgs e)
+        {
+            n.Prender();
+            txtStatusAc.Text = (n.GetEstaPrendido()) ? "Prendido" : "Apagado";
+        }
+
+        private void off_act_Click(object sender, EventArgs e)
+        {
+            n.Apagar();
+            txtStatusAc.Text = (n.GetEstaPrendido()) ? "Prendido" : "Apagado";
+        }
+
+        private void ConsumoAct_Click(object sender, EventArgs e)
+        {
+            double d = n.Consumosuma();
+            txtConAct.Text = d.ToString("0.0000");
+            txtAlertaAct.Text = n.AltoConsumo() ? "¡¡¡ ALTO CONSUMO !!!" : "";
         }
 
         private void moverpicture118()
@@ -2018,25 +2097,25 @@ namespace Proyecto
             posActBotonY = pictureBox119.Location.Y;
         }
 
-
-
         //-----------------------------------------------------------------------------------------------------------------
 
 
         public string imprimir_listaobjetos()
         {
-            string s = "\t  Objetos     ID      Ubicación     Estado     " ;
+            string s = "\t  Objetos ||  ID   || Ubicación  || Estado || Consumo   ";
 
             for (int i = 0; i < listaDeObjetos.Count; i++)
             {
-                s += "\n * " + listaDeObjetos[i].Gettipo() + "  "+ listaDeObjetos[i].GetId()+  "  " + listaDeObjetos[i].GetUbicacion() + "  " + listaDeObjetos[i].GetEstaPrendido();
-                
+                s += "\n  * " + i +"   " + listaDeObjetos[i].Gettipo() + "   " + listaDeObjetos[i].GetId() + "    " + listaDeObjetos[i].GetUbicacion() + "    " + listaDeObjetos[i].GetEstaPrendido()+ "    "+ listaDeObjetos[i].Consumosuma() +" [W]";
+
             }
-            
+
             return s;
         }
 
-        
+
+       
+
 
     }
     }
