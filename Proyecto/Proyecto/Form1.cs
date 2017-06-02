@@ -15,10 +15,11 @@ namespace Proyecto
     public partial class Form1 : Form
     {
         //  Graphics g;
-        private double[] cpuArray = new double[30];  
+        private double[] cpuArray = new double[30];
 
         int tiempo = 0;
         List<Electro_master> listaDeObjetos = new List<Electro_master>();
+        
         public Form1()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace Proyecto
             t.Interval = 1000;
             t.Tick += T_Tick;
             t.Start();
+            
         }
 
         Random r = new Random();
@@ -42,9 +44,12 @@ namespace Proyecto
             //rt = rt + 0.1;
         }
 
+
+
+
         private void GenerarButton_Click(object sender, EventArgs e)
         {
-            
+
 
             string opcion = comboBox1.Text;
 
@@ -451,7 +456,7 @@ namespace Proyecto
         private void button2_Click(object sender, EventArgs e)
         {
 
-           Microondas l = new Microondas("hola");
+            Microondas l = new Microondas("hola");
             l.CrearIcono();
 
             //separar funciones de moverpicture para que no se genere el error 
@@ -747,8 +752,8 @@ namespace Proyecto
             if (pictureclick == true) moverpicture29(); //se debe de mover el picture
         }
 
-        
-       
+
+
         //-------------------------------------------------------------------------nuevos
         private void pictureBox7_DoubleClick(object sender, EventArgs e)
         {
@@ -775,7 +780,7 @@ namespace Proyecto
             //posiciones de picture
             posMousePictureX = e.Location.X;
             posMousePictureY = e.Location.Y;
-            pictureclick = true; 
+            pictureclick = true;
         }
         private void pictureBox7_MouseUp(object sender, MouseEventArgs e)
         {
@@ -1709,7 +1714,7 @@ namespace Proyecto
 
         }
         //nuevos---------------------------
-       
+
 
         private void moverpicture30()
         {
@@ -1944,11 +1949,31 @@ namespace Proyecto
             posActBotonY = pictureBox117.Location.Y;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)//dudas
         {
             CreaObjetosForm d = new CreaObjetosForm();
+           
             d.ShowDialog();
         }
+
+
+        public bool prender(string id)
+        {
+            for (int i = 0; i < listaDeObjetos.Count; i++)
+            {
+                if (listaDeObjetos[i].GetId()==id)
+                {
+                    listaDeObjetos[i].Prender();
+                    return true;
+                }
+            }
+           
+            
+                MessageBox.Show("El id no existe, intentalo de nuevo");
+                return false;
+        }
+
+
 
         private void moverpicture118()
         {
@@ -1966,10 +1991,10 @@ namespace Proyecto
             posActBotonX = pictureBox119.Location.X;
             posActBotonY = pictureBox119.Location.Y;
         }
-       
+
         //-----------------------------------------------------------------------------------------------------------------
 
-           
+
 
 
 
@@ -1987,5 +2012,5 @@ namespace Proyecto
 
 
     }
-    }
+}
 

@@ -20,7 +20,7 @@ namespace Proyecto.Electrodomesticos
 
         public override void CrearIcono()
         {
-            consola = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\Consolajuegos.png");
+            consola = Image.FromFile(@"Iconos\Consolajuegos.png");
         }
 
         public override Image ObtenerIMagen()

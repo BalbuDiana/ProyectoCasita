@@ -20,7 +20,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-            secadora = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\secadora.png");
+            secadora = Image.FromFile(@"Iconos\secadora.png");
         }
 
         public override Image ObtenerIMagen()

@@ -18,7 +18,7 @@ namespace Proyecto.Electrodomesticos
         }
         public override void CrearIcono()
         {
-            refri = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\refrigerador.jpg");
+            refri = Image.FromFile(@"Iconos\refrigerador.jpg");
         }
 
         public override Image ObtenerIMagen()
