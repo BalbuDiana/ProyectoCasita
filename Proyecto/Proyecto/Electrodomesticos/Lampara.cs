@@ -13,7 +13,7 @@ namespace Proyecto.Electrodomesticos
         Image lamp;
 
         public Lampara(string id, string ubicacion)
-            :base(150,id,ubicacion)
+            :base(id,ubicacion)
         {
 
         }

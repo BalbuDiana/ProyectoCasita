@@ -15,11 +15,10 @@ namespace Proyecto
     public partial class Form1 : Form
     {
         //  Graphics g;
-        private double[] cpuArray = new double[30];
+        private double[] cpuArray = new double[30];  
 
         int tiempo = 0;
         List<Electro_master> listaDeObjetos = new List<Electro_master>();
-        
         public Form1()
         {
             InitializeComponent();
@@ -28,28 +27,45 @@ namespace Proyecto
             t.Interval = 1000;
             t.Tick += T_Tick;
             t.Start();
-            
         }
+
+        private double Wattaje()
+        {
+            double consumoTotal = 0;
+
+            for (int i = 0; i < listaDeObjetos.Count; i++)
+            {
+                consumoTotal = consumoTotal + listaDeObjetos[i].Consumosuma();
+            }
+            return consumoTotal;
+        }
+
 
         Random r = new Random();
         private void T_Tick(object sender, EventArgs e)
         {
+
+            double consumoT = 0;
+            if (listaDeObjetos != null)
+            {
+                consumoT = Wattaje();
+
+            }
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
-            chart1.Series[0].Points.AddY(r.NextDouble());
-            //chart1.Series["Series 1"].Points.Clear();
-            if (chart1.Series["Series1"].Points.Count > 10)
+
+            if (chart1.Series["Series1"].Points.Count > 20) //Error porque el rango era 10 cambio por 1000000
             {
                 chart1.Series["Series1"].Points.RemoveAt(0);
             }
+            chart1.Series[0].Points.AddY(consumoT);
+            
+            //chart1.Series["Series 1"].Points.Clear();
             //rt = rt + 0.1;
         }
 
-
-
-
         private void GenerarButton_Click(object sender, EventArgs e)
         {
-
+            
 
             string opcion = comboBox1.Text;
 
@@ -201,7 +217,7 @@ namespace Proyecto
             else if (opcion == "Foco")
             {
 
-                l = new Electrodomesticos.Foco(100, id, comboBox1.Text);
+                l = new Electrodomesticos.Foco( id, comboBox1.Text);
 
                 if (l.GetUbicacion() == "WC")
                 {
@@ -456,7 +472,7 @@ namespace Proyecto
         private void button2_Click(object sender, EventArgs e)
         {
 
-            Microondas l = new Microondas("hola");
+           Microondas l = new Microondas("hola");
             l.CrearIcono();
 
             //separar funciones de moverpicture para que no se genere el error 
@@ -470,7 +486,7 @@ namespace Proyecto
             //  pictureBox1.Image = l.ObtenerIMagen(); //solo se ve en panel
             //pictureBox2.Image = l.ObtenerIMagen(); // Ya no se ve Xc
             //pictureBox1.Refresh();
-            pictureBox7.Image = l.ObtenerIMagen();
+            pictureBox119.Image = l.ObtenerIMagen();
         }
 
 
@@ -494,6 +510,9 @@ namespace Proyecto
         //---------------------------------------------------------------------------------------------
 
         //generando movimiento por mouse
+
+
+
 
         private void pictureBox2_DoubleClick(object sender, EventArgs e)
         {
@@ -1949,31 +1968,23 @@ namespace Proyecto
             posActBotonY = pictureBox117.Location.Y;
         }
 
-        private void button3_Click(object sender, EventArgs e)//dudas
+        private void pictureBox36_DoubleClick_1(object sender, EventArgs e)
         {
-            CreaObjetosForm d = new CreaObjetosForm();
-           
-            d.ShowDialog();
+            pictureBox36.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox36.Location.X;
+            posActBotonY = pictureBox36.Location.Y;
         }
 
-
-        public bool prender(string id)
+        private void pictureBox16_DoubleClick_1(object sender, EventArgs e)
         {
-            for (int i = 0; i < listaDeObjetos.Count; i++)
-            {
-                if (listaDeObjetos[i].GetId()==id)
-                {
-                    listaDeObjetos[i].Prender();
-                    return true;
-                }
-            }
-           
-            
-                MessageBox.Show("El id no existe, intentalo de nuevo");
-                return false;
+            pictureBox16.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox16.Location.X;
+            posActBotonY = pictureBox16.Location.Y;
         }
-
-
 
         private void moverpicture118()
         {
@@ -1991,6 +2002,8 @@ namespace Proyecto
             posActBotonX = pictureBox119.Location.X;
             posActBotonY = pictureBox119.Location.Y;
         }
+
+
 
         //-----------------------------------------------------------------------------------------------------------------
 
@@ -2012,5 +2025,5 @@ namespace Proyecto
 
 
     }
-}
+    }
 
