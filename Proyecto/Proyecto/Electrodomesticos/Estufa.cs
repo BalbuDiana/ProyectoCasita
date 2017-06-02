@@ -19,7 +19,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-            estufa = Image.FromFile(@"Iconos\estufa.jpg");
+            estufa = Image.FromFile(@"Iconos\estufa.png");
         }
 
         public override Image ObtenerIMagen()
