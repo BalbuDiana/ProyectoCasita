@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -90,9 +91,10 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txbbubi = new System.Windows.Forms.TextBox();
             this.txtAlertaAct = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.txtConAct = new System.Windows.Forms.TextBox();
@@ -109,9 +111,11 @@
             this.Buscar_Foco = new System.Windows.Forms.Button();
             this.txtAlerta = new System.Windows.Forms.TextBox();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.txbbubi = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.txalarma = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -153,6 +157,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // comboBox1
@@ -217,7 +222,7 @@
             this.comboBox2.Location = new System.Drawing.Point(24, 30);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(151, 25);
+            this.comboBox2.Size = new System.Drawing.Size(151, 23);
             this.comboBox2.TabIndex = 8;
             // 
             // label3
@@ -226,17 +231,18 @@
             this.label3.Location = new System.Drawing.Point(14, 15);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(176, 17);
+            this.label3.Size = new System.Drawing.Size(145, 15);
             this.label3.TabIndex = 9;
             this.label3.Text = "Ingrese qué artículo desea crear";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.button1.Font = new System.Drawing.Font("Monotype Corsiva", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(58, 102);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 19);
+            this.button1.Size = new System.Drawing.Size(79, 37);
             this.button1.TabIndex = 10;
             this.button1.Text = "Crear Objeto";
             this.button1.UseVisualStyleBackColor = false;
@@ -251,7 +257,7 @@
             this.groupBox8.Controls.Add(this.label3);
             this.groupBox8.Controls.Add(this.button1);
             this.groupBox8.Controls.Add(this.comboBox2);
-            this.groupBox8.Font = new System.Drawing.Font("Perpetua", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox8.Font = new System.Drawing.Font("Monotype Corsiva", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(204, 15);
             this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox8.Name = "groupBox8";
@@ -260,6 +266,16 @@
             this.groupBox8.TabIndex = 11;
             this.groupBox8.TabStop = false;
             this.groupBox8.Visible = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(78, 149);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 15);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "label6";
+            this.label6.Visible = false;
             // 
             // button3
             // 
@@ -278,7 +294,7 @@
             this.label4.Location = new System.Drawing.Point(30, 53);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 17);
+            this.label4.Size = new System.Drawing.Size(135, 15);
             this.label4.TabIndex = 12;
             this.label4.Text = "Ingrese un ID para el objeto";
             // 
@@ -287,33 +303,34 @@
             this.textBox2.Location = new System.Drawing.Point(61, 68);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 25);
+            this.textBox2.Size = new System.Drawing.Size(76, 22);
             this.textBox2.TabIndex = 11;
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.DarkTurquoise;
             this.button2.Location = new System.Drawing.Point(680, 50);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 19);
             this.button2.TabIndex = 13;
             this.button2.Text = "Aleatorio";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart1.Legends.Add(legend4);
             this.chart1.Location = new System.Drawing.Point(403, 15);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart1.Series.Add(series4);
             this.chart1.Size = new System.Drawing.Size(272, 121);
             this.chart1.TabIndex = 16;
             this.chart1.Text = "chart1";
@@ -971,16 +988,6 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Patio";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(78, 140);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 17);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "label6";
-            this.label6.Visible = false;
-            // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -1020,6 +1027,22 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Buscar / Cambiar";
             this.groupBox9.Visible = false;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(7, 63);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(92, 16);
+            this.label12.TabIndex = 26;
+            this.label12.Text = "Ubicacion Buscar";
+            // 
+            // txbbubi
+            // 
+            this.txbbubi.Location = new System.Drawing.Point(119, 60);
+            this.txbbubi.Name = "txbbubi";
+            this.txbbubi.Size = new System.Drawing.Size(100, 22);
+            this.txbbubi.TabIndex = 25;
             // 
             // txtAlertaAct
             // 
@@ -1164,22 +1187,6 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Seleccion Habitación";
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(7, 63);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(92, 16);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "Ubicacion Buscar";
-            // 
-            // txbbubi
-            // 
-            this.txbbubi.Location = new System.Drawing.Point(119, 60);
-            this.txbbubi.Name = "txbbubi";
-            this.txbbubi.Size = new System.Drawing.Size(100, 22);
-            this.txbbubi.TabIndex = 25;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Red;
@@ -1190,12 +1197,55 @@
             this.button5.TabIndex = 65;
             this.button5.Text = "Alarma";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.button6);
+            this.groupBox11.Controls.Add(this.label5);
+            this.groupBox11.Controls.Add(this.txalarma);
+            this.groupBox11.Font = new System.Drawing.Font("Monotype Corsiva", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox11.Location = new System.Drawing.Point(1031, 433);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(225, 103);
+            this.groupBox11.TabIndex = 66;
+            this.groupBox11.TabStop = false;
+            this.groupBox11.Text = "Alarma";
+            this.groupBox11.Visible = false;
+            // 
+            // txalarma
+            // 
+            this.txalarma.Location = new System.Drawing.Point(107, 24);
+            this.txalarma.Name = "txalarma";
+            this.txalarma.Size = new System.Drawing.Size(100, 24);
+            this.txalarma.TabIndex = 0;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(16, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(84, 17);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Rango en min.";
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button6.Location = new System.Drawing.Point(70, 50);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 2;
+            this.button6.Text = "Inicio";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1276, 659);
+            this.ClientSize = new System.Drawing.Size(1268, 659);
+            this.Controls.Add(this.groupBox11);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
@@ -1296,6 +1346,8 @@
             this.groupBox9.PerformLayout();
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1382,5 +1434,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox txbbubi;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txalarma;
     }
 }

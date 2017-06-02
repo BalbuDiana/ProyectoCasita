@@ -16,12 +16,13 @@ namespace Proyecto
         private double[] cpuArray = new double[30];
 
         int tiempo = 0;
+        Timer t;
         public List<Electro_master> listaDeObjetos = new List<Electro_master>();
         public Form1()
         {
             InitializeComponent();
 
-            Timer t = new Timer();
+            t = new Timer();
             t.Interval = 1000;
             t.Tick += T_Tick;
             t.Start();
@@ -60,7 +61,29 @@ namespace Proyecto
             //chart1.Series["Series 1"].Points.Clear();
             //rt = rt + 0.1;
         }
+        private void T_Tick1(object sender, EventArgs e)
+        {
+            for (int i = 0; i < listaDeObjetos.Count; i++)
+            {
+                listaDeObjetos[i].Apagar();
+                
+            }
+                t1.Stop();//detiene el temporizador
 
+        }
+        Timer t1;
+        private void button6_Click(object sender, EventArgs e)
+        {
+            int tiempo = Convert.ToInt16(txalarma.Text) * (60000); //para que sean minutos
+            t1 = new Timer();
+            t1.Interval = tiempo;
+            t1.Tick += T_Tick1;
+            t1.Start();
+
+           
+
+        }
+        
         private void GenerarButton_Click(object sender, EventArgs e)
         {
 
@@ -2079,6 +2102,14 @@ namespace Proyecto
             txtConAct.Text = d.ToString("0.0000");
             txtAlertaAct.Text = n.AltoConsumo() ? "¡¡¡ ALTO CONSUMO !!!" : "";
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            groupBox11.Visible = true;
+            
+        }
+
+      
 
         private void moverpicture118()
         {
