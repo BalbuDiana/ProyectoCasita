@@ -11,8 +11,8 @@ namespace Proyecto.Electrodomesticos
     {
         Image foco;
 
-        public Foco(double potencia, string id, string ubicacion)
-            :base(potencia, id, ubicacion,"foco")
+        public Foco(string id, string ubicacion)
+            :base(100, id, ubicacion,"foco")
 
         {
             
@@ -20,7 +20,7 @@ namespace Proyecto.Electrodomesticos
 
         public override void CrearIcono()
         {
-            foco = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\foquito.jpg");
+            foco = Image.FromFile(@"C:\Users\Balbu\Source\Repos\ProyectoCasita2\Proyecto\Proyecto\Iconos\foquito.jpg");
         }
 
         public override Image ObtenerIMagen()

@@ -13,7 +13,7 @@ namespace Proyecto.Electrodomesticos
         Image lamp;
 
         public Lampara(string id, string ubicacion)
-            :base(150,id,ubicacion)
+            :base(id,ubicacion)
         {
 
         }
@@ -23,7 +23,7 @@ namespace Proyecto.Electrodomesticos
             // necesitamos meter todas las imágenes en un sola carpeta y hacer archivos locales para que se puede leer
             //Mitch, aquí necesitas poner tu ruta porque si no te marcará error a la hora de realizar tu programa en 
             // tu computadora
-           lamp = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\lampara.jpg");
+           lamp = Image.FromFile(@"C:\Users\Balbu\Source\Repos\ProyectoCasita2\Proyecto\Proyecto\Iconos\lampara.jpg");
             
              //*@"C:\Users\Balbu\Source\Repos\ProyectoCasita\Proyecto\Proyecto\lic.png"
         }

@@ -29,16 +29,37 @@ namespace Proyecto
             t.Start();
         }
 
+        private double Wattaje()
+        {
+            double consumoTotal = 0;
+
+            for (int i = 0; i < listaDeObjetos.Count; i++)
+            {
+                consumoTotal = consumoTotal + listaDeObjetos[i].Consumosuma();
+            }
+            return consumoTotal;
+        }
+
+
         Random r = new Random();
         private void T_Tick(object sender, EventArgs e)
         {
+
+            double consumoT = 0;
+            if (listaDeObjetos != null)
+            {
+                consumoT = Wattaje();
+
+            }
             textBox1.Text = "Tiempo transcurrido" + tiempo++;
-            chart1.Series[0].Points.AddY(r.NextDouble());
-            //chart1.Series["Series 1"].Points.Clear();
-            if (chart1.Series["Series1"].Points.Count > 10)
+
+            if (chart1.Series["Series1"].Points.Count > 20) //Error porque el rango era 10 cambio por 1000000
             {
                 chart1.Series["Series1"].Points.RemoveAt(0);
             }
+            chart1.Series[0].Points.AddY(consumoT);
+            
+            //chart1.Series["Series 1"].Points.Clear();
             //rt = rt + 0.1;
         }
 
@@ -196,7 +217,7 @@ namespace Proyecto
             else if (opcion == "Foco")
             {
 
-                l = new Electrodomesticos.Foco(100, id, comboBox1.Text);
+                l = new Electrodomesticos.Foco( id, comboBox1.Text);
 
                 if (l.GetUbicacion() == "WC")
                 {

@@ -27,7 +27,7 @@ namespace Proyecto
             this.id = id;
             this.tipo = tipo;
             this.potencia = potencia; //Wh
-            estaPrendido = false;
+            estaPrendido = true;
             tiempoAcc = 0.0;
             if (potencia < PotenciaMayor)
             {
