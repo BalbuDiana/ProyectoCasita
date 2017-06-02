@@ -20,7 +20,7 @@ namespace Proyecto.Electrodomesticos
 
         public override void CrearIcono()
         {
-            foco = Image.FromFile(@"C:\Users\Balbu\Source\Repos\ProyectoCasita2\Proyecto\Proyecto\Iconos\foquito.jpg");
+            foco = Image.FromFile(@"Iconos\foquito.jpg");
         }
 
         public override Image ObtenerIMagen()

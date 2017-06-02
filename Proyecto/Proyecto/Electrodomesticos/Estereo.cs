@@ -18,7 +18,7 @@ namespace Proyecto.Electrodomesticos
         }
         public override void CrearIcono()
         {
-            estereo = Image.FromFile(@"C:\Users\Sagrario\Source\Repos\ProyectoCasita\ProyectoCasita\Proyecto\Proyecto\Iconos\estereo.png");
+            estereo = Image.FromFile(@"Iconos\estereo.jpg");
         }
 
         public override Image ObtenerIMagen()
