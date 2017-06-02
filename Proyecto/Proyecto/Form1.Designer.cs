@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,6 +41,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -89,7 +90,6 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -233,6 +233,15 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Visible = false;
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(47, 171);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(108, 23);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Enceder/Apagar";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -264,17 +273,17 @@
             // 
             // chart1
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chart1.Legends.Add(legend2);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
             this.chart1.Location = new System.Drawing.Point(403, 15);
             this.chart1.Name = "chart1";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.chart1.Series.Add(series2);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(260, 107);
             this.chart1.TabIndex = 16;
             this.chart1.Text = "chart1";
@@ -304,6 +313,10 @@
             this.pictureBox119.TabIndex = 59;
             this.pictureBox119.TabStop = false;
             this.pictureBox119.DoubleClick += new System.EventHandler(this.pictureBox119_DoubleClick);
+            this.pictureBox119.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox119_MouseClick);
+            this.pictureBox119.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox119_MouseDown);
+            this.pictureBox119.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox119_MouseMove);
+            this.pictureBox119.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox119_MouseUp);
             // 
             // pictureBox118
             // 
@@ -315,6 +328,10 @@
             this.pictureBox118.TabIndex = 58;
             this.pictureBox118.TabStop = false;
             this.pictureBox118.DoubleClick += new System.EventHandler(this.pictureBox118_DoubleClick);
+            this.pictureBox118.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox118_MouseClick);
+            this.pictureBox118.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox118_MouseDown);
+            this.pictureBox118.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox118_MouseMove);
+            this.pictureBox118.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox118_MouseUp);
             // 
             // pictureBox117
             // 
@@ -326,6 +343,10 @@
             this.pictureBox117.TabIndex = 57;
             this.pictureBox117.TabStop = false;
             this.pictureBox117.DoubleClick += new System.EventHandler(this.pictureBox117_DoubleClick);
+            this.pictureBox117.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox117_MouseClick);
+            this.pictureBox117.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox117_MouseDown);
+            this.pictureBox117.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox117_MouseMove);
+            this.pictureBox117.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox117_MouseUp);
             // 
             // pictureBox116
             // 
@@ -337,6 +358,10 @@
             this.pictureBox116.TabIndex = 56;
             this.pictureBox116.TabStop = false;
             this.pictureBox116.DoubleClick += new System.EventHandler(this.pictureBox116_DoubleClick);
+            this.pictureBox116.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox116_MouseClick);
+            this.pictureBox116.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox116_MouseDown);
+            this.pictureBox116.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox116_MouseMove);
+            this.pictureBox116.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox116_MouseUp);
             // 
             // pictureBox115
             // 
@@ -348,6 +373,10 @@
             this.pictureBox115.TabIndex = 51;
             this.pictureBox115.TabStop = false;
             this.pictureBox115.DoubleClick += new System.EventHandler(this.pictureBox115_DoubleClick);
+            this.pictureBox115.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox115_MouseClick);
+            this.pictureBox115.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox115_MouseDown);
+            this.pictureBox115.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox115_MouseMove);
+            this.pictureBox115.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox115_MouseUp);
             // 
             // pictureBox114
             // 
@@ -359,6 +388,10 @@
             this.pictureBox114.TabIndex = 55;
             this.pictureBox114.TabStop = false;
             this.pictureBox114.DoubleClick += new System.EventHandler(this.pictureBox114_DoubleClick);
+            this.pictureBox114.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox114_MouseClick);
+            this.pictureBox114.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox114_MouseDown);
+            this.pictureBox114.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox114_MouseMove);
+            this.pictureBox114.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox114_MouseUp);
             // 
             // pictureBox113
             // 
@@ -370,6 +403,10 @@
             this.pictureBox113.TabIndex = 54;
             this.pictureBox113.TabStop = false;
             this.pictureBox113.DoubleClick += new System.EventHandler(this.pictureBox113_DoubleClick);
+            this.pictureBox113.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox113_MouseClick);
+            this.pictureBox113.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox113_MouseDown);
+            this.pictureBox113.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox113_MouseMove);
+            this.pictureBox113.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox113_MouseUp);
             // 
             // pictureBox112
             // 
@@ -381,6 +418,10 @@
             this.pictureBox112.TabIndex = 53;
             this.pictureBox112.TabStop = false;
             this.pictureBox112.DoubleClick += new System.EventHandler(this.pictureBox112_DoubleClick);
+            this.pictureBox112.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox112_MouseClick);
+            this.pictureBox112.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox112_MouseDown);
+            this.pictureBox112.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox112_MouseMove);
+            this.pictureBox112.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox112_MouseUp);
             // 
             // pictureBox111
             // 
@@ -392,6 +433,10 @@
             this.pictureBox111.TabIndex = 52;
             this.pictureBox111.TabStop = false;
             this.pictureBox111.DoubleClick += new System.EventHandler(this.pictureBox111_DoubleClick);
+            this.pictureBox111.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox111_MouseClick);
+            this.pictureBox111.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox111_MouseDown);
+            this.pictureBox111.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox111_MouseMove);
+            this.pictureBox111.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox111_MouseUp);
             // 
             // pictureBox29
             // 
@@ -477,6 +522,7 @@
             this.pictureBox36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox36.TabIndex = 44;
             this.pictureBox36.TabStop = false;
+            this.pictureBox36.DoubleClick += new System.EventHandler(this.pictureBox36_DoubleClick_1);
             this.pictureBox36.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseClick);
             this.pictureBox36.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseDown);
             this.pictureBox36.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox36_MouseMove);
@@ -492,6 +538,10 @@
             this.pictureBox24.TabIndex = 38;
             this.pictureBox24.TabStop = false;
             this.pictureBox24.DoubleClick += new System.EventHandler(this.pictureBox24_DoubleClick);
+            this.pictureBox24.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseClick);
+            this.pictureBox24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseDown);
+            this.pictureBox24.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseMove);
+            this.pictureBox24.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox24_MouseUp);
             // 
             // pictureBox26
             // 
@@ -503,6 +553,10 @@
             this.pictureBox26.TabIndex = 36;
             this.pictureBox26.TabStop = false;
             this.pictureBox26.DoubleClick += new System.EventHandler(this.pictureBox26_DoubleClick);
+            this.pictureBox26.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseClick);
+            this.pictureBox26.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseDown);
+            this.pictureBox26.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseMove);
+            this.pictureBox26.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox26_MouseUp);
             // 
             // pictureBox28
             // 
@@ -514,6 +568,10 @@
             this.pictureBox28.TabIndex = 34;
             this.pictureBox28.TabStop = false;
             this.pictureBox28.DoubleClick += new System.EventHandler(this.pictureBox28_DoubleClick);
+            this.pictureBox28.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseClick);
+            this.pictureBox28.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseDown);
+            this.pictureBox28.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseMove);
+            this.pictureBox28.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox28_MouseUp);
             // 
             // pictureBox19
             // 
@@ -525,6 +583,10 @@
             this.pictureBox19.TabIndex = 32;
             this.pictureBox19.TabStop = false;
             this.pictureBox19.DoubleClick += new System.EventHandler(this.pictureBox19_DoubleClick);
+            this.pictureBox19.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseClick);
+            this.pictureBox19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseDown);
+            this.pictureBox19.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseMove);
+            this.pictureBox19.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox19_MouseUp);
             // 
             // pictureBox18
             // 
@@ -536,6 +598,10 @@
             this.pictureBox18.TabIndex = 13;
             this.pictureBox18.TabStop = false;
             this.pictureBox18.DoubleClick += new System.EventHandler(this.pictureBox18_DoubleClick);
+            this.pictureBox18.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseClick);
+            this.pictureBox18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseDown);
+            this.pictureBox18.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseMove);
+            this.pictureBox18.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox18_MouseUp);
             // 
             // pictureBox17
             // 
@@ -547,6 +613,10 @@
             this.pictureBox17.TabIndex = 31;
             this.pictureBox17.TabStop = false;
             this.pictureBox17.DoubleClick += new System.EventHandler(this.pictureBox17_DoubleClick);
+            this.pictureBox17.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseClick);
+            this.pictureBox17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseDown);
+            this.pictureBox17.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseMove);
+            this.pictureBox17.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox17_MouseUp);
             // 
             // pictureBox16
             // 
@@ -557,6 +627,11 @@
             this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox16.TabIndex = 30;
             this.pictureBox16.TabStop = false;
+            this.pictureBox16.DoubleClick += new System.EventHandler(this.pictureBox16_DoubleClick_1);
+            this.pictureBox16.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseClick);
+            this.pictureBox16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseDown);
+            this.pictureBox16.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseMove);
+            this.pictureBox16.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox16_MouseUp);
             // 
             // pictureBox15
             // 
@@ -568,6 +643,10 @@
             this.pictureBox15.TabIndex = 29;
             this.pictureBox15.TabStop = false;
             this.pictureBox15.DoubleClick += new System.EventHandler(this.pictureBox15_DoubleClick);
+            this.pictureBox15.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseClick);
+            this.pictureBox15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseDown);
+            this.pictureBox15.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseMove);
+            this.pictureBox15.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox15_MouseUp);
             // 
             // pictureBox14
             // 
@@ -579,6 +658,10 @@
             this.pictureBox14.TabIndex = 28;
             this.pictureBox14.TabStop = false;
             this.pictureBox14.DoubleClick += new System.EventHandler(this.pictureBox14_DoubleClick);
+            this.pictureBox14.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseClick);
+            this.pictureBox14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseDown);
+            this.pictureBox14.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseMove);
+            this.pictureBox14.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox14_MouseUp);
             // 
             // pictureBox13
             // 
@@ -591,6 +674,9 @@
             this.pictureBox13.TabStop = false;
             this.pictureBox13.DoubleClick += new System.EventHandler(this.pictureBox13_DoubleClick);
             this.pictureBox13.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseClick);
+            this.pictureBox13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseDown);
+            this.pictureBox13.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseMove);
+            this.pictureBox13.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox13_MouseUp);
             // 
             // pictureBox12
             // 
@@ -617,6 +703,10 @@
             this.pictureBox11.TabIndex = 25;
             this.pictureBox11.TabStop = false;
             this.pictureBox11.DoubleClick += new System.EventHandler(this.pictureBox11_DoubleClick);
+            this.pictureBox11.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseClick);
+            this.pictureBox11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseDown);
+            this.pictureBox11.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseMove);
+            this.pictureBox11.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox11_MouseUp);
             // 
             // pictureBox10
             // 
@@ -628,6 +718,10 @@
             this.pictureBox10.TabIndex = 24;
             this.pictureBox10.TabStop = false;
             this.pictureBox10.DoubleClick += new System.EventHandler(this.pictureBox10_DoubleClick);
+            this.pictureBox10.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseClick);
+            this.pictureBox10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseDown);
+            this.pictureBox10.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseMove);
+            this.pictureBox10.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox10_MouseUp);
             // 
             // pictureBox9
             // 
@@ -639,6 +733,10 @@
             this.pictureBox9.TabIndex = 23;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.DoubleClick += new System.EventHandler(this.pictureBox9_DoubleClick);
+            this.pictureBox9.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseClick);
+            this.pictureBox9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseDown);
+            this.pictureBox9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseMove);
+            this.pictureBox9.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox9_MouseUp);
             // 
             // pictureBox8
             // 
@@ -651,6 +749,9 @@
             this.pictureBox8.TabStop = false;
             this.pictureBox8.DoubleClick += new System.EventHandler(this.pictureBox8_DoubleClick);
             this.pictureBox8.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseClick);
+            this.pictureBox8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseDown);
+            this.pictureBox8.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseMove);
+            this.pictureBox8.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox8_MouseUp);
             // 
             // pictureBox7
             // 
@@ -677,6 +778,10 @@
             this.pictureBox6.TabIndex = 20;
             this.pictureBox6.TabStop = false;
             this.pictureBox6.DoubleClick += new System.EventHandler(this.pictureBox6_DoubleClick);
+            this.pictureBox6.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox6_MouseClick);
+            this.pictureBox6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox6_MouseDown);
+            this.pictureBox6.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox6_MouseMove);
+            this.pictureBox6.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox6_MouseUp);
             // 
             // pictureBox5
             // 
@@ -688,6 +793,10 @@
             this.pictureBox5.TabIndex = 19;
             this.pictureBox5.TabStop = false;
             this.pictureBox5.DoubleClick += new System.EventHandler(this.pictureBox5_DoubleClick);
+            this.pictureBox5.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox5_MouseClick);
+            this.pictureBox5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox5_MouseDown);
+            this.pictureBox5.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox5_MouseMove);
+            this.pictureBox5.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox5_MouseUp);
             // 
             // pictureBox4
             // 
@@ -699,6 +808,10 @@
             this.pictureBox4.TabIndex = 18;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.DoubleClick += new System.EventHandler(this.pictureBox4_DoubleClick);
+            this.pictureBox4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseClick);
+            this.pictureBox4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseDown);
+            this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseMove);
+            this.pictureBox4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox4_MouseUp);
             // 
             // pictureBox3
             // 
@@ -820,16 +933,6 @@
             this.groupBox7.TabIndex = 60;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Patio";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(47, 171);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(108, 23);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Enceder/Apagar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 

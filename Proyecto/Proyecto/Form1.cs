@@ -465,7 +465,7 @@ namespace Proyecto
             //  pictureBox1.Image = l.ObtenerIMagen(); //solo se ve en panel
             //pictureBox2.Image = l.ObtenerIMagen(); // Ya no se ve Xc
             //pictureBox1.Refresh();
-            pictureBox7.Image = l.ObtenerIMagen();
+            pictureBox119.Image = l.ObtenerIMagen();
         }
 
 
@@ -489,6 +489,9 @@ namespace Proyecto
         //---------------------------------------------------------------------------------------------
 
         //generando movimiento por mouse
+
+
+
 
         private void pictureBox2_DoubleClick(object sender, EventArgs e)
         {
@@ -747,8 +750,8 @@ namespace Proyecto
             if (pictureclick == true) moverpicture29(); //se debe de mover el picture
         }
 
-        
-       
+
+
         //-------------------------------------------------------------------------nuevos
         private void pictureBox7_DoubleClick(object sender, EventArgs e)
         {
@@ -775,7 +778,7 @@ namespace Proyecto
             //posiciones de picture
             posMousePictureX = e.Location.X;
             posMousePictureY = e.Location.Y;
-            pictureclick = true; 
+            pictureclick = true;
         }
         private void pictureBox7_MouseUp(object sender, MouseEventArgs e)
         {
@@ -1709,7 +1712,7 @@ namespace Proyecto
 
         }
         //nuevos---------------------------
-       
+
 
         private void moverpicture30()
         {
@@ -1944,10 +1947,22 @@ namespace Proyecto
             posActBotonY = pictureBox117.Location.Y;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void pictureBox36_DoubleClick_1(object sender, EventArgs e)
         {
-            CreaObjetosForm d = new CreaObjetosForm();
-            d.ShowDialog();
+            pictureBox36.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox36.Location.X;
+            posActBotonY = pictureBox36.Location.Y;
+        }
+
+        private void pictureBox16_DoubleClick_1(object sender, EventArgs e)
+        {
+            pictureBox16.Image = null;
+
+            //abrir formulario campura posiciones 
+            posActBotonX = pictureBox16.Location.X;
+            posActBotonY = pictureBox16.Location.Y;
         }
 
         private void moverpicture118()
@@ -1966,10 +1981,12 @@ namespace Proyecto
             posActBotonX = pictureBox119.Location.X;
             posActBotonY = pictureBox119.Location.Y;
         }
-       
+
+
+
         //-----------------------------------------------------------------------------------------------------------------
 
-           
+
 
 
 
