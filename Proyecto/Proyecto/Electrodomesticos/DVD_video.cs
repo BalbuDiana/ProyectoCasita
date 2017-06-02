@@ -18,7 +18,7 @@ namespace Proyecto
 
         public override void CrearIcono()
         {
-           dvd = Image.FromFile(@"Iconos\dvd.jpg");
+           dvd = Image.FromFile(@"Iconos\dvd.png");
         }
 
         public override Image ObtenerIMagen()

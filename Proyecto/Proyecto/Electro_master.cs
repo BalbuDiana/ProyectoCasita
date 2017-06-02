@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace Proyecto
 {
-     abstract class Electro_master
+    public abstract class Electro_master
     {
 
         double potencia;
@@ -136,6 +136,9 @@ namespace Proyecto
         {
             return tipo;
         }
+
+       
+      
 
     }
 }

@@ -12,20 +12,13 @@ namespace Proyecto
 {
     public partial class CreaObjetosForm : Form
     {
+        
         public CreaObjetosForm()
         {
             InitializeComponent();
 
         }
 
-        private void CreaObjetosForm_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        public void localizacion(string opcion)
-        {
-            
-        }
+       
     }
 }

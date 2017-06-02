@@ -8,8 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
-
 namespace Proyecto
 {
     public partial class Form1 : Form
@@ -18,12 +16,12 @@ namespace Proyecto
         private double[] cpuArray = new double[30];  
 
         int tiempo = 0;
-        List<Electro_master> listaDeObjetos = new List<Electro_master>();
+        public List<Electro_master> listaDeObjetos = new List<Electro_master>();
         public Form1()
         {
             InitializeComponent();
-
-            Timer t = new Timer();
+            
+        Timer t = new Timer();
             t.Interval = 1000;
             t.Tick += T_Tick;
             t.Start();
@@ -223,13 +221,14 @@ namespace Proyecto
                 {
                     l.CrearIcono();
                     pictureBox14.Image = l.ObtenerIMagen();
+                    
 
                 }
                 else if (l.GetUbicacion() == "Cocina")
                 {
                     l.CrearIcono();
                     pictureBox30.Image = l.ObtenerIMagen();
-
+                    
 
                 }
                 else if (l.GetUbicacion() == "Habitación")
@@ -237,14 +236,14 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox31.Image = l.ObtenerIMagen();
-
+                    
                 }
                 else if (l.GetUbicacion() == "Habitación de huéspedes")
                 {
 
                     l.CrearIcono();
                     pictureBox32.Image = l.ObtenerIMagen();
-
+                    listaDeObjetos.Add(l);
 
                 }
                 else if (l.GetUbicacion() == "Patio")
@@ -252,7 +251,7 @@ namespace Proyecto
 
                     l.CrearIcono();
                     pictureBox34.Image = l.ObtenerIMagen();
-
+                    listaDeObjetos.Add(l);
 
                 }
                 else if (l.GetUbicacion() == "Sala")
@@ -456,12 +455,15 @@ namespace Proyecto
 
             }
 
-
-
-
-            MessageBox.Show("Generaste un objeto tipo : " + opcion + "\n  Ubicación: " + comboBox1.Text);
+            MessageBox.Show("Generaste un objeto tipo : " + opcion, "\n  Ubicación: " + comboBox1.Text,MessageBoxButtons.OK, MessageBoxIcon.Information);
             listaDeObjetos.Add(l);
 
+            /*label5.Visible = true;
+            if(label5.Visible == true)
+            {
+                label5.Text = imprimir_listaobjetos();  //solo era para verificar
+            }*/
+            
 
         }
 
@@ -487,6 +489,8 @@ namespace Proyecto
             //pictureBox2.Image = l.ObtenerIMagen(); // Ya no se ve Xc
             //pictureBox1.Refresh();
             pictureBox119.Image = l.ObtenerIMagen();
+
+           
         }
 
 
@@ -1986,6 +1990,17 @@ namespace Proyecto
             posActBotonY = pictureBox16.Location.Y;
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            
+            // para borrar lista hago esto
+            
+            CreaObjetosForm pik = new CreaObjetosForm();
+            pik.Show();
+            pik.label3.Refresh();
+            pik.label3.Text = imprimir_listaobjetos();
+        }
+
         private void moverpicture118()
         {
 
@@ -2008,21 +2023,20 @@ namespace Proyecto
         //-----------------------------------------------------------------------------------------------------------------
 
 
-
-
-
-
-
-        public string imprimir_lista()
+        public string imprimir_listaobjetos()
         {
-            string s = "";
+            string s = "\t  Objetos     ID      Ubicación     Estado     " ;
 
-            s = "hola";
-
+            for (int i = 0; i < listaDeObjetos.Count; i++)
+            {
+                s += "\n * " + listaDeObjetos[i].Gettipo() + "  "+ listaDeObjetos[i].GetId()+  "  " + listaDeObjetos[i].GetUbicacion() + "  " + listaDeObjetos[i].GetEstaPrendido();
+                
+            }
+            
             return s;
         }
 
-
+        
 
     }
     }
